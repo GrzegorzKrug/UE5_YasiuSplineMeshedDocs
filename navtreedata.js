@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "Yasiu Math", "index.html", [
+  [ "Yasiu Spline Meshed", "index.html", [
     [ "About Math Library", "md_Documentation_2About.html", [
       [ "Overview", "md_Documentation_2About.html#autotoc_md1", null ],
       [ "Components", "md_Documentation_2About.html#autotoc_md4", null ],
@@ -42,13 +42,30 @@ var NAVTREE =
     [ "How to use plugin", "md_Documentation_2Usage.html", [
       [ "Use in blueprints", "md_Documentation_2Usage.html#autotoc_md17", null ],
       [ "C++", "md_Documentation_2Usage.html#autotoc_md19", null ]
+    ] ],
+    [ "Classes", "annotated.html", [
+      [ "Class List", "annotated.html", "annotated_dup" ],
+      [ "Class Index", "classes.html", null ],
+      [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
+      [ "Class Members", "functions.html", [
+        [ "All", "functions.html", null ],
+        [ "Functions", "functions_func.html", null ],
+        [ "Variables", "functions_vars.html", null ]
+      ] ]
+    ] ],
+    [ "Files", "files.html", [
+      [ "File List", "files.html", "files_dup" ],
+      [ "File Members", "globals.html", [
+        [ "All", "globals.html", null ],
+        [ "Enumerations", "globals_enum.html", null ]
+      ] ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"index.html"
+"SplineMeshedActor_8h.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';
