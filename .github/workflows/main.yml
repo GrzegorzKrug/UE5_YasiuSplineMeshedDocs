@@ -39,12 +39,14 @@ jobs:
       # Commit ONLY /html to main
       - name: Commit repo
         run: |
-          ls -a
-          pwd
+          # ls -a
+          # pwd
           #git checkout main     
-          # mv html ./html
+
+          # Mv has issues with overwrite, rsync? 
           rm -r plugin/.git
-          mv plugin/* .
+          cp -r plugin/* .
+          rm plugin -r
 
           git add *.md
           
@@ -74,7 +76,7 @@ jobs:
 
       # Run Doxygen against the OTHER repo
       - name: Run Doxygen
-        run: doxygen plugin/Doxyfile                
+        run: doxygen Doxyfile                
       
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v4
