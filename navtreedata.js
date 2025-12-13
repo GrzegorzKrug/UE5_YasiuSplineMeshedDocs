@@ -1,0 +1,56 @@
+/*
+ @licstart  The following is the entire license notice for the JavaScript code in this file.
+
+ The MIT License (MIT)
+
+ Copyright (C) 1997-2020 by Dimitri van Heesch
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy of this software
+ and associated documentation files (the "Software"), to deal in the Software without restriction,
+ including without limitation the rights to use, copy, modify, merge, publish, distribute,
+ sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in all copies or
+ substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING
+ BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+ DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+ @licend  The above is the entire license notice for the JavaScript code in this file
+*/
+var NAVTREE =
+[
+  [ "Yasiu Math", "index.html", [
+    [ "About Math Library", "md_Documentation_2About.html", [
+      [ "Overview", "md_Documentation_2About.html#autotoc_md1", null ],
+      [ "Components", "md_Documentation_2About.html#autotoc_md4", null ],
+      [ "Documentation", "md_Documentation_2About.html#autotoc_md6", [
+        [ "Instalation", "md_Documentation_2About.html#autotoc_md7", null ],
+        [ "Usage", "md_Documentation_2About.html#autotoc_md8", null ]
+      ] ]
+    ] ],
+    [ "Installation of plugin", "md_Documentation_2Instalation.html", [
+      [ "1. Download and Extract the Plugin", "md_Documentation_2Instalation.html#autotoc_md10", null ],
+      [ "2. Enable the Plugin in Unreal Engine", "md_Documentation_2Instalation.html#autotoc_md12", null ],
+      [ "3. Finished!", "md_Documentation_2Instalation.html#autotoc_md14", null ],
+      [ "C++ Dependency", "md_Documentation_2Instalation.html#autotoc_md15", null ]
+    ] ],
+    [ "How to use plugin", "md_Documentation_2Usage.html", [
+      [ "Use in blueprints", "md_Documentation_2Usage.html#autotoc_md17", null ],
+      [ "C++", "md_Documentation_2Usage.html#autotoc_md19", null ]
+    ] ]
+  ] ]
+];
+
+var NAVTREEINDEX =
+[
+"index.html"
+];
+
+var SYNCONMSG = 'click to disable panel synchronization';
+var SYNCOFFMSG = 'click to enable panel synchronization';
+var LISTOFALLMEMBERS = 'List of all members';
