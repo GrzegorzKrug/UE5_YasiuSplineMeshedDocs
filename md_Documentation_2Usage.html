@@ -99,23 +99,22 @@ $(function(){initNavTree('md_Documentation_2Usage.html','',''); });
   <div class="headertitle"><div class="title">How to use plugin </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md16"></a></p>
-<h1 class="doxsection"><a class="anchor" id="autotoc_md17"></a>
-Use in blueprints</h1>
-<ol type="1">
-<li>Right-click in the Blueprint graph. <br  />
- // TODO 2. Search under the category <b>Math / Yasiu</b>. <br  />
-</li>
-<li>Select the function you need.</li>
+<div class="textblock"><p><a class="anchor" id="autotoc_md17"></a></p>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md18"></a>
+Use in Blueprints</h2>
+<p>Squirrel Object is not treated as ActorComponent, it has to be spawned from class using node <b>CreateFromClass</b></p><ol type="1">
+<li>Right-click in the Blueprint graph.</li>
+<li>Search for "Spawn From Class"</li>
+<li>Put <b>Squirrel 13 RNG</b> into class parameter</li>
+<li>Promote object to variable to keep it alive </li>
 </ol>
-<p><em>All functions from library are located under same category.</em></p>
-<p>//TODO <a href="https://grzegorzkrug.github.io/UE5_YasiuMath/classUYasiuMathFunctionLibrary.html">Functions accessible in BP</a></p>
-<hr  />
 <h1 class="doxsection"><a class="anchor" id="autotoc_md19"></a>
-C++</h1>
-<p>To use math functions include this in your file:</p>
-<p>// TODO <a href="https://grzegorzkrug.github.io/UE5_YasiuMath/namespacemembers_func.html">List of all functions for C++</a></p>
-<p>//TODO Functions are grouped into namespaces: <a href="https://grzegorzkrug.github.io/UE5_YasiuSplineMeshed/namespaces.html">Name spaces</a> </p>
+- This is only required to keep object alive during gameplay and prevent UE from destroying it.</h1>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md20"></a>
+Use in C++</h2>
+<p>To access the Squirrel random generator in C++, add include in your file:</p>
+<p>TODO: fix </p><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;SquirrelRNG.h&quot;</span></div>
+</div><!-- fragment --><p>It is <b>UObject</b>, so it must comply with unreal engine rules for objects lifecycle. Store ref value as any UObject if you want it to persist in game for longer. ```cpp /* Declaration in class, initialize in CDO */ UPROPERTY() TObjectPtr&lt;USquirrel13_RNG&gt; rng; </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
