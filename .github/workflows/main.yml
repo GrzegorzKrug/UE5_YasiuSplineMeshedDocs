@@ -61,11 +61,17 @@ jobs:
           echo ${FILE_TYPES[@]}
           git status          
           git add -u
+          
           for type in ${FILE_TYPES[@]}; do
             if find . -name "*$type" | grep -q . ; then
-              git add *$type
+              echo "Adding to git:"
+              find . -name "*type"
+              git add *$type        
             fi
           done
+
+          echo "Status after 'git add'
+          git status 
           
           if git diff --cached --quiet; then
             echo "No changes were made"
