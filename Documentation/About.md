@@ -1,35 +1,48 @@
 # About Math Library
 
 ## Overview
-A compact Unreal Engine 5.0+ runtime library designed to help create game mechanics, procedural content generation and custom tools.
+Extension of basic unreal engine spline.
 
-// TODO This library provides essential mathematical utilities that work both at runtime and within the editor, enabling deterministic procedural generation and solve common mathematic problems.
+Library provides set of features to help you work with splines more easily.
+
 
 ---
 
-// TODO ## Features
+## Features
 - **Runtime & Editor Compatible**: All functions work during gameplay and within editor tools
-- **Deterministic Generation**: Seedable random number generator for reproducible results
+- **Mesh placement**: Place and morph meshes along spline
 - **Performance Optimized**: Lightweight implementation suitable for real-time execution
 - **Comprehensive Documentation**: Every function includes detailed inline explanations
 
 ---
 
-## Components
+## SplineMeshed Component features
+- Mesh placing along spline
+- Mesh morphing to fit seamless
+- Mesh customization like size, rotation and randomness
 
-// TODO ### RNG (Random Number Generation)
-**Squirrel 13**: Seedable random number generator 
-- Gives more random results than unreal random functions
-- Supports deterministic generation
+- Functions to modify spline shape
+    - Sinus
+    - Helix
+- Functions to calculate spline tangent points with single click
+- Functions for collision check along spline with customized parameters
+
+## SplineMeshed Actor features
+- Attached SplineMeshed component ready to use
+- Exposed parameters ready to drag and drop actor into game
+- Extended classes that spawn meshes around spline without modification
+    - Sinus in 2D space
+    - Helix in 3D space
+
 
 
 ---
 
 ## Documentation
 
-### Instalation
-Check this page [Instalation](Instalation.md).
+### Installation
+Check this page \ref install.
 
 ### Usage
-Check this page [How to use](Usage.md), to find out how to use functions in BP or C++.
+Check this page \ref baseuse, to find out how to use functions in BP or C++.
 
