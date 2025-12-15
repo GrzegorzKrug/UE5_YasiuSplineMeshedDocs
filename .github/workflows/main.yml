@@ -16,11 +16,14 @@ jobs:
         with:
           fetch-depth: 0
       
-      - name: Delete all document files
+      - name: Delete local doc files
         run: |
-             echo "Deleting this files: "
-             find . -name *.md
-             find . -name *.md -delete
+          FILE_TYPES=("*.md" "*.txt" "*.png" "*.jpg" "*.bmp")
+          echo "Deleting local files: "
+          for type in "${FILE_TYPES[@]}"; do
+            find . -name "$type"
+            find . -name "$type" -delete
+          done
         
       # # Set up SSH key for external repository
       # - name: Setup SSH key
