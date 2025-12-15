@@ -65,8 +65,8 @@ jobs:
           for type in ${FILE_TYPES[@]}; do
             if find . -name "*$type" | grep -q . ; then
               echo "Adding to git:" $type
-              find . -name "*type"
-              git add *$type        
+              echo find . -name "*type"
+              git add *"$type"
             fi
           done
 
