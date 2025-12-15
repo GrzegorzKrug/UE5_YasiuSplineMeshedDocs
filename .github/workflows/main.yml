@@ -21,8 +21,8 @@ jobs:
           FILE_TYPES=(".md" ".txt" ".png" ".jpg" ".bmp")
           echo "Deleting local files: "
           for type in ${FILE_TYPES[@]}; do
-            find . -name *$type
-            find . -name *$type -delete
+            find . -name "*$type"
+            find . -name "*$type" -delete
           done
         
       # # Set up SSH key for external repository
@@ -58,11 +58,13 @@ jobs:
           rm plugin -r
 
           FILE_TYPES=(".md" ".txt" ".png" ".jpg" ".bmp")
-          echo $FILE_TYPES    
+          echo ${FILE_TYPES[@]}
           git status          
           git add -u
           for type in ${FILE_TYPES[@]}; do
-            git add *$type            
+            if find . -name "*$type" | grep -q . ; then
+              git add *$type
+            fi
           done
           
           if git diff --cached --quiet; then
