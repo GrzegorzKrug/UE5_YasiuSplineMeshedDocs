@@ -57,6 +57,7 @@ jobs:
           cp -r plugin/* .
           rm plugin -r
 
+          git add -u
           for type in "${FILE_TYPES[@]}"; do
             git add "$type"            
           done
