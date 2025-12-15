@@ -64,13 +64,13 @@ jobs:
           
           for type in ${FILE_TYPES[@]}; do
             if find . -name "*$type" | grep -q . ; then
-              echo "Adding to git:"
+              echo "Adding to git:" $type
               find . -name "*type"
               git add *$type        
             fi
           done
 
-          echo "Status after 'git add'
+          echo "Status after 'git add'"
           git status 
           
           if git diff --cached --quiet; then
