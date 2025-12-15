@@ -18,11 +18,11 @@ jobs:
       
       - name: Delete local doc files
         run: |
-          FILE_TYPES=("*.md" "*.txt" "*.png" "*.jpg" "*.bmp")
+          FILE_TYPES=(".md" ".txt" ".png" ".jpg" ".bmp")
           echo "Deleting local files: "
           for type in ${FILE_TYPES[@]}; do
-            find . -name $type
-            find . -name $type -delete
+            find . -name *$type
+            find . -name *$type -delete
           done
         
       # # Set up SSH key for external repository
@@ -60,7 +60,7 @@ jobs:
           git status          
           git add -u
           for type in ${FILE_TYPES[@]}; do
-            git add $type            
+            git add *$type            
           done
           
           if git diff --cached --quiet; then
