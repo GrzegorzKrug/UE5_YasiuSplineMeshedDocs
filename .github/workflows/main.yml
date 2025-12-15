@@ -57,7 +57,9 @@ jobs:
           cp -r plugin/* .
           rm plugin -r
 
-          git add *.md
+          for type in "${FILE_TYPES[@]}"; do
+            git add "$type"            
+          done
           
           if git diff --cached --quiet; then
             echo "No changes were made"
