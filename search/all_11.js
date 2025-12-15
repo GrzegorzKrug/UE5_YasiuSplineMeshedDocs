@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['required_20to_20keep_20object_20alive_20during_20gameplay_20and_20prevent_20ue_20from_20destroying_20it_0',['- This is only required to keep object alive during gameplay and prevent UE from destroying it.',['../md_Documentation_2Usage.html#autotoc_md19',1,'']]]
+  ['quick_20start_0',['Quick Start',['../mainpage.html',1,'']]],
+  ['quick_20use_1',['Quick Use',['../baseuse.html',1,'mainpage']]]
 ];

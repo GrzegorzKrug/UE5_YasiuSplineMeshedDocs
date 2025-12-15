@@ -1,17 +1,16 @@
 var hierarchy =
 [
     [ "AActor", null, [
-      [ "ASplineMeshedActor", "classASplineMeshedActor.html", null ],
-      [ "ASplineMeshedActor_ExtendedAbstract", "classASplineMeshedActor__ExtendedAbstract.html", [
-        [ "ASplineMeshedActor_ExtendedHelix", "classASplineMeshedActor__ExtendedHelix.html", null ],
-        [ "ASplineMeshedActor_ExtendedSinus", "classASplineMeshedActor__ExtendedSinus.html", null ]
+      [ "ASplineMeshed", "classASplineMeshed.html", null ],
+      [ "ASplineMeshed_AbstractExtension", "classASplineMeshed__AbstractExtension.html", [
+        [ "ASplineMeshed_ExtensionHelix", "classASplineMeshed__ExtensionHelix.html", null ],
+        [ "ASplineMeshed_ExtensionSinus", "classASplineMeshed__ExtensionSinus.html", null ]
       ] ]
     ] ],
     [ "FSplineCollisionTestParams", "structFSplineCollisionTestParams.html", null ],
     [ "FSplineDebugParams", "structFSplineDebugParams.html", null ],
     [ "FSplineHelixParams", "structFSplineHelixParams.html", null ],
     [ "FSplineMeshed_ExtendedParams", "structFSplineMeshed__ExtendedParams.html", null ],
-    [ "FSplineMeshed_PointData", "structFSplineMeshed__PointData.html", null ],
     [ "FSplineMeshed_PointTangent", "structFSplineMeshed__PointTangent.html", null ],
     [ "FSplineMeshedOverlapResult", "structFSplineMeshedOverlapResult.html", null ],
     [ "FSplineMeshedParams", "structFSplineMeshedParams.html", null ],

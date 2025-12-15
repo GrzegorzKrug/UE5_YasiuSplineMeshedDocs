@@ -28,24 +28,14 @@ var NAVTREE =
     [ "About Math Library", "md_Documentation_2About.html", [
       [ "Overview", "md_Documentation_2About.html#autotoc_md1", null ],
       [ "Features", "md_Documentation_2About.html#autotoc_md3", null ],
-      [ "Components", "md_Documentation_2About.html#autotoc_md5", null ],
-      [ "Documentation", "md_Documentation_2About.html#autotoc_md7", [
-        [ "Installation", "md_Documentation_2About.html#autotoc_md8", null ],
-        [ "Usage", "md_Documentation_2About.html#autotoc_md9", null ]
+      [ "SplineMeshed Component features", "md_Documentation_2About.html#autotoc_md5", null ],
+      [ "SplineMeshed Actor features", "md_Documentation_2About.html#autotoc_md6", null ],
+      [ "Documentation", "md_Documentation_2About.html#autotoc_md8", [
+        [ "Installation", "md_Documentation_2About.html#autotoc_md9", null ],
+        [ "Usage", "md_Documentation_2About.html#autotoc_md10", null ]
       ] ]
     ] ],
-    [ "Installation of plugin", "md_Documentation_2Instalation.html", [
-      [ "1. Download and Extract the Plugin", "md_Documentation_2Instalation.html#autotoc_md11", null ],
-      [ "2. C++ Dependency", "md_Documentation_2Instalation.html#autotoc_md13", null ],
-      [ "3. (Check or) Enable the Plugin in Unreal Engine", "md_Documentation_2Instalation.html#autotoc_md14", null ],
-      [ "3. Finished!", "md_Documentation_2Instalation.html#autotoc_md16", null ]
-    ] ],
-    [ "How to use plugin", "md_Documentation_2Usage.html", [
-      [ "- This is only required to keep object alive during gameplay and prevent UE from destroying it.", "md_Documentation_2Usage.html#autotoc_md19", [
-        [ "Use in Blueprints", "md_Documentation_2Usage.html#autotoc_md18", null ],
-        [ "Use in C++", "md_Documentation_2Usage.html#autotoc_md20", null ]
-      ] ]
-    ] ],
+    [ "Quick Start", "mainpage.html", "mainpage" ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],

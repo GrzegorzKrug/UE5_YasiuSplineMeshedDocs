@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['blueprints_0',['Use in Blueprints',['../md_Documentation_2Usage.html#autotoc_md18',1,'']]]
+  ['blueprints_0',['Use component in Blueprints',['../baseuse.html#autotoc_md25',1,'']]]
 ];

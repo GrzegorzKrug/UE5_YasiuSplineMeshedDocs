@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['esplinefitmethod_0',['ESplineFitMethod',['../SplineMeshedComponent_8h.html#a1bf82fda56eceb0e39c3542a07f7b1a5',1,'SplineMeshedComponent.h']]],
-  ['esplinerollsolvemethod_1',['ESplineRollSolveMethod',['../SplineMeshedComponent_8h.html#a5a8761ee1419b19584485863d5820e5d',1,'SplineMeshedComponent.h']]]
+  ['esplinemeshedspawnmode_0',['ESplineMeshedSpawnMode',['../SplineMeshedComponent_8h.html#ae53e183930e650f062a4b1227d8da655',1,'SplineMeshedComponent.h']]],
+  ['esplinerotatemode_1',['ESplineRotateMode',['../SplineMeshedComponent_8h.html#a9135761ea76014f745be989347f84098',1,'SplineMeshedComponent.h']]]
 ];

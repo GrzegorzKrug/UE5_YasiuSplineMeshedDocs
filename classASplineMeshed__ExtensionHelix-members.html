@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.15.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yasiu Spline Meshed: How to use plugin</title>
+<title>Yasiu Spline Meshed: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -70,7 +70,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(function(){initNavTree('md_Documentation_2Usage.html','',''); });
+$(function(){initNavTree('classASplineMeshed__ExtensionHelix.html','',''); });
 </script>
 <div id="container">
 <div id="doc-content">
@@ -95,36 +95,21 @@ $(function(){initNavTree('md_Documentation_2Usage.html','',''); });
 </div>
 </div>
 
-<div><div class="header">
-  <div class="headertitle"><div class="title">How to use plugin </div></div>
+<div class="header">
+  <div class="headertitle"><div class="title">ASplineMeshed_ExtensionHelix Member List</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md17"></a></p>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md18"></a>
-Use in Blueprints</h2>
-<p>Squirrel Object is not treated as ActorComponent, it has to be spawned from class using node <b>CreateFromClass</b></p><ol type="1">
-<li>Right-click in the Blueprint graph.</li>
-<li>Search for "Spawn From Class"</li>
-<li>Put <b>Squirrel 13 RNG</b> into class parameter</li>
-<li>Promote object to variable to keep it alive </li>
-</ol>
-<h1 class="doxsection"><a class="anchor" id="autotoc_md19"></a>
-- This is only required to keep object alive during gameplay and prevent UE from destroying it.</h1>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md20"></a>
-Use in C++</h2>
-<p>To access the Squirrel random generator in C++, add include in your file:</p>
-<p>TODO: fix </p><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;SquirrelRNG.h&quot;</span></div>
-</div><!-- fragment --><p>It is <b>UObject</b>, so it must comply with unreal engine rules for objects lifecycle. Store ref value as any UObject if you want it to persist in game for longer. ```cpp /* Declaration in class, initialize in CDO */ UPROPERTY() TObjectPtr&lt;USquirrel13_RNG&gt; rng; </p>
-</div></div><!-- contents -->
-</div><!-- PageDoc -->
+
+<p>This is the complete list of members for <a class="el" href="classASplineMeshed__ExtensionHelix.html">ASplineMeshed_ExtensionHelix</a>, including all inherited members.</p>
+<table class="directory">
+  <tr class="even"><td class="entry"><a class="el" href="classASplineMeshed__AbstractExtension.html#a5bb138552a38556941ca95e849376412">ExtendedActorParams</a></td><td class="entry"><a class="el" href="classASplineMeshed__AbstractExtension.html">ASplineMeshed_AbstractExtension</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classASplineMeshed__AbstractExtension.html#aedbaea92a33f0c5bc334220ea598da15">Materials</a></td><td class="entry"><a class="el" href="classASplineMeshed__AbstractExtension.html">ASplineMeshed_AbstractExtension</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classASplineMeshed__AbstractExtension.html#af68a5bf64f555e8c8e73ae69139d09ca">Mesh</a></td><td class="entry"><a class="el" href="classASplineMeshed__AbstractExtension.html">ASplineMeshed_AbstractExtension</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classASplineMeshed__AbstractExtension.html#affa48fc59a0bc98c380a32bf82af4e6f">OnConstruction</a>(const FTransform &amp;Transform) override</td><td class="entry"><a class="el" href="classASplineMeshed__AbstractExtension.html">ASplineMeshed_AbstractExtension</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classASplineMeshed__AbstractExtension.html#a39c4880808b8093d3fe12ba42bc69252">SplineMeshedComponent</a></td><td class="entry"><a class="el" href="classASplineMeshed__AbstractExtension.html">ASplineMeshed_AbstractExtension</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classASplineMeshed__AbstractExtension.html#a5d7e11a705a78bb2b1d0b37e579f0d9b">SplineParameters</a></td><td class="entry"><a class="el" href="classASplineMeshed__AbstractExtension.html">ASplineMeshed_AbstractExtension</a></td><td class="entry"></td></tr>
+</table></div><!-- contents -->
 </div><!-- doc-content -->
-<div id="page-nav" class="page-nav-panel">
-<div id="page-nav-resize-handle"></div>
-<div id="page-nav-tree">
-<div id="page-nav-contents">
-</div><!-- page-nav-contents -->
-</div><!-- page-nav-tree -->
-</div><!-- page-nav -->
 </div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

@@ -1,4 +1,8 @@
 var searchData=
 [
-  ['how_20to_20use_20plugin_0',['How to use plugin',['../md_Documentation_2Usage.html',1,'']]]
+  ['in_20blueprints_0',['Use component in Blueprints',['../baseuse.html#autotoc_md25',1,'']]],
+  ['in_20c_1',['Use in C++',['../baseuse.html#autotoc_md27',1,'']]],
+  ['in_20unreal_20engine_2',['3. (Check or) Enable the Plugin in Unreal Engine',['../install.html#autotoc_md17',1,'']]],
+  ['installation_3',['Installation',['../install.html',1,'Installation'],['../md_Documentation_2About.html#autotoc_md9',1,'Installation']]],
+  ['issues_4',['Known Issues',['../issues.html',1,'mainpage']]]
 ];

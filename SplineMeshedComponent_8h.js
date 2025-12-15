@@ -1,31 +1,30 @@
 var SplineMeshedComponent_8h =
 [
-    [ "FSplineSinusParams", "structFSplineSinusParams.html", null ],
-    [ "FSplineHelixParams", "structFSplineHelixParams.html", null ],
-    [ "FSplineMeshed_PointTangent", "structFSplineMeshed__PointTangent.html", null ],
-    [ "FSplineMeshed_PointData", "structFSplineMeshed__PointData.html", null ],
-    [ "FVectorRange", "structFVectorRange.html", null ],
-    [ "FSplineRandomness", "structFSplineRandomness.html", null ],
+    [ "FSplineSinusParams", "structFSplineSinusParams.html", "structFSplineSinusParams" ],
+    [ "FSplineHelixParams", "structFSplineHelixParams.html", "structFSplineHelixParams" ],
+    [ "FSplineMeshed_PointTangent", "structFSplineMeshed__PointTangent.html", "structFSplineMeshed__PointTangent" ],
+    [ "FVectorRange", "structFVectorRange.html", "structFVectorRange" ],
+    [ "FSplineRandomness", "structFSplineRandomness.html", "structFSplineRandomness" ],
     [ "FSplineMeshedParams", "structFSplineMeshedParams.html", "structFSplineMeshedParams" ],
     [ "FSplineSmoothParams", "structFSplineSmoothParams.html", null ],
     [ "FSplineCollisionTestParams", "structFSplineCollisionTestParams.html", "structFSplineCollisionTestParams" ],
-    [ "FSplineDebugParams", "structFSplineDebugParams.html", null ],
-    [ "FSplineMeshedOverlapResult", "structFSplineMeshedOverlapResult.html", null ],
+    [ "FSplineDebugParams", "structFSplineDebugParams.html", "structFSplineDebugParams" ],
+    [ "FSplineMeshedOverlapResult", "structFSplineMeshedOverlapResult.html", "structFSplineMeshedOverlapResult" ],
     [ "USplineMeshedComponent", "classUSplineMeshedComponent.html", "classUSplineMeshedComponent" ],
-    [ "FSplineMeshed_ExtendedParams", "structFSplineMeshed__ExtendedParams.html", null ],
-    [ "USplineMeshedComponent_ExtensionBridge", "classUSplineMeshedComponent__ExtensionBridge.html", null ],
-    [ "USplineMeshedComponent_ExtendedToSinus", "classUSplineMeshedComponent__ExtendedToSinus.html", "classUSplineMeshedComponent__ExtendedToSinus" ],
-    [ "USplineMeshedComponent_ExtendedToHelix", "classUSplineMeshedComponent__ExtendedToHelix.html", "classUSplineMeshedComponent__ExtendedToHelix" ],
-    [ "ESplineFitMethod", "SplineMeshedComponent_8h.html#a1bf82fda56eceb0e39c3542a07f7b1a5", [
-      [ "FullSizeOnly", "SplineMeshedComponent_8h.html#a1bf82fda56eceb0e39c3542a07f7b1a5a296c6c67305acf3622ff14fe390fe3a1", null ],
-      [ "StretchOnlyLast", "SplineMeshedComponent_8h.html#a1bf82fda56eceb0e39c3542a07f7b1a5a2b5d34458ec23ea904d8f2632d220675", null ],
-      [ "MinimalStretchOnAll", "SplineMeshedComponent_8h.html#a1bf82fda56eceb0e39c3542a07f7b1a5a9acef336480c41367ee5b4ce2c4df0c2", null ]
+    [ "FSplineMeshed_ExtendedParams", "structFSplineMeshed__ExtendedParams.html", "structFSplineMeshed__ExtendedParams" ],
+    [ "USplineMeshedComponent_ExtensionBridge", "classUSplineMeshedComponent__ExtensionBridge.html", "classUSplineMeshedComponent__ExtensionBridge" ],
+    [ "USplineMeshedComponent_ExtendedToSinus", "classUSplineMeshedComponent__ExtendedToSinus.html", null ],
+    [ "USplineMeshedComponent_ExtendedToHelix", "classUSplineMeshedComponent__ExtendedToHelix.html", null ],
+    [ "ESplineMeshedSpawnMode", "SplineMeshedComponent_8h.html#ae53e183930e650f062a4b1227d8da655", [
+      [ "FullSizeOnly", "SplineMeshedComponent_8h.html#ae53e183930e650f062a4b1227d8da655a296c6c67305acf3622ff14fe390fe3a1", null ],
+      [ "StretchOnlyLast", "SplineMeshedComponent_8h.html#ae53e183930e650f062a4b1227d8da655a2b5d34458ec23ea904d8f2632d220675", null ],
+      [ "MinimalStretchOnAll", "SplineMeshedComponent_8h.html#ae53e183930e650f062a4b1227d8da655a9acef336480c41367ee5b4ce2c4df0c2", null ]
     ] ],
-    [ "ESplineRollSolveMethod", "SplineMeshedComponent_8h.html#a5a8761ee1419b19584485863d5820e5d", [
-      [ "ConstantAbsolute", "SplineMeshedComponent_8h.html#a5a8761ee1419b19584485863d5820e5da6fbf16c129ce9a4415643c5ced587a67", null ],
-      [ "ConstantRelative", "SplineMeshedComponent_8h.html#a5a8761ee1419b19584485863d5820e5da635f29ead0a8d03cf8d3e69299d62ac9", null ],
-      [ "Default", "SplineMeshedComponent_8h.html#a5a8761ee1419b19584485863d5820e5da7a1920d61156abc05a60135aefe8bc67", null ],
-      [ "TwistFix", "SplineMeshedComponent_8h.html#a5a8761ee1419b19584485863d5820e5daf9bfcd21a32539b98a03390875851a99", null ],
-      [ "SmoothRoll", "SplineMeshedComponent_8h.html#a5a8761ee1419b19584485863d5820e5da3b4fe512972f22d8f38111a4d293b645", null ]
+    [ "ESplineRotateMode", "SplineMeshedComponent_8h.html#a9135761ea76014f745be989347f84098", [
+      [ "ConstantAbsolute", "SplineMeshedComponent_8h.html#a9135761ea76014f745be989347f84098a6fbf16c129ce9a4415643c5ced587a67", null ],
+      [ "ConstantRelative", "SplineMeshedComponent_8h.html#a9135761ea76014f745be989347f84098a635f29ead0a8d03cf8d3e69299d62ac9", null ],
+      [ "Default", "SplineMeshedComponent_8h.html#a9135761ea76014f745be989347f84098a7a1920d61156abc05a60135aefe8bc67", null ],
+      [ "TwistFix", "SplineMeshedComponent_8h.html#a9135761ea76014f745be989347f84098af9bfcd21a32539b98a03390875851a99", null ],
+      [ "SmoothRoll", "SplineMeshedComponent_8h.html#a9135761ea76014f745be989347f84098a3b4fe512972f22d8f38111a4d293b645", null ]
     ] ]
 ];

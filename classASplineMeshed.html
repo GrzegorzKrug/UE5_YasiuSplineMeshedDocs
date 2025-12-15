@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.15.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yasiu Spline Meshed: ASplineMeshedActor_ExtendedAbstract Class Reference</title>
+<title>Yasiu Spline Meshed: ASplineMeshed Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -70,7 +70,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(function(){initNavTree('classASplineMeshedActor__ExtendedAbstract.html','','classASplineMeshedActor__ExtendedAbstract-members'); });
+$(function(){initNavTree('classASplineMeshed.html','','classASplineMeshed-members'); });
 </script>
 <div id="container">
 <div id="doc-content">
@@ -96,20 +96,46 @@ $(function(){initNavTree('classASplineMeshedActor__ExtendedAbstract.html','','cl
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">ASplineMeshedActor_ExtendedAbstract Class Reference</div></div>
+  <div class="headertitle"><div class="title">ASplineMeshed Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Base actor class with attached component for quick and drag, customizable.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="SplineMeshedActor_8h_source.html">SplineMeshedActor.h</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for ASplineMeshedActor_ExtendedAbstract:</div>
+Inheritance diagram for ASplineMeshed:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="classASplineMeshedActor__ExtendedAbstract.png" usemap="#ASplineMeshedActor_5FExtendedAbstract_map" alt=""/>
-  <map id="ASplineMeshedActor_5FExtendedAbstract_map" name="ASplineMeshedActor_5FExtendedAbstract_map">
-<area href="classASplineMeshedActor__ExtendedHelix.html" alt="ASplineMeshedActor_ExtendedHelix" shape="rect" coords="0,112,238,136"/>
-<area href="classASplineMeshedActor__ExtendedSinus.html" alt="ASplineMeshedActor_ExtendedSinus" shape="rect" coords="248,112,486,136"/>
-  </map>
-</div></div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+  <img src="classASplineMeshed.png" alt=""/>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a2b07e77da74d6d3c4ded16718cacdc86" id="r_a2b07e77da74d6d3c4ded16718cacdc86"><td class="memItemLeft" align="right" valign="top"><a id="a2b07e77da74d6d3c4ded16718cacdc86" name="a2b07e77da74d6d3c4ded16718cacdc86"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnConstruction</b> (const FTransform &amp;Transform) override</td></tr>
+<tr class="memdesc:a2b07e77da74d6d3c4ded16718cacdc86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that spawns meshes after any change or spawn. <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a8bd8b77d15f861fcc342d7d4d8beb35d" id="r_a8bd8b77d15f861fcc342d7d4d8beb35d"><td class="memItemLeft" align="right" valign="top"><a id="a8bd8b77d15f861fcc342d7d4d8beb35d" name="a8bd8b77d15f861fcc342d7d4d8beb35d"></a>
+TObjectPtr&lt; <a class="el" href="classUSplineMeshedComponent.html">USplineMeshedComponent</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>SplineMeshedComponent</b></td></tr>
+<tr class="memdesc:a8bd8b77d15f861fcc342d7d4d8beb35d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spline meshed component. <br /></td></tr>
+<tr class="memitem:a19cc54e20b22f595eaee5a60ae80b8a3" id="r_a19cc54e20b22f595eaee5a60ae80b8a3"><td class="memItemLeft" align="right" valign="top"><a id="a19cc54e20b22f595eaee5a60ae80b8a3" name="a19cc54e20b22f595eaee5a60ae80b8a3"></a>
+TSoftObjectPtr&lt; UStaticMesh &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Mesh</b></td></tr>
+<tr class="memdesc:a19cc54e20b22f595eaee5a60ae80b8a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mesh used to spawn along spline. <br /></td></tr>
+<tr class="memitem:a3c07ac03ca700012c8a975839bee74ce" id="r_a3c07ac03ca700012c8a975839bee74ce"><td class="memItemLeft" align="right" valign="top"><a id="a3c07ac03ca700012c8a975839bee74ce" name="a3c07ac03ca700012c8a975839bee74ce"></a>
+<a class="el" href="structFSplineMeshedParams.html">FSplineMeshedParams</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SplineParameters</b></td></tr>
+<tr class="memdesc:a3c07ac03ca700012c8a975839bee74ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameters used for mesh spawning. <br /></td></tr>
+<tr class="memitem:a26edbb89e09e0d9bd9cd36365f351f46" id="r_a26edbb89e09e0d9bd9cd36365f351f46"><td class="memItemLeft" align="right" valign="top"><a id="a26edbb89e09e0d9bd9cd36365f351f46" name="a26edbb89e09e0d9bd9cd36365f351f46"></a>
+TArray&lt; TObjectPtr&lt; UMaterialInstance &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Materials</b></td></tr>
+<tr class="memdesc:a26edbb89e09e0d9bd9cd36365f351f46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Materials list used to apply on meshes to corresponding index. <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Base actor class with attached component for quick and drag, customizable. </p>
+<p>Parameters stored in variable for quick edit in level </p>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>Source/SplineMeshed/Public/<a class="el" href="SplineMeshedActor_8h_source.html">SplineMeshedActor.h</a></li>
 </ul>
 </div><!-- contents -->
@@ -125,7 +151,7 @@ Inheritance diagram for ASplineMeshedActor_ExtendedAbstract:</div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="classASplineMeshedActor__ExtendedAbstract.html">ASplineMeshedActor_ExtendedAbstract</a></li>
+    <li class="navelem"><a href="classASplineMeshed.html">ASplineMeshed</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0 </li>
   </ul>
 </div>

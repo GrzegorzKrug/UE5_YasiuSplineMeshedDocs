@@ -1,12 +1,15 @@
 var searchData=
 [
   ['about_20math_20library_0',['About Math Library',['../md_Documentation_2About.html',1,'']]],
-  ['alignmethod_1',['alignMethod',['../structFSplineMeshedParams.html#aee38e36dcc04de88746f263e7a0641c0',1,'FSplineMeshedParams']]],
-  ['alive_20during_20gameplay_20and_20prevent_20ue_20from_20destroying_20it_2',['- This is only required to keep object alive during gameplay and prevent UE from destroying it.',['../md_Documentation_2Usage.html#autotoc_md19',1,'']]],
-  ['and_20extract_20the_20plugin_3',['1. Download and Extract the Plugin',['../md_Documentation_2Instalation.html#autotoc_md11',1,'']]],
-  ['and_20prevent_20ue_20from_20destroying_20it_4',['- This is only required to keep object alive during gameplay and prevent UE from destroying it.',['../md_Documentation_2Usage.html#autotoc_md19',1,'']]],
-  ['asplinemeshedactor_5',['ASplineMeshedActor',['../classASplineMeshedActor.html',1,'']]],
-  ['asplinemeshedactor_5fextendedabstract_6',['ASplineMeshedActor_ExtendedAbstract',['../classASplineMeshedActor__ExtendedAbstract.html',1,'']]],
-  ['asplinemeshedactor_5fextendedhelix_7',['ASplineMeshedActor_ExtendedHelix',['../classASplineMeshedActor__ExtendedHelix.html',1,'']]],
-  ['asplinemeshedactor_5fextendedsinus_8',['ASplineMeshedActor_ExtendedSinus',['../classASplineMeshedActor__ExtendedSinus.html',1,'']]]
+  ['actor_1',['Actor',['../structFSplineMeshedOverlapResult.html#a3625a77face1690037bc3bd7e92ae296',1,'FSplineMeshedOverlapResult']]],
+  ['actor_20class_2',['Use pre-created actor class',['../baseuse.html#autotoc_md24',1,'']]],
+  ['actor_20features_3',['SplineMeshed Actor features',['../md_Documentation_2About.html#autotoc_md6',1,'']]],
+  ['advanced_20examples_4',['Advanced examples',['../examples.html',1,'mainpage']]],
+  ['amplitude_5',['Amplitude',['../structFSplineMeshed__ExtendedParams.html#a16c8e51626bf11537a1c56dd8cc47559',1,'FSplineMeshed_ExtendedParams']]],
+  ['amplitude_6',['amplitude',['../structFSplineSinusParams.html#af3af0e2e69eb1eeb41235c5a765e6ade',1,'FSplineSinusParams::amplitude'],['../structFSplineHelixParams.html#aa0efb7fc7285fa39b2fd0abf63b63973',1,'FSplineHelixParams::amplitude']]],
+  ['and_20extract_20the_20plugin_7',['1. Download and Extract the Plugin',['../install.html#autotoc_md14',1,'']]],
+  ['asplinemeshed_8',['ASplineMeshed',['../classASplineMeshed.html',1,'']]],
+  ['asplinemeshed_5fabstractextension_9',['ASplineMeshed_AbstractExtension',['../classASplineMeshed__AbstractExtension.html',1,'']]],
+  ['asplinemeshed_5fextensionhelix_10',['ASplineMeshed_ExtensionHelix',['../classASplineMeshed__ExtensionHelix.html',1,'']]],
+  ['asplinemeshed_5fextensionsinus_11',['ASplineMeshed_ExtensionSinus',['../classASplineMeshed__ExtensionSinus.html',1,'']]]
 ];

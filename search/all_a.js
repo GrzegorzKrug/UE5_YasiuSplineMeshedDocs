@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['how_20to_20use_20plugin_0',['How to use plugin',['../md_Documentation_2Usage.html',1,'']]]
+  ['helixtoolparams_0',['HelixToolParams',['../classUSplineMeshedComponent.html#a96dd1aa9636520965c96b1100e917403',1,'USplineMeshedComponent']]],
+  ['hierarchy_1',['Classes hierarchy',['../baseuse.html#autotoc_md28',1,'']]]
 ];

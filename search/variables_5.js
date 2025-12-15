@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['lastoverlapwithingsplinelimits_0',['LastOverlapWithingSplineLimits',['../structFSplineCollisionTestParams.html#a94d64bfc064ef2c7545feda05393b20a',1,'FSplineCollisionTestParams']]]
+  ['helixtoolparams_0',['HelixToolParams',['../classUSplineMeshedComponent.html#a96dd1aa9636520965c96b1100e917403',1,'USplineMeshedComponent']]]
 ];
