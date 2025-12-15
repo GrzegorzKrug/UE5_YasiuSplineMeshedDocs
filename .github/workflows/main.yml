@@ -20,9 +20,9 @@ jobs:
         run: |
           FILE_TYPES=("*.md" "*.txt" "*.png" "*.jpg" "*.bmp")
           echo "Deleting local files: "
-          for type in "${FILE_TYPES[@]}"; do
-            find . -name "$type"
-            find . -name "$type" -delete
+          for type in ${FILE_TYPES[@]}; do
+            find . -name $type
+            find . -name $type -delete
           done
         
       # # Set up SSH key for external repository
@@ -56,9 +56,10 @@ jobs:
           rm -r plugin/.git
           cp -r plugin/* .
           rm plugin -r
-
+          
+          git status          
           git add -u
-          for type in "${FILE_TYPES[@]}"; do
+          for type in ${FILE_TYPES[@]}; do
             git add $type            
           done
           
