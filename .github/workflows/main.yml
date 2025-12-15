@@ -59,7 +59,7 @@ jobs:
 
           git add -u
           for type in "${FILE_TYPES[@]}"; do
-            git add "$type"            
+            git add $type            
           done
           
           if git diff --cached --quiet; then
