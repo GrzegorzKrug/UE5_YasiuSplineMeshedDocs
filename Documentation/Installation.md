@@ -30,18 +30,18 @@ Add dependency to your project in build file: `ProjectName.Build.cs`
 2. In the top menu, select **Edit → Plugins**.
 3. Use the search bar to find **Yasiu Spline Meshed**.
 4. Check the box to enable the plugin.
-   - If changed Unreal Engine will asks you to restart the editor.
+   - If changed Unreal Engine may ask you to restart the editor.
 
 
 ---
 
 # Dependencies
-YasiuMath Plugin
+- Plugin: **YasiuMath**
 
 ---
 
 ## 3. Finished!
-After the editor restarts, the Yasiu Math plugin is installed and ready to use.
+After the editor restarts, the **Yasiu Spline Meshed** plugin is installed and ready to use.
 
 
 
