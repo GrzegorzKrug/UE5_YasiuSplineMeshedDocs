@@ -3,8 +3,8 @@ var indexSectionsWithContent =
   0: "123abcdefghiklmopqrstuv",
   1: "afu",
   2: "s",
-  3: "cefgopst",
-  4: "acdefhilmprstu",
+  3: "cdefgops",
+  4: "acdefhilmoprstu",
   5: "e",
   6: "cdfmst",
   7: "123abcdefhiklmopqstuv"

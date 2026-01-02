@@ -113,32 +113,40 @@ FCollisionQueryParams&#160;</td><td class="memItemRight" valign="bottom"><b>GetQ
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:a0948bb16c1d8a2a5c1992261ac8aaa8c" id="r_a0948bb16c1d8a2a5c1992261ac8aaa8c"><td class="memItemLeft" align="right" valign="top"><a id="a0948bb16c1d8a2a5c1992261ac8aaa8c" name="a0948bb16c1d8a2a5c1992261ac8aaa8c"></a>
+TSoftObjectPtr&lt; UStaticMesh &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>TestMesh</b> {}</td></tr>
+<tr class="memdesc:a0948bb16c1d8a2a5c1992261ac8aaa8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mesh used for collision test. <br /></td></tr>
 <tr class="memitem:adf996b5d2d87de870c5dbf396b7fecc7" id="r_adf996b5d2d87de870c5dbf396b7fecc7"><td class="memItemLeft" align="right" valign="top"><a id="adf996b5d2d87de870c5dbf396b7fecc7" name="adf996b5d2d87de870c5dbf396b7fecc7"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>StepDistance</b> = 500</td></tr>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>StepDistance</b> = 50</td></tr>
 <tr class="memdesc:adf996b5d2d87de870c5dbf396b7fecc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Distance between collision checks (mesh size is ignored). <br /></td></tr>
 <tr class="memitem:a2f1fd9e61bb0464cb6e8f1c4a573ab39" id="r_a2f1fd9e61bb0464cb6e8f1c4a573ab39"><td class="memItemLeft" align="right" valign="top">FTransform&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f1fd9e61bb0464cb6e8f1c4a573ab39">MeshTransform</a> {}</td></tr>
 <tr class="memdesc:a2f1fd9e61bb0464cb6e8f1c4a573ab39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Relative transform for collision check.  <br /></td></tr>
 <tr class="memitem:af2d34adc4f236af672b40bfed310c008" id="r_af2d34adc4f236af672b40bfed310c008"><td class="memItemLeft" align="right" valign="top"><a id="af2d34adc4f236af672b40bfed310c008" name="af2d34adc4f236af672b40bfed310c008"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>CenterMesh</b> {false}</td></tr>
-<tr class="memdesc:af2d34adc4f236af672b40bfed310c008"><td class="mdescLeft">&#160;</td><td class="mdescRight">Should we use center of mesh or its origin point. <br /></td></tr>
-<tr class="memitem:a0bbf56793964f0e7dd6c95c1c5d91951" id="r_a0bbf56793964f0e7dd6c95c1c5d91951"><td class="memItemLeft" align="right" valign="top"><a id="a0bbf56793964f0e7dd6c95c1c5d91951" name="a0bbf56793964f0e7dd6c95c1c5d91951"></a>
-TArray&lt; TEnumAsByte&lt; ECollisionChannel &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>TestChannels</b> {ECollisionChannel::ECC_WorldStatic}</td></tr>
-<tr class="memdesc:a0bbf56793964f0e7dd6c95c1c5d91951"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of collision channels for testing. <br /></td></tr>
+<tr class="memdesc:af2d34adc4f236af672b40bfed310c008"><td class="mdescLeft">&#160;</td><td class="mdescRight">Should mesh be centered or use origin offset. <br /></td></tr>
+<tr class="memitem:a6b17eb6e6d0e26122290e4db77dc30ea" id="r_a6b17eb6e6d0e26122290e4db77dc30ea"><td class="memItemLeft" align="right" valign="top"><a id="a6b17eb6e6d0e26122290e4db77dc30ea" name="a6b17eb6e6d0e26122290e4db77dc30ea"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>SelfIgnore</b> {true}</td></tr>
+<tr class="memdesc:a6b17eb6e6d0e26122290e4db77dc30ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Should collision test ignore self components. <br /></td></tr>
+<tr class="memitem:a7d0981354a4ac87b58de537be1e5ab0b" id="r_a7d0981354a4ac87b58de537be1e5ab0b"><td class="memItemLeft" align="right" valign="top">TArray&lt; TEnumAsByte&lt; ECollisionChannel &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7d0981354a4ac87b58de537be1e5ab0b">ObjectTypes</a> {ECollisionChannel::ECC_WorldStatic}</td></tr>
 <tr class="memitem:ae4fcb61ff8b3119d0af8d706eda6abf6" id="r_ae4fcb61ff8b3119d0af8d706eda6abf6"><td class="memItemLeft" align="right" valign="top"><a id="ae4fcb61ff8b3119d0af8d706eda6abf6" name="ae4fcb61ff8b3119d0af8d706eda6abf6"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>StopAtFirstCollision</b> = true</td></tr>
 <tr class="memdesc:ae4fcb61ff8b3119d0af8d706eda6abf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop iterating at first valid collision. <br /></td></tr>
 <tr class="memitem:ac566de4965c76a1f5d82ed9ba5e4eb89" id="r_ac566de4965c76a1f5d82ed9ba5e4eb89"><td class="memItemLeft" align="right" valign="top"><a id="ac566de4965c76a1f5d82ed9ba5e4eb89" name="ac566de4965c76a1f5d82ed9ba5e4eb89"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>UseSphere</b> = false</td></tr>
 <tr class="memdesc:ac566de4965c76a1f5d82ed9ba5e4eb89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use sphere instead of bounding box. <br /></td></tr>
-<tr class="memitem:aaaf33fa0eac9219a82c8bc50c8c20917" id="r_aaaf33fa0eac9219a82c8bc50c8c20917"><td class="memItemLeft" align="right" valign="top"><a id="aaaf33fa0eac9219a82c8bc50c8c20917" name="aaaf33fa0eac9219a82c8bc50c8c20917"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>TestOnlyBlocking</b> = false</td></tr>
-<tr class="memdesc:aaaf33fa0eac9219a82c8bc50c8c20917"><td class="mdescLeft">&#160;</td><td class="mdescRight">False means testing Overlap and Block response, while true will ignore overlap. <br /></td></tr>
+<tr class="memitem:abf02e0d9d754eabab87f3c246a9eb511" id="r_abf02e0d9d754eabab87f3c246a9eb511"><td class="memItemLeft" align="right" valign="top">FVector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abf02e0d9d754eabab87f3c246a9eb511">ShapeSize</a> {1, 1, 1}</td></tr>
 <tr class="memitem:a404cea91bff9a9bf201070e0ed14855c" id="r_a404cea91bff9a9bf201070e0ed14855c"><td class="memItemLeft" align="right" valign="top"><a id="a404cea91bff9a9bf201070e0ed14855c" name="a404cea91bff9a9bf201070e0ed14855c"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>FirstOverlapWithingSplineLimits</b> = true</td></tr>
 <tr class="memdesc:a404cea91bff9a9bf201070e0ed14855c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compensates boundary dimension to not extend beyond spline point, otherwise half of mesh will extend. <br /></td></tr>
 <tr class="memitem:a94d64bfc064ef2c7545feda05393b20a" id="r_a94d64bfc064ef2c7545feda05393b20a"><td class="memItemLeft" align="right" valign="top"><a id="a94d64bfc064ef2c7545feda05393b20a" name="a94d64bfc064ef2c7545feda05393b20a"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>LastOverlapWithingSplineLimits</b> = true</td></tr>
 <tr class="memdesc:a94d64bfc064ef2c7545feda05393b20a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compensates boundary dimension to not extend beyond spline point, otherwise half of mesh will extend. <br /></td></tr>
+<tr class="memitem:ac97f3d500e219806f020ab79673e4c35" id="r_ac97f3d500e219806f020ab79673e4c35"><td class="memItemLeft" align="right" valign="top"><a id="ac97f3d500e219806f020ab79673e4c35" name="ac97f3d500e219806f020ab79673e4c35"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>TraceComplex</b> {false}</td></tr>
+<tr class="memdesc:ac97f3d500e219806f020ab79673e4c35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether we should trace against complex collision. <br /></td></tr>
+<tr class="memitem:a6b5e527a9e28f27253f59b01ff4b19c0" id="r_a6b5e527a9e28f27253f59b01ff4b19c0"><td class="memItemLeft" align="right" valign="top"><a id="a6b5e527a9e28f27253f59b01ff4b19c0" name="a6b5e527a9e28f27253f59b01ff4b19c0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>FindInitialOverlaps</b> {false}</td></tr>
+<tr class="memdesc:a6b5e527a9e28f27253f59b01ff4b19c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether we want to find out initial overlap or not. If true, it will return if this was initial overlap. <br /></td></tr>
 <tr class="memitem:ae4439f9389628ebe3f82f7a64736ff0a" id="r_ae4439f9389628ebe3f82f7a64736ff0a"><td class="memItemLeft" align="right" valign="top"><a id="ae4439f9389628ebe3f82f7a64736ff0a" name="ae4439f9389628ebe3f82f7a64736ff0a"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IgnoreBlocks</b> {false}</td></tr>
 <tr class="memdesc:ae4439f9389628ebe3f82f7a64736ff0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether to ignore blocking results. <br /></td></tr>
@@ -148,6 +156,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IgnoreTouches</b> {fa
 <tr class="memitem:a1c9545847feefac60498eb9cc237d07f" id="r_a1c9545847feefac60498eb9cc237d07f"><td class="memItemLeft" align="right" valign="top"><a id="a1c9545847feefac60498eb9cc237d07f" name="a1c9545847feefac60498eb9cc237d07f"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>SkipNarrowPhase</b> {false}</td></tr>
 <tr class="memdesc:a1c9545847feefac60498eb9cc237d07f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether to skip narrow phase checks (only for overlaps). <br /></td></tr>
+<tr class="memitem:aa6aee6ba093870b1d789e26151e38754" id="r_aa6aee6ba093870b1d789e26151e38754"><td class="memItemLeft" align="right" valign="top"><a id="aa6aee6ba093870b1d789e26151e38754" name="aa6aee6ba093870b1d789e26151e38754"></a>
+<a class="el" href="structFSplineDebugParams.html">FSplineDebugParams</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DebugParams</b> {}</td></tr>
+<tr class="memdesc:aa6aee6ba093870b1d789e26151e38754"><td class="mdescLeft">&#160;</td><td class="mdescRight">Debug parms used to show overlap boxes. <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Params used for collision check along spline. </p>
@@ -167,6 +178,36 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>SkipNarrowPhase</b> {
 
 <p>Relative transform for collision check. </p>
 <p>Sphere is scaled by X only. Translation is not affected by scale. Translation is relative to spline direction. </p>
+
+</div>
+</div>
+<a id="a7d0981354a4ac87b58de537be1e5ab0b" name="a7d0981354a4ac87b58de537be1e5ab0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d0981354a4ac87b58de537be1e5ab0b">&#9670;&#160;</a></span>ObjectTypes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TArray&lt;TEnumAsByte&lt;ECollisionChannel&gt; &gt; FSplineCollisionTestParams::ObjectTypes {ECollisionChannel::ECC_WorldStatic}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>List of collision channels for testing Objects must have "Query" Enabled </p>
+
+</div>
+</div>
+<a id="abf02e0d9d754eabab87f3c246a9eb511" name="abf02e0d9d754eabab87f3c246a9eb511"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf02e0d9d754eabab87f3c246a9eb511">&#9670;&#160;</a></span>ShapeSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FVector FSplineCollisionTestParams::ShapeSize {1, 1, 1}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Size evaluated at run for given mesh For Sphere use X </p>
 
 </div>
 </div>

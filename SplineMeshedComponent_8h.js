@@ -5,10 +5,11 @@ var SplineMeshedComponent_8h =
     [ "FSplineMeshed_PointTangent", "structFSplineMeshed__PointTangent.html", "structFSplineMeshed__PointTangent" ],
     [ "FVectorRange", "structFVectorRange.html", "structFVectorRange" ],
     [ "FSplineRandomness", "structFSplineRandomness.html", "structFSplineRandomness" ],
-    [ "FSplineMeshedParams", "structFSplineMeshedParams.html", "structFSplineMeshedParams" ],
+    [ "FSplineMeshedCollision", "structFSplineMeshedCollision.html", "structFSplineMeshedCollision" ],
+    [ "FSplineMeshedSpawnParams", "structFSplineMeshedSpawnParams.html", "structFSplineMeshedSpawnParams" ],
     [ "FSplineSmoothParams", "structFSplineSmoothParams.html", null ],
-    [ "FSplineCollisionTestParams", "structFSplineCollisionTestParams.html", "structFSplineCollisionTestParams" ],
     [ "FSplineDebugParams", "structFSplineDebugParams.html", "structFSplineDebugParams" ],
+    [ "FSplineCollisionTestParams", "structFSplineCollisionTestParams.html", "structFSplineCollisionTestParams" ],
     [ "FSplineMeshedOverlapResult", "structFSplineMeshedOverlapResult.html", "structFSplineMeshedOverlapResult" ],
     [ "USplineMeshedComponent", "classUSplineMeshedComponent.html", "classUSplineMeshedComponent" ],
     [ "FSplineMeshed_ExtendedParams", "structFSplineMeshed__ExtendedParams.html", "structFSplineMeshed__ExtendedParams" ],
@@ -21,7 +22,6 @@ var SplineMeshedComponent_8h =
       [ "MinimalStretchOnAll", "SplineMeshedComponent_8h.html#ae53e183930e650f062a4b1227d8da655a9acef336480c41367ee5b4ce2c4df0c2", null ]
     ] ],
     [ "ESplineRotateMode", "SplineMeshedComponent_8h.html#a9135761ea76014f745be989347f84098", [
-      [ "ConstantAbsolute", "SplineMeshedComponent_8h.html#a9135761ea76014f745be989347f84098a6fbf16c129ce9a4415643c5ced587a67", null ],
       [ "ConstantRelative", "SplineMeshedComponent_8h.html#a9135761ea76014f745be989347f84098a635f29ead0a8d03cf8d3e69299d62ac9", null ],
       [ "Default", "SplineMeshedComponent_8h.html#a9135761ea76014f745be989347f84098a7a1920d61156abc05a60135aefe8bc67", null ],
       [ "TwistFix", "SplineMeshedComponent_8h.html#a9135761ea76014f745be989347f84098af9bfcd21a32539b98a03390875851a99", null ],

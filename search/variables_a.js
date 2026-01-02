@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['resolution_0',['resolution',['../structFSplineHelixParams.html#a6f2cf0dfc55c71a868f2f043823b15ec',1,'FSplineHelixParams']]],
-  ['rotatetoshape_1',['RotateToShape',['../structFSplineMeshed__ExtendedParams.html#a26c55a04d70be97984598e60d1e50c17',1,'FSplineMeshed_ExtendedParams']]],
-  ['rotation_2',['Rotation',['../structFSplineRandomness.html#adcf10da4ecb2a9c1f5e647eca0a6395d',1,'FSplineRandomness']]],
-  ['rotation_3',['rotation',['../structFSplineMeshed__PointTangent.html#a454e71f60bd6525a936cfec42da31f6a',1,'FSplineMeshed_PointTangent']]],
-  ['rotationmethod_4',['RotationMethod',['../structFSplineMeshedParams.html#a93e3731c39c921fae8334fc408f8c8af',1,'FSplineMeshedParams']]]
+  ['perioddistance_0',['PeriodDistance',['../structFSplineSinusParams.html#af44f15d9c6626cb9f5ba432b17f13ee7',1,'FSplineSinusParams::PeriodDistance'],['../structFSplineHelixParams.html#a3ae17a4d147e4b2b1b0bb790c35f0271',1,'FSplineHelixParams::PeriodDistance']]],
+  ['perioddistance_1',['periodDistance',['../structFSplineMeshed__ExtendedParams.html#a1ee6611256beb4467d4af4cfec1e67a5',1,'FSplineMeshed_ExtendedParams']]],
+  ['phaseoffset_2',['PhaseOffset',['../structFSplineMeshed__ExtendedParams.html#a366fb190d0c5176de192ceeee3c4bba8',1,'FSplineMeshed_ExtendedParams']]]
 ];

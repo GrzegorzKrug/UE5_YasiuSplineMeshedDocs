@@ -118,8 +118,8 @@ Inheritance diagram for USplineMeshedComponent:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a11dbe14fa74ad8387c59521eeee7d73a" id="r_a11dbe14fa74ad8387c59521eeee7d73a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a11dbe14fa74ad8387c59521eeee7d73a">PlaceMeshesOnSpline</a> (UStaticMesh *mesh, const <a class="el" href="structFSplineMeshedParams.html">FSplineMeshedParams</a> &amp;parameters)</td></tr>
-<tr class="memdesc:a11dbe14fa74ad8387c59521eeee7d73a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill spline with mesh objects.  <br /></td></tr>
+<tr class="memitem:aa3614f9febec9a39e7edcb12f7041a47" id="r_aa3614f9febec9a39e7edcb12f7041a47"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa3614f9febec9a39e7edcb12f7041a47">PlaceMeshesOnSpline</a> (UStaticMesh *Mesh, const <a class="el" href="structFSplineMeshedSpawnParams.html">FSplineMeshedSpawnParams</a> SpawnParameters)</td></tr>
+<tr class="memdesc:aa3614f9febec9a39e7edcb12f7041a47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill spline with mesh objects.  <br /></td></tr>
 <tr class="memitem:af1ab932ba086949d492624ab498668d6" id="r_af1ab932ba086949d492624ab498668d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af1ab932ba086949d492624ab498668d6">Extend</a> (const FVector &amp;ForwardVec, const FVector &amp;UpVect, const int SegmentID, const float DistanceA, const float DistanceB, USplineMeshComponent *RefMesh) const</td></tr>
 <tr class="memdesc:af1ab932ba086949d492624ab498668d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that is triggered after placing each mesh with corresponding values.  <br /></td></tr>
 <tr class="memitem:a63c8e817e675920819be90eaafc0c3c7" id="r_a63c8e817e675920819be90eaafc0c3c7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a63c8e817e675920819be90eaafc0c3c7">ChangeMesh</a> (TSoftObjectPtr&lt; UStaticMesh &gt; mesh)</td></tr>
@@ -133,8 +133,12 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>CopySpline</b
 <tr class="memitem:a84a58aa95e43f613a03313728bfe853d" id="r_a84a58aa95e43f613a03313728bfe853d"><td class="memItemLeft" align="right" valign="top"><a id="a84a58aa95e43f613a03313728bfe853d" name="a84a58aa95e43f613a03313728bfe853d"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>CopySplineAndMeshes</b> (const <a class="el" href="classUSplineMeshedComponent.html">USplineMeshedComponent</a> *copyFrom)</td></tr>
 <tr class="memdesc:a84a58aa95e43f613a03313728bfe853d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy curvature and mesh properties. <br /></td></tr>
-<tr class="memitem:a9d73e2b34236e013b52779ecf34ef8be" id="r_a9d73e2b34236e013b52779ecf34ef8be"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9d73e2b34236e013b52779ecf34ef8be">TestCollisionAlongSpline</a> (TArray&lt; <a class="el" href="structFSplineMeshedOverlapResult.html">FSplineMeshedOverlapResult</a> &gt; &amp;OutOverlaps, UStaticMesh *mesh, <a class="el" href="structFSplineCollisionTestParams.html">FSplineCollisionTestParams</a> params, <a class="el" href="structFSplineDebugParams.html">FSplineDebugParams</a> debugParams)</td></tr>
-<tr class="memdesc:a9d73e2b34236e013b52779ecf34ef8be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run overlap checking along spline. Returns <span class="tt">True</span> if collision is found.  <br /></td></tr>
+<tr class="memitem:a2624fdba13082b46edeabb93877bef60" id="r_a2624fdba13082b46edeabb93877bef60"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2624fdba13082b46edeabb93877bef60">DetectObjectsAlongSpline</a> (TArray&lt; <a class="el" href="structFSplineMeshedOverlapResult.html">FSplineMeshedOverlapResult</a> &gt; &amp;DetectResults, <a class="el" href="structFSplineCollisionTestParams.html">FSplineCollisionTestParams</a> CollisionParams) const</td></tr>
+<tr class="memdesc:a2624fdba13082b46edeabb93877bef60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that does detection of objects with collision enabled.  <br /></td></tr>
+<tr class="memitem:a7cf19864149586e0a6d54540ccc8442d" id="r_a7cf19864149586e0a6d54540ccc8442d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7cf19864149586e0a6d54540ccc8442d">CustomDetectionFunction</a> (TArray&lt; <a class="el" href="structFSplineMeshedOverlapResult.html">FSplineMeshedOverlapResult</a> &gt; &amp;localOverlaps, UWorld *world, const FVector &amp;locationIn, const FQuat &amp;rotationIn, const <a class="el" href="structFSplineCollisionTestParams.html">FSplineCollisionTestParams</a> &amp;paramsIn) const</td></tr>
+<tr class="memdesc:a7cf19864149586e0a6d54540ccc8442d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detection function, used in <a class="el" href="#a2624fdba13082b46edeabb93877bef60">DetectObjectsAlongSpline</a>. Can be overriden for customization.  <br /></td></tr>
+<tr class="memitem:a0411eb2a28426dcc8934fbf0d3dfa098" id="r_a0411eb2a28426dcc8934fbf0d3dfa098"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0411eb2a28426dcc8934fbf0d3dfa098">CustomDetectionFunction_Implementation</a> (TArray&lt; <a class="el" href="structFSplineMeshedOverlapResult.html">FSplineMeshedOverlapResult</a> &gt; &amp;localOverlaps, UWorld *world, const FVector &amp;locationIn, const FQuat &amp;rotationIn, const <a class="el" href="structFSplineCollisionTestParams.html">FSplineCollisionTestParams</a> &amp;paramsIn) const</td></tr>
+<tr class="memdesc:a0411eb2a28426dcc8934fbf0d3dfa098"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detection function, used in <a class="el" href="#a2624fdba13082b46edeabb93877bef60">DetectObjectsAlongSpline</a>. Can be overriden for customization.  <br /></td></tr>
 <tr class="memitem:a318d0a7e830364210aee1387c74559eb" id="r_a318d0a7e830364210aee1387c74559eb"><td class="memItemLeft" align="right" valign="top"><a id="a318d0a7e830364210aee1387c74559eb" name="a318d0a7e830364210aee1387c74559eb"></a>
 FVector&#160;</td><td class="memItemRight" valign="bottom"><b>CalculateForwardByPoints</b> (float distanceA, float distanceB, const TEnumAsByte&lt; ESplineCoordinateSpace::Type &gt; &amp;CoordSpace=ESplineCoordinateSpace::World) const</td></tr>
 <tr class="memdesc:a318d0a7e830364210aee1387c74559eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get normalized vector between 2 points. A -&gt; B. <br /></td></tr>
@@ -185,6 +189,144 @@ Public Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a7cf19864149586e0a6d54540ccc8442d" name="a7cf19864149586e0a6d54540ccc8442d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cf19864149586e0a6d54540ccc8442d">&#9670;&#160;</a></span>CustomDetectionFunction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool USplineMeshedComponent::CustomDetectionFunction </td>
+          <td>(</td>
+          <td class="paramtype">TArray&lt; <a class="el" href="structFSplineMeshedOverlapResult.html">FSplineMeshedOverlapResult</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>localOverlaps</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UWorld *</td>          <td class="paramname"><span class="paramname"><em>world</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const FVector &amp;</td>          <td class="paramname"><span class="paramname"><em>locationIn</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const FQuat &amp;</td>          <td class="paramname"><span class="paramname"><em>rotationIn</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structFSplineCollisionTestParams.html">FSplineCollisionTestParams</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>paramsIn</em></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Detection function, used in <a class="el" href="#a2624fdba13082b46edeabb93877bef60">DetectObjectsAlongSpline</a>. Can be overriden for customization. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">localOverlaps</td><td>Output array, passed to top function </td></tr>
+    <tr><td class="paramname">world</td><td>World reference used to run detection </td></tr>
+    <tr><td class="paramname">locationIn</td><td>Location of detection </td></tr>
+    <tr><td class="paramname">rotationIn</td><td>Rotation of detection </td></tr>
+    <tr><td class="paramname">paramsIn</td><td>Collection of params used for detection </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns <b>True</b> if found at least 1 object </dd></dl>
+
+</div>
+</div>
+<a id="a0411eb2a28426dcc8934fbf0d3dfa098" name="a0411eb2a28426dcc8934fbf0d3dfa098"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0411eb2a28426dcc8934fbf0d3dfa098">&#9670;&#160;</a></span>CustomDetectionFunction_Implementation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool USplineMeshedComponent::CustomDetectionFunction_Implementation </td>
+          <td>(</td>
+          <td class="paramtype">TArray&lt; <a class="el" href="structFSplineMeshedOverlapResult.html">FSplineMeshedOverlapResult</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>localOverlaps</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UWorld *</td>          <td class="paramname"><span class="paramname"><em>world</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const FVector &amp;</td>          <td class="paramname"><span class="paramname"><em>locationIn</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const FQuat &amp;</td>          <td class="paramname"><span class="paramname"><em>rotationIn</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structFSplineCollisionTestParams.html">FSplineCollisionTestParams</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>paramsIn</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Detection function, used in <a class="el" href="#a2624fdba13082b46edeabb93877bef60">DetectObjectsAlongSpline</a>. Can be overriden for customization. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">localOverlaps</td><td>Output array, passed to top function </td></tr>
+    <tr><td class="paramname">world</td><td>World reference used to run detection </td></tr>
+    <tr><td class="paramname">locationIn</td><td>Location of detection </td></tr>
+    <tr><td class="paramname">rotationIn</td><td>Rotation of detection </td></tr>
+    <tr><td class="paramname">paramsIn</td><td>Collection of params used for detection </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns <b>True</b> if found at least 1 object </dd></dl>
+
+</div>
+</div>
+<a id="a2624fdba13082b46edeabb93877bef60" name="a2624fdba13082b46edeabb93877bef60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2624fdba13082b46edeabb93877bef60">&#9670;&#160;</a></span>DetectObjectsAlongSpline()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool USplineMeshedComponent::DetectObjectsAlongSpline </td>
+          <td>(</td>
+          <td class="paramtype">TArray&lt; <a class="el" href="structFSplineMeshedOverlapResult.html">FSplineMeshedOverlapResult</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>DetectResults</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structFSplineCollisionTestParams.html">FSplineCollisionTestParams</a></td>          <td class="paramname"><span class="paramname"><em>CollisionParams</em></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function that does detection of objects with collision enabled. </p>
+<p>By default, it detects objects with "Query" enabled. Returns all objects of given type, ignoring their <b>`Responses</b>` For customization please override <a class="el" href="#a7cf19864149586e0a6d54540ccc8442d">CustomDetectionFunction</a>, in BP or C++(BlueprintNativeEvent)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">DetectResults</td><td>Output array of detected actors </td></tr>
+    <tr><td class="paramname">CollisionParams</td><td>Struct that </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if any object of given type is found. </dd></dl>
 
 </div>
 </div>
@@ -242,8 +384,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a11dbe14fa74ad8387c59521eeee7d73a" name="a11dbe14fa74ad8387c59521eeee7d73a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a11dbe14fa74ad8387c59521eeee7d73a">&#9670;&#160;</a></span>PlaceMeshesOnSpline()</h2>
+<a id="aa3614f9febec9a39e7edcb12f7041a47" name="aa3614f9febec9a39e7edcb12f7041a47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3614f9febec9a39e7edcb12f7041a47">&#9670;&#160;</a></span>PlaceMeshesOnSpline()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -254,12 +396,12 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">virtual void USplineMeshedComponent::PlaceMeshesOnSpline </td>
           <td>(</td>
-          <td class="paramtype">UStaticMesh *</td>          <td class="paramname"><span class="paramname"><em>mesh</em></span>, </td>
+          <td class="paramtype">UStaticMesh *</td>          <td class="paramname"><span class="paramname"><em>Mesh</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structFSplineMeshedParams.html">FSplineMeshedParams</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>parameters</em></span>&#160;)</td>
+          <td class="paramtype">const <a class="el" href="structFSplineMeshedSpawnParams.html">FSplineMeshedSpawnParams</a></td>          <td class="paramname"><span class="paramname"><em>SpawnParameters</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -272,53 +414,11 @@ Public Attributes</h2></td></tr>
 <p>Fill spline with mesh objects. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">mesh</td><td>Mesh pointer </td></tr>
-    <tr><td class="paramname">parameters</td><td>parameters for placing function </td></tr>
+    <tr><td class="paramname">Mesh</td><td>Mesh pointer </td></tr>
+    <tr><td class="paramname">SpawnParameters</td><td>parameters for placing function </td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a9d73e2b34236e013b52779ecf34ef8be" name="a9d73e2b34236e013b52779ecf34ef8be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d73e2b34236e013b52779ecf34ef8be">&#9670;&#160;</a></span>TestCollisionAlongSpline()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool USplineMeshedComponent::TestCollisionAlongSpline </td>
-          <td>(</td>
-          <td class="paramtype">TArray&lt; <a class="el" href="structFSplineMeshedOverlapResult.html">FSplineMeshedOverlapResult</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>OutOverlaps</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">UStaticMesh *</td>          <td class="paramname"><span class="paramname"><em>mesh</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structFSplineCollisionTestParams.html">FSplineCollisionTestParams</a></td>          <td class="paramname"><span class="paramname"><em>params</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structFSplineDebugParams.html">FSplineDebugParams</a></td>          <td class="paramname"><span class="paramname"><em>debugParams</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Run overlap checking along spline. Returns <span class="tt">True</span> if collision is found. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">mesh</td><td></td></tr>
-    <tr><td class="paramname">params</td><td></td></tr>
-    <tr><td class="paramname">debugParams</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if collision is found </dd></dl>
 
 </div>
 </div>

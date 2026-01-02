@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['extend_0',['Extend',['../classUSplineMeshedComponent.html#af1ab932ba086949d492624ab498668d6',1,'USplineMeshedComponent']]]
+  ['detectobjectsalongspline_0',['DetectObjectsAlongSpline',['../classUSplineMeshedComponent.html#a2624fdba13082b46edeabb93877bef60',1,'USplineMeshedComponent']]]
 ];

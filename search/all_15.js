@@ -2,7 +2,7 @@ var searchData=
 [
   ['uniformsize_0',['UniformSize',['../structFSplineMeshed__ExtendedParams.html#ad3b932073031c2f5872e19c4f6ef04ca',1,'FSplineMeshed_ExtendedParams']]],
   ['unreal_20engine_1',['3. (Check or) Enable the Plugin in Unreal Engine',['../install.html#autotoc_md17',1,'']]],
-  ['upvector_2',['UpVector',['../structFSplineMeshedParams.html#aeef12cb5dfdc66e74f58fa7fd261f272',1,'FSplineMeshedParams']]],
+  ['upvector_2',['UpVector',['../structFSplineMeshedSpawnParams.html#aa67816c1f9d0395c1298c4d1f964a48f',1,'FSplineMeshedSpawnParams']]],
   ['usage_3',['Usage',['../md_Documentation_2About.html#autotoc_md10',1,'']]],
   ['use_4',['Quick Use',['../baseuse.html',1,'mainpage']]],
   ['use_20component_20in_20blueprints_5',['Use component in Blueprints',['../baseuse.html#autotoc_md25',1,'']]],

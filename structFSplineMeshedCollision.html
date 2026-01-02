@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.15.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Yasiu Spline Meshed: Member List</title>
+<title>Yasiu Spline Meshed: FSplineMeshedCollision Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -70,7 +70,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(function(){initNavTree('structFSplineMeshedParams.html','',''); });
+$(function(){initNavTree('structFSplineMeshedCollision.html','','structFSplineMeshedCollision-members'); });
 </script>
 <div id="container">
 <div id="doc-content">
@@ -96,28 +96,43 @@ $(function(){initNavTree('structFSplineMeshedParams.html','',''); });
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">FSplineMeshedParams Member List</div></div>
+  <div class="headertitle"><div class="title">FSplineMeshedCollision Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="structFSplineMeshedParams.html">FSplineMeshedParams</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="structFSplineMeshedParams.html#a5a6e57cb00563099d5479f37c9a11c8a">DeformMesh</a></td><td class="entry"><a class="el" href="structFSplineMeshedParams.html">FSplineMeshedParams</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="structFSplineMeshedParams.html#ab44d557ba2830bf8ae7cff54e271a90c">ForwardAxis</a></td><td class="entry"><a class="el" href="structFSplineMeshedParams.html">FSplineMeshedParams</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structFSplineMeshedParams.html#a2d4a59701691a6936f45777ab4b9f948">FSplineMeshedParams</a>(const float &amp;spacing, const bool &amp;deformMesh, const ESplineMeshAxis::Type &amp;forwardAxis, const ESplineRotateMode &amp;RotateMethod)</td><td class="entry"><a class="el" href="structFSplineMeshedParams.html">FSplineMeshedParams</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="structFSplineMeshedParams.html#a5014c59316f928bd1ac8458ca346ff6a">MeshRandomness</a></td><td class="entry"><a class="el" href="structFSplineMeshedParams.html">FSplineMeshedParams</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structFSplineMeshedParams.html#ae1f665cd39bafd512a52b18774ebf2f4">MeshScale</a></td><td class="entry"><a class="el" href="structFSplineMeshedParams.html">FSplineMeshedParams</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="structFSplineMeshedParams.html#a99b2d28271a40fe05fba4bc8c0d0517a">MeshSpacing</a></td><td class="entry"><a class="el" href="structFSplineMeshedParams.html">FSplineMeshedParams</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structFSplineMeshedParams.html#a93e3731c39c921fae8334fc408f8c8af">RotationMethod</a></td><td class="entry"><a class="el" href="structFSplineMeshedParams.html">FSplineMeshedParams</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="structFSplineMeshedParams.html#a2ef02ff6547851fa1da78273236588e5">SpacingByGap</a></td><td class="entry"><a class="el" href="structFSplineMeshedParams.html">FSplineMeshedParams</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structFSplineMeshedParams.html#af4851487114aa8433111a17bcab2a8a6">SpawnMethod</a></td><td class="entry"><a class="el" href="structFSplineMeshedParams.html">FSplineMeshedParams</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="structFSplineMeshedParams.html#aeef12cb5dfdc66e74f58fa7fd261f272">UpVector</a></td><td class="entry"><a class="el" href="structFSplineMeshedParams.html">FSplineMeshedParams</a></td><td class="entry"></td></tr>
-</table></div><!-- contents -->
+<p>Parameters used to set collision on mesh.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="SplineMeshedComponent_8h_source.html">SplineMeshedComponent.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:af0285027b186a21eba29b4bebf8d75af" id="r_af0285027b186a21eba29b4bebf8d75af"><td class="memItemLeft" align="right" valign="top"><a id="af0285027b186a21eba29b4bebf8d75af" name="af0285027b186a21eba29b4bebf8d75af"></a>
+TEnumAsByte&lt; ECollisionEnabled::Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CollisionEnabled</b> = ECollisionEnabled::Type::QueryAndPhysics</td></tr>
+<tr class="memdesc:af0285027b186a21eba29b4bebf8d75af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Should collision be enabled. <br /></td></tr>
+<tr class="memitem:aba11c4cf02559491f01cc2b4ae7f4fe1" id="r_aba11c4cf02559491f01cc2b4ae7f4fe1"><td class="memItemLeft" align="right" valign="top"><a id="aba11c4cf02559491f01cc2b4ae7f4fe1" name="aba11c4cf02559491f01cc2b4ae7f4fe1"></a>
+TEnumAsByte&lt; ECollisionChannel &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CollisionType</b> = ECC_WorldDynamic</td></tr>
+<tr class="memdesc:aba11c4cf02559491f01cc2b4ae7f4fe1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Object collision type. <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Parameters used to set collision on mesh. </p>
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
+<li>Source/SplineMeshed/Public/<a class="el" href="SplineMeshedComponent_8h_source.html">SplineMeshedComponent.h</a></li>
+</ul>
+</div><!-- contents -->
 </div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
 </div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a href="structFSplineMeshedCollision.html">FSplineMeshedCollision</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0 </li>
   </ul>
 </div>

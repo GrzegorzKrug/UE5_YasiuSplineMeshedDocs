@@ -110,11 +110,10 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a65ae2bef184d19c46b85cb23750ac83e" id="r_a65ae2bef184d19c46b85cb23750ac83e"><td class="memItemLeft" align="right" valign="top"><a id="a65ae2bef184d19c46b85cb23750ac83e" name="a65ae2bef184d19c46b85cb23750ac83e"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>seed</b> {5}</td></tr>
 <tr class="memdesc:a65ae2bef184d19c46b85cb23750ac83e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Seed that is feed into Squirrel13 RNG. <br /></td></tr>
-<tr class="memitem:a4571b50905bf2a3bd6bd1d134b62a7df" id="r_a4571b50905bf2a3bd6bd1d134b62a7df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structFVectorRange.html">FVectorRange</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4571b50905bf2a3bd6bd1d134b62a7df">Translation</a> {0}</td></tr>
+<tr class="memitem:a4571b50905bf2a3bd6bd1d134b62a7df" id="r_a4571b50905bf2a3bd6bd1d134b62a7df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structFVectorRange.html">FVectorRange</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4571b50905bf2a3bd6bd1d134b62a7df">Translation</a> {0, 0, 0}</td></tr>
 <tr class="memdesc:a4571b50905bf2a3bd6bd1d134b62a7df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Translation relative to spline:  <br /></td></tr>
-<tr class="memitem:adcf10da4ecb2a9c1f5e647eca0a6395d" id="r_adcf10da4ecb2a9c1f5e647eca0a6395d"><td class="memItemLeft" align="right" valign="top"><a id="adcf10da4ecb2a9c1f5e647eca0a6395d" name="adcf10da4ecb2a9c1f5e647eca0a6395d"></a>
-<a class="el" href="structFVectorRange.html">FVectorRange</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Rotation</b> {0}</td></tr>
-<tr class="memdesc:adcf10da4ecb2a9c1f5e647eca0a6395d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Random rotation. <br /></td></tr>
+<tr class="memitem:adcf10da4ecb2a9c1f5e647eca0a6395d" id="r_adcf10da4ecb2a9c1f5e647eca0a6395d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structFVectorRange.html">FVectorRange</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adcf10da4ecb2a9c1f5e647eca0a6395d">Rotation</a> {0, 0, 0}</td></tr>
+<tr class="memdesc:adcf10da4ecb2a9c1f5e647eca0a6395d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Random rotation.  <br /></td></tr>
 <tr class="memitem:aa077668bc8511f92e2b911d9e631b87a" id="r_aa077668bc8511f92e2b911d9e631b87a"><td class="memItemLeft" align="right" valign="top"><a id="aa077668bc8511f92e2b911d9e631b87a" name="aa077668bc8511f92e2b911d9e631b87a"></a>
 <a class="el" href="structFVectorRange.html">FVectorRange</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Scale</b> {1}</td></tr>
 <tr class="memdesc:aa077668bc8511f92e2b911d9e631b87a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Random scale range. <br /></td></tr>
@@ -122,6 +121,30 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>seed</b> {5}</td></tr>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Params used for randomizing each mesh. </p>
 </div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
+<a id="adcf10da4ecb2a9c1f5e647eca0a6395d" name="adcf10da4ecb2a9c1f5e647eca0a6395d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcf10da4ecb2a9c1f5e647eca0a6395d">&#9670;&#160;</a></span>Rotation</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structFVectorRange.html">FVectorRange</a> FSplineRandomness::Rotation {0, 0, 0}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Random rotation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">X</td><td></td></tr>
+    <tr><td class="paramname">Y</td><td></td></tr>
+    <tr><td class="paramname">Z</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a4571b50905bf2a3bd6bd1d134b62a7df" name="a4571b50905bf2a3bd6bd1d134b62a7df"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4571b50905bf2a3bd6bd1d134b62a7df">&#9670;&#160;</a></span>Translation</h2>
 
@@ -129,13 +152,20 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>seed</b> {5}</td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structFVectorRange.html">FVectorRange</a> FSplineRandomness::Translation {0}</td>
+          <td class="memname"><a class="el" href="structFVectorRange.html">FVectorRange</a> FSplineRandomness::Translation {0, 0, 0}</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Translation relative to spline: </p>
-<p>X - Forward vector Y - Side vector Z - Up vector </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">X</td><td>Forward vector </td></tr>
+    <tr><td class="paramname">Y</td><td>Side vector </td></tr>
+    <tr><td class="paramname">Z</td><td>Up vector </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

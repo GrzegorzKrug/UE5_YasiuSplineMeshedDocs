@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['testcollisionalongspline_0',['TestCollisionAlongSpline',['../classUSplineMeshedComponent.html#a9d73e2b34236e013b52779ecf34ef8be',1,'USplineMeshedComponent']]]
+  ['setmaterials_0',['SetMaterials',['../classUSplineMeshedComponent.html#a404e29073678272f9c2ea492f469cbb5',1,'USplineMeshedComponent']]]
 ];

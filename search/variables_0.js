@@ -1,6 +1,5 @@
 var searchData=
 [
   ['actor_0',['Actor',['../structFSplineMeshedOverlapResult.html#a3625a77face1690037bc3bd7e92ae296',1,'FSplineMeshedOverlapResult']]],
-  ['amplitude_1',['Amplitude',['../structFSplineMeshed__ExtendedParams.html#a16c8e51626bf11537a1c56dd8cc47559',1,'FSplineMeshed_ExtendedParams']]],
-  ['amplitude_2',['amplitude',['../structFSplineSinusParams.html#af3af0e2e69eb1eeb41235c5a765e6ade',1,'FSplineSinusParams::amplitude'],['../structFSplineHelixParams.html#aa0efb7fc7285fa39b2fd0abf63b63973',1,'FSplineHelixParams::amplitude']]]
+  ['amplitude_1',['Amplitude',['../structFSplineSinusParams.html#a57cb849b16fa4e64d9526180f007c7da',1,'FSplineSinusParams::Amplitude'],['../structFSplineHelixParams.html#a59236fbdafe70ab2a07125f81d82f98a',1,'FSplineHelixParams::Amplitude'],['../structFSplineMeshed__ExtendedParams.html#a16c8e51626bf11537a1c56dd8cc47559',1,'FSplineMeshed_ExtendedParams::Amplitude']]]
 ];
