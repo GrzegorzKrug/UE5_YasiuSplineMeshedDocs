@@ -6,5 +6,6 @@ var searchData=
   ['placemeshesonspline_3',['PlaceMeshesOnSpline',['../classUSplineMeshedComponent.html#aa3614f9febec9a39e7edcb12f7041a47',1,'USplineMeshedComponent']]],
   ['plugin_4',['1. Download and Extract the Plugin',['../install.html#autotoc_md14',1,'']]],
   ['plugin_20in_20unreal_20engine_5',['3. (Check or) Enable the Plugin in Unreal Engine',['../install.html#autotoc_md17',1,'']]],
-  ['pre_20created_20actor_20class_6',['Use pre-created actor class',['../baseuse.html#autotoc_md24',1,'']]]
+  ['pointindex_6',['pointIndex',['../structFSplineSmoothParams.html#a669881cfeadfa35fe2460feef48156fc',1,'FSplineSmoothParams']]],
+  ['pre_20created_20actor_20with_20component_7',['Use pre-created actor with component',['../baseuse.html#autotoc_md24',1,'']]]
 ];

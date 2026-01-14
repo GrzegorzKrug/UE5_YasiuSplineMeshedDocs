@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['blueprints_0',['Use component in Blueprints',['../baseuse.html#autotoc_md25',1,'']]]
+  ['bp_0',['Add component to your actor in BP',['../baseuse.html#autotoc_md25',1,'']]]
 ];

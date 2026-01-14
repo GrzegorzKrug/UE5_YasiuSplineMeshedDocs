@@ -7,8 +7,8 @@ var hierarchy =
         [ "ASplineMeshed_ExtensionSinus", "classASplineMeshed__ExtensionSinus.html", null ]
       ] ]
     ] ],
-    [ "FSplineCollisionTestParams", "structFSplineCollisionTestParams.html", null ],
     [ "FSplineDebugParams", "structFSplineDebugParams.html", null ],
+    [ "FSplineDetectionTestParams", "structFSplineDetectionTestParams.html", null ],
     [ "FSplineHelixParams", "structFSplineHelixParams.html", null ],
     [ "FSplineMeshed_ExtendedParams", "structFSplineMeshed__ExtendedParams.html", null ],
     [ "FSplineMeshed_PointTangent", "structFSplineMeshed__PointTangent.html", null ],

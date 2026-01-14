@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['ignoreblocks_0',['IgnoreBlocks',['../structFSplineCollisionTestParams.html#ae4439f9389628ebe3f82f7a64736ff0a',1,'FSplineCollisionTestParams']]],
-  ['ignoretouches_1',['IgnoreTouches',['../structFSplineCollisionTestParams.html#ad74c54100e28fc213fe20e2865b4674c',1,'FSplineCollisionTestParams']]],
-  ['in_20blueprints_2',['Use component in Blueprints',['../baseuse.html#autotoc_md25',1,'']]],
+  ['ignoreblocks_0',['IgnoreBlocks',['../structFSplineDetectionTestParams.html#a06d78a4a70573d67f32e8ef7049eca8f',1,'FSplineDetectionTestParams']]],
+  ['ignoretouches_1',['IgnoreTouches',['../structFSplineDetectionTestParams.html#a7ee387b7ad38f3a5cbbef72e83728a3c',1,'FSplineDetectionTestParams']]],
+  ['in_20bp_2',['Add component to your actor in BP',['../baseuse.html#autotoc_md25',1,'']]],
   ['in_20c_3',['Use in C++',['../baseuse.html#autotoc_md27',1,'']]],
   ['in_20unreal_20engine_4',['3. (Check or) Enable the Plugin in Unreal Engine',['../install.html#autotoc_md17',1,'']]],
   ['installation_5',['Installation',['../install.html',1,'Installation'],['../md_Documentation_2About.html#autotoc_md9',1,'Installation']]],

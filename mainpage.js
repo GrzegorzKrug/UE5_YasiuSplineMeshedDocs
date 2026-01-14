@@ -9,8 +9,8 @@ var mainpage =
       ] ]
     ] ],
     [ "Quick Use", "baseuse.html", [
-      [ "Use pre-created actor class", "baseuse.html#autotoc_md24", null ],
-      [ "Use component in Blueprints", "baseuse.html#autotoc_md25", null ],
+      [ "Use pre-created actor with component", "baseuse.html#autotoc_md24", null ],
+      [ "Add component to your actor in BP", "baseuse.html#autotoc_md25", null ],
       [ "Use in C++", "baseuse.html#autotoc_md27", [
         [ "Classes hierarchy", "baseuse.html#autotoc_md28", null ]
       ] ],
