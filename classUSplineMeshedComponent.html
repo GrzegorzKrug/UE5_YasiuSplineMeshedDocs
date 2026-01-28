@@ -110,7 +110,7 @@ Inheritance diagram for USplineMeshedComponent:</div>
  <div class="center">
   <img src="classUSplineMeshedComponent.png" usemap="#USplineMeshedComponent_map" alt=""/>
   <map id="USplineMeshedComponent_map" name="USplineMeshedComponent_map">
-<area href="classUSplineMeshedComponent__ExtensionBridge.html" title="Abstract class that uses bridge pattern." alt="USplineMeshedComponent_ExtensionBridge" shape="rect" coords="138,112,405,136"/>
+<area href="classUSplineMeshedComponent__Extension.html" title="Abstract class that uses bridge pattern." alt="USplineMeshedComponent_Extension" shape="rect" coords="138,112,405,136"/>
 <area href="classUSplineMeshedComponent__ExtendedToHelix.html" title="Modified USplineMeshedComponent that spawns meshes in helix pattern." alt="USplineMeshedComponent_ExtendedToHelix" shape="rect" coords="0,168,267,192"/>
 <area href="classUSplineMeshedComponent__ExtendedToSinus.html" title="Modified USplineMeshedComponent that spawns meshes in zigzag/sinus pattern." alt="USplineMeshedComponent_ExtendedToSinus" shape="rect" coords="277,168,544,192"/>
   </map>
@@ -118,26 +118,59 @@ Inheritance diagram for USplineMeshedComponent:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa3614f9febec9a39e7edcb12f7041a47" id="r_aa3614f9febec9a39e7edcb12f7041a47"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#aa3614f9febec9a39e7edcb12f7041a47">PlaceMeshesOnSpline</a> (UStaticMesh *Mesh, const <a class="el" href="structFSplineMeshedSpawnParams.html">FSplineMeshedSpawnParams</a> SpawnParameters)</td></tr>
-<tr class="memdesc:aa3614f9febec9a39e7edcb12f7041a47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill spline with mesh objects.  <br /></td></tr>
+<tr class="memitem:a6c92fe0c698e10c7a930b38e761ea327" id="r_a6c92fe0c698e10c7a930b38e761ea327"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6c92fe0c698e10c7a930b38e761ea327">PlaceMeshesOnSpline</a> (UStaticMesh *Mesh, const <a class="el" href="structFSplineMeshedSpawnParams.html">FSplineMeshedSpawnParams</a> SpawnParameters)</td></tr>
+<tr class="memdesc:a6c92fe0c698e10c7a930b38e761ea327"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spawn meshes along spline.  <br /></td></tr>
 <tr class="memitem:ab8718e38d16fcf40a12f0088e735c45c" id="r_ab8718e38d16fcf40a12f0088e735c45c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab8718e38d16fcf40a12f0088e735c45c">OnMeshPlace</a> (const FVector &amp;ForwardVec, const FVector &amp;UpVect, const int SegmentID, const float DistanceA, const float DistanceB, USplineMeshComponent *RefMesh) const</td></tr>
 <tr class="memdesc:ab8718e38d16fcf40a12f0088e735c45c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that is triggered after placing each mesh with corresponding values.  <br /></td></tr>
-<tr class="memitem:a63c8e817e675920819be90eaafc0c3c7" id="r_a63c8e817e675920819be90eaafc0c3c7"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a63c8e817e675920819be90eaafc0c3c7">ChangeMesh</a> (TSoftObjectPtr&lt; UStaticMesh &gt; mesh)</td></tr>
-<tr class="memdesc:a63c8e817e675920819be90eaafc0c3c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that sets mesh of all objects placed along spline.  <br /></td></tr>
+<tr class="memitem:ab659c48a9bde8428e6abc97367af192b" id="r_ab659c48a9bde8428e6abc97367af192b"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#ab659c48a9bde8428e6abc97367af192b">ChangeMesh</a> (TSoftObjectPtr&lt; UStaticMesh &gt; Mesh)</td></tr>
+<tr class="memdesc:ab659c48a9bde8428e6abc97367af192b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change static mesh in all Objects. (Tangents are unchanged).  <br /></td></tr>
+<tr class="memitem:a9b81f15210bc3ce3a858875eb9fdb696" id="r_a9b81f15210bc3ce3a858875eb9fdb696"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9b81f15210bc3ce3a858875eb9fdb696">GetMeshes</a> (TArray&lt; class USplineMeshComponent * &gt; &amp;OutArray)</td></tr>
+<tr class="memdesc:a9b81f15210bc3ce3a858875eb9fdb696"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns array of all meshes.  <br /></td></tr>
 <tr class="memitem:a404e29073678272f9c2ea492f469cbb5" id="r_a404e29073678272f9c2ea492f469cbb5"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a404e29073678272f9c2ea492f469cbb5">SetMaterials</a> (const TArray&lt; UMaterialInstance * &gt; &amp;materials)</td></tr>
 <tr class="memdesc:a404e29073678272f9c2ea492f469cbb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies materials from array to every mesh to material slots.  <br /></td></tr>
-<tr class="memitem:a8b2c3aa68d2ca69779a475afb9c52c1b" id="r_a8b2c3aa68d2ca69779a475afb9c52c1b"><td class="memItemLeft"><a id="a8b2c3aa68d2ca69779a475afb9c52c1b" name="a8b2c3aa68d2ca69779a475afb9c52c1b"></a>
-virtual void&#160;</td><td class="memItemRight"><b>CopySpline</b> (const <a class="el" href="classUSplineMeshedComponent.html">USplineMeshedComponent</a> *copyFrom)</td></tr>
-<tr class="memdesc:a8b2c3aa68d2ca69779a475afb9c52c1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy spline points and curve. <br /></td></tr>
+<tr class="memitem:afb54158f09a1e1dc5cb04d10211eb1ea" id="r_afb54158f09a1e1dc5cb04d10211eb1ea"><td class="memItemLeft"><a id="afb54158f09a1e1dc5cb04d10211eb1ea" name="afb54158f09a1e1dc5cb04d10211eb1ea"></a>
+virtual void&#160;</td><td class="memItemRight"><b>CopySplinePoints</b> (const <a class="el" href="classUSplineMeshedComponent.html">USplineMeshedComponent</a> *copyFrom)</td></tr>
+<tr class="memdesc:afb54158f09a1e1dc5cb04d10211eb1ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy spline points and curve. <br /></td></tr>
 <tr class="memitem:a84a58aa95e43f613a03313728bfe853d" id="r_a84a58aa95e43f613a03313728bfe853d"><td class="memItemLeft"><a id="a84a58aa95e43f613a03313728bfe853d" name="a84a58aa95e43f613a03313728bfe853d"></a>
 virtual void&#160;</td><td class="memItemRight"><b>CopySplineAndMeshes</b> (const <a class="el" href="classUSplineMeshedComponent.html">USplineMeshedComponent</a> *copyFrom)</td></tr>
 <tr class="memdesc:a84a58aa95e43f613a03313728bfe853d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy spline points, curve and mesh properties. <br /></td></tr>
+<tr class="memitem:a93864bd447ef3529f7ea25b946aee0fc" id="r_a93864bd447ef3529f7ea25b946aee0fc"><td class="memItemLeft"><a id="a93864bd447ef3529f7ea25b946aee0fc" name="a93864bd447ef3529f7ea25b946aee0fc"></a>
+void&#160;</td><td class="memItemRight"><b>ChangeToSinus</b> ()</td></tr>
+<tr class="memdesc:a93864bd447ef3529f7ea25b946aee0fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function will modify your spline and add points to look like sinus wave, see <a class="el" href="#ad9480c67e3226d4631a30b74f2926f38" title="SinusToolParams">SinusToolParams</a>. <br /></td></tr>
+<tr class="memitem:ad1102b14b7f1db70678ca189369720ea" id="r_ad1102b14b7f1db70678ca189369720ea"><td class="memItemLeft"><a id="ad1102b14b7f1db70678ca189369720ea" name="ad1102b14b7f1db70678ca189369720ea"></a>
+void&#160;</td><td class="memItemRight"><b>ChangeToHelix</b> ()</td></tr>
+<tr class="memdesc:ad1102b14b7f1db70678ca189369720ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate spiral spline along current spline, see <a class="el" href="#a96dd1aa9636520965c96b1100e917403" title="HelixToolParams">HelixToolParams</a>. <br /></td></tr>
+<tr class="memitem:aad030f1da7063c8e53bf7c136b85fd99" id="r_aad030f1da7063c8e53bf7c136b85fd99"><td class="memItemLeft"><a id="aad030f1da7063c8e53bf7c136b85fd99" name="aad030f1da7063c8e53bf7c136b85fd99"></a>
+void&#160;</td><td class="memItemRight"><b>Decimate</b> ()</td></tr>
+<tr class="memdesc:aad030f1da7063c8e53bf7c136b85fd99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove 90% of points between first and last point. <br /></td></tr>
+<tr class="memitem:a945bf84c3f5af905b0f6b535266e8da3" id="r_a945bf84c3f5af905b0f6b535266e8da3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a945bf84c3f5af905b0f6b535266e8da3">SetSmoothnessAtPoint</a> (int keyIndex, float smoothness=1.f, float ZRotationDeg=0.f)</td></tr>
+<tr class="memdesc:a945bf84c3f5af905b0f6b535266e8da3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change single point to have given smoothness and rotation.  <br /></td></tr>
+<tr class="memitem:aec99d8fbe687365a3e052f88c8ac2990" id="r_aec99d8fbe687365a3e052f88c8ac2990"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aec99d8fbe687365a3e052f88c8ac2990">SetSmoothnessAtAllPoints</a> (float smoothness=1.f, float ZRotationDeg=0.f)</td></tr>
+<tr class="memdesc:aec99d8fbe687365a3e052f88c8ac2990"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change spline all points to have desired params.  <br /></td></tr>
+<tr class="memitem:ab03f208182576c7c0c4d8276f7058fe8" id="r_ab03f208182576c7c0c4d8276f7058fe8"><td class="memItemLeft"><a id="ab03f208182576c7c0c4d8276f7058fe8" name="ab03f208182576c7c0c4d8276f7058fe8"></a>
+void&#160;</td><td class="memItemRight"><b>Smooth</b> ()</td></tr>
+<tr class="memdesc:ab03f208182576c7c0c4d8276f7058fe8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function will adjust tangents of all points to make it look smooth. <br /></td></tr>
+<tr class="memitem:aeb3746f79c9bd818188638ee41e103db" id="r_aeb3746f79c9bd818188638ee41e103db"><td class="memItemLeft"><a id="aeb3746f79c9bd818188638ee41e103db" name="aeb3746f79c9bd818188638ee41e103db"></a>
+void&#160;</td><td class="memItemRight"><b>Sharp</b> ()</td></tr>
+<tr class="memdesc:aeb3746f79c9bd818188638ee41e103db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function will adjust tangents of all points to make it sharp. <br /></td></tr>
+<tr class="memitem:a7297dab4bceab781599f93aef38d628e" id="r_a7297dab4bceab781599f93aef38d628e"><td class="memItemLeft"><a id="a7297dab4bceab781599f93aef38d628e" name="a7297dab4bceab781599f93aef38d628e"></a>
+void&#160;</td><td class="memItemRight"><b>ExtraCurvy</b> ()</td></tr>
+<tr class="memdesc:a7297dab4bceab781599f93aef38d628e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function will adjust tangents of all points to make it look extra smooth and very curvy. <br /></td></tr>
+<tr class="memitem:a4390ce371e26ca9ebf81573b779deddc" id="r_a4390ce371e26ca9ebf81573b779deddc"><td class="memItemLeft"><a id="a4390ce371e26ca9ebf81573b779deddc" name="a4390ce371e26ca9ebf81573b779deddc"></a>
+void&#160;</td><td class="memItemRight"><b>CustomTangents</b> ()</td></tr>
+<tr class="memdesc:a4390ce371e26ca9ebf81573b779deddc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function will adjust tangents of single point using <a class="el" href="#a163a6373860c8fe000bd1b3bfdd65648" title="TangentToolParams">TangentToolParams</a> variable. <br /></td></tr>
+<tr class="memitem:a653b9ac49e0a82091f61a1e1533d02ae" id="r_a653b9ac49e0a82091f61a1e1533d02ae"><td class="memItemLeft"><a id="a653b9ac49e0a82091f61a1e1533d02ae" name="a653b9ac49e0a82091f61a1e1533d02ae"></a>
+void&#160;</td><td class="memItemRight"><b>CustomTangentsAllPoints</b> ()</td></tr>
+<tr class="memdesc:a653b9ac49e0a82091f61a1e1533d02ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function will adjust tangents of all spline points using <a class="el" href="#a163a6373860c8fe000bd1b3bfdd65648" title="TangentToolParams">TangentToolParams</a> variable. <br /></td></tr>
+<tr class="memitem:a8ad0c559ec8ad5a471c642ca564b6258" id="r_a8ad0c559ec8ad5a471c642ca564b6258"><td class="memItemLeft"><a id="a8ad0c559ec8ad5a471c642ca564b6258" name="a8ad0c559ec8ad5a471c642ca564b6258"></a>
+void&#160;</td><td class="memItemRight"><b>FixMeshes</b> ()</td></tr>
+<tr class="memdesc:a8ad0c559ec8ad5a471c642ca564b6258"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear mesh objects and rerun construction for ASplinedMeshed actor only. <br /></td></tr>
 <tr class="memitem:a1a8091e532457e23af39ee0462dc5161" id="r_a1a8091e532457e23af39ee0462dc5161"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a1a8091e532457e23af39ee0462dc5161">DetectObjectsAlongSpline</a> (TArray&lt; <a class="el" href="structFSplineMeshedOverlapResult.html">FSplineMeshedOverlapResult</a> &gt; &amp;DetectResults, <a class="el" href="structFSplineDetectionTestParams.html">FSplineDetectionTestParams</a> DetectionParams) const</td></tr>
-<tr class="memdesc:a1a8091e532457e23af39ee0462dc5161"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that does only detection of objects.  <br /></td></tr>
+<tr class="memdesc:a1a8091e532457e23af39ee0462dc5161"><td class="mdescLeft">&#160;</td><td class="mdescRight">Object detection function that iterates along spline.  <br /></td></tr>
 <tr class="memitem:a6b63e889d46a5b04eeedfb63aa312efa" id="r_a6b63e889d46a5b04eeedfb63aa312efa"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a6b63e889d46a5b04eeedfb63aa312efa">CustomDetectionFunction</a> (TArray&lt; <a class="el" href="structFSplineMeshedOverlapResult.html">FSplineMeshedOverlapResult</a> &gt; &amp;localOverlaps, UWorld *world, const FVector &amp;locationIn, const FQuat &amp;rotationIn, const <a class="el" href="structFSplineDetectionTestParams.html">FSplineDetectionTestParams</a> &amp;paramsIn) const</td></tr>
-<tr class="memdesc:a6b63e889d46a5b04eeedfb63aa312efa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detection function, used in <a class="el" href="#a1a8091e532457e23af39ee0462dc5161" title="DetectObjectsAlongSpline">DetectObjectsAlongSpline</a>. Can be overriden for customization.  <br /></td></tr>
+<tr class="memdesc:a6b63e889d46a5b04eeedfb63aa312efa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detection function's body, (can be customized), used by <a class="el" href="#a1a8091e532457e23af39ee0462dc5161" title="DetectObjectsAlongSpline">DetectObjectsAlongSpline</a>. Can be overriden for customization.  <br /></td></tr>
 <tr class="memitem:ac0b770dbc1fedb9b4f216fa7e616c0d5" id="r_ac0b770dbc1fedb9b4f216fa7e616c0d5"><td class="memItemLeft">FVector&#160;</td><td class="memItemRight"><a class="el" href="#ac0b770dbc1fedb9b4f216fa7e616c0d5">VectorFrom2Points</a> (float distanceA, float distanceB, const TEnumAsByte&lt; ESplineCoordinateSpace::Type &gt; &amp;CoordSpace=ESplineCoordinateSpace::World) const</td></tr>
-<tr class="memdesc:ac0b770dbc1fedb9b4f216fa7e616c0d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get normalized vector between 2 points A and B on spline.  <br /></td></tr>
+<tr class="memdesc:ac0b770dbc1fedb9b4f216fa7e616c0d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get normalized vector between 2 points, points are clamped to spline length.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -150,12 +183,18 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a163a6373860c8fe000bd1b3bfdd65648" id="r_a163a6373860c8fe000bd1b3bfdd65648"><td class="memItemLeft"><a id="a163a6373860c8fe000bd1b3bfdd65648" name="a163a6373860c8fe000bd1b3bfdd65648"></a>
 <a class="el" href="structFSplineSmoothParams.html">FSplineSmoothParams</a>&#160;</td><td class="memItemRight"><b>TangentToolParams</b> {}</td></tr>
 <tr class="memdesc:a163a6373860c8fe000bd1b3bfdd65648"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameter used by editor commands. <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pro-attribs" class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:aa7a4fb0610e8cb62cd9d2379296c65c8" id="r_aa7a4fb0610e8cb62cd9d2379296c65c8"><td class="memItemLeft"><a id="aa7a4fb0610e8cb62cd9d2379296c65c8" name="aa7a4fb0610e8cb62cd9d2379296c65c8"></a>
+TArray&lt; TObjectPtr&lt; USplineMeshComponent &gt; &gt;&#160;</td><td class="memItemRight"><b>MeshesArray</b></td></tr>
+<tr class="memdesc:aa7a4fb0610e8cb62cd9d2379296c65c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array of created SplineMeshes. <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Core component that handles meshes spawning along spline. </p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="a63c8e817e675920819be90eaafc0c3c7" name="a63c8e817e675920819be90eaafc0c3c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a63c8e817e675920819be90eaafc0c3c7">&#9670;&#160;</a></span>ChangeMesh()</h2>
+<a id="ab659c48a9bde8428e6abc97367af192b" name="ab659c48a9bde8428e6abc97367af192b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab659c48a9bde8428e6abc97367af192b">&#9670;&#160;</a></span>ChangeMesh()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -166,7 +205,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">virtual void USplineMeshedComponent::ChangeMesh </td>
           <td>(</td>
-          <td class="paramtype">TSoftObjectPtr&lt; UStaticMesh &gt;</td>          <td class="paramname"><span class="paramname"><em>mesh</em></span></td><td>)</td>
+          <td class="paramtype">TSoftObjectPtr&lt; UStaticMesh &gt;</td>          <td class="paramname"><span class="paramname"><em>Mesh</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -177,11 +216,11 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Function that sets mesh of all objects placed along spline. </p>
+<p>Change static mesh in all Objects. (Tangents are unchanged). </p>
 <dl class="section warning"><dt>Warning</dt><dd>Does not change spacing or tangents of mesh (may deform wrong) </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">mesh</td><td>Reference to mesh asset </td></tr>
+    <tr><td class="paramname">Mesh</td><td>Reference to mesh asset </td></tr>
   </table>
   </dd>
 </dl>
@@ -222,8 +261,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Detection function, used in <a class="el" href="#a1a8091e532457e23af39ee0462dc5161" title="DetectObjectsAlongSpline">DetectObjectsAlongSpline</a>. Can be overriden for customization. </p>
-<p>By default it detects all objects with Collision "Query" enabled and specific channels in <b>paramsIn</b></p>
+<p>Detection function's body, (can be customized), used by <a class="el" href="#a1a8091e532457e23af39ee0462dc5161" title="DetectObjectsAlongSpline">DetectObjectsAlongSpline</a>. Can be overriden for customization. </p>
+<p>By default it detects overlaps by object type. Other objects must have Collision "Query" enabled and math collision channel in <b>paramsIn</b></p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">localOverlaps</td><td>Output array, passed to top function </td></tr>
@@ -257,10 +296,10 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Function that does only detection of objects. </p>
-<p>By default, it detects only objects with Collision "Query" enabled (Physics is not required).</p>
+<p>Object detection function that iterates along spline. </p>
+<p>By default, it detects Overlaps, objects must have Collision "Query" enabled (Physics is not required).</p>
 <p>Returns all objects of given type, ignoring their <b>ChannelType responses</b>.</p>
-<dl class="section note"><dt>Note</dt><dd>For Customization (Injection) </dd>
+<dl class="section note"><dt>Note</dt><dd>Detection can be modified (by Injection) </dd>
 <dd>
 In BP please override <a class="el" href="#a6b63e889d46a5b04eeedfb63aa312efa" title="CustomDetectionFunction">CustomDetectionFunction</a> </dd>
 <dd>
@@ -268,11 +307,36 @@ In C++ override <b>CustomDetectionFunction_Implementation</b>, it is BlueprintNa
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">DetectResults</td><td>Output array of detected actors </td></tr>
-    <tr><td class="paramname">DetectionParams</td><td>Struct that </td></tr>
+    <tr><td class="paramname">DetectionParams</td><td>Struct that has test parameters </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if any object of given type is found. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if detected at least one object </dd></dl>
+
+</div>
+</div>
+<a id="a9b81f15210bc3ce3a858875eb9fdb696" name="a9b81f15210bc3ce3a858875eb9fdb696"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b81f15210bc3ce3a858875eb9fdb696">&#9670;&#160;</a></span>GetMeshes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void USplineMeshedComponent::GetMeshes </td>
+          <td>(</td>
+          <td class="paramtype">TArray&lt; class USplineMeshComponent * &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>OutArray</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns array of all meshes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">OutArray</td><td>Array with pointers to all valid objects. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -327,8 +391,8 @@ In C++ override <b>OnMeshPlace_Implementation</b>, it is BlueprintNativeEvent</d
     <tr><td class="paramname">ForwardVec</td><td>Vector from mesh start to mesh end </td></tr>
     <tr><td class="paramname">UpVect</td><td>Spline's up vector for this mesh </td></tr>
     <tr><td class="paramname">SegmentID</td><td>Mesh number, indexed from &lt;0, N-1&gt; </td></tr>
-    <tr><td class="paramname">DistanceA</td><td>Spline distance at start for this mesh in unreal units </td></tr>
-    <tr><td class="paramname">DistanceB</td><td>Spline distance at end for this mesh in unreal units </td></tr>
+    <tr><td class="paramname">DistanceA</td><td>Spline distance along spline at start of mesh in unreal units </td></tr>
+    <tr><td class="paramname">DistanceB</td><td>Spline distance along spline at end of mesh in unreal units </td></tr>
     <tr><td class="paramname">RefMesh</td><td>Spline Mesh reference for custom edits </td></tr>
   </table>
   </dd>
@@ -336,17 +400,14 @@ In C++ override <b>OnMeshPlace_Implementation</b>, it is BlueprintNativeEvent</d
 
 </div>
 </div>
-<a id="aa3614f9febec9a39e7edcb12f7041a47" name="aa3614f9febec9a39e7edcb12f7041a47"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa3614f9febec9a39e7edcb12f7041a47">&#9670;&#160;</a></span>PlaceMeshesOnSpline()</h2>
+<a id="a6c92fe0c698e10c7a930b38e761ea327" name="a6c92fe0c698e10c7a930b38e761ea327"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c92fe0c698e10c7a930b38e761ea327">&#9670;&#160;</a></span>PlaceMeshesOnSpline()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void USplineMeshedComponent::PlaceMeshesOnSpline </td>
+          <td class="memname">void USplineMeshedComponent::PlaceMeshesOnSpline </td>
           <td>(</td>
           <td class="paramtype">UStaticMesh *</td>          <td class="paramname"><span class="paramname"><em>Mesh</em></span>, </td>
         </tr>
@@ -356,18 +417,13 @@ In C++ override <b>OnMeshPlace_Implementation</b>, it is BlueprintNativeEvent</d
           <td class="paramtype">const <a class="el" href="structFSplineMeshedSpawnParams.html">FSplineMeshedSpawnParams</a></td>          <td class="paramname"><span class="paramname"><em>SpawnParameters</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Fill spline with mesh objects. </p>
+<p>Spawn meshes along spline. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">Mesh</td><td>Mesh pointer </td></tr>
-    <tr><td class="paramname">SpawnParameters</td><td>parameters for placing function </td></tr>
+    <tr><td class="paramname">Mesh</td><td>Static mesh object to be used </td></tr>
+    <tr><td class="paramname">SpawnParameters</td><td>Parameters how mesh should spawn </td></tr>
   </table>
   </dd>
 </dl>
@@ -402,6 +458,72 @@ In C++ override <b>OnMeshPlace_Implementation</b>, it is BlueprintNativeEvent</d
 
 </div>
 </div>
+<a id="aec99d8fbe687365a3e052f88c8ac2990" name="aec99d8fbe687365a3e052f88c8ac2990"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec99d8fbe687365a3e052f88c8ac2990">&#9670;&#160;</a></span>SetSmoothnessAtAllPoints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void USplineMeshedComponent::SetSmoothnessAtAllPoints </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>smoothness</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1.f</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>ZRotationDeg</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0.f</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Change spline all points to have desired params. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">smoothness</td><td>How smooth should spline be, 0 means sharp spline, 1 means smooth. Works with negative values </td></tr>
+    <tr><td class="paramname">ZRotationDeg</td><td>Angle in degrees. Rotation around Z axis for cool effects </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a945bf84c3f5af905b0f6b535266e8da3" name="a945bf84c3f5af905b0f6b535266e8da3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a945bf84c3f5af905b0f6b535266e8da3">&#9670;&#160;</a></span>SetSmoothnessAtPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void USplineMeshedComponent::SetSmoothnessAtPoint </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>keyIndex</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>smoothness</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1.f</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>ZRotationDeg</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0.f</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Change single point to have given smoothness and rotation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">keyIndex</td><td>Spline point index </td></tr>
+    <tr><td class="paramname">smoothness</td><td>How smooth should spline be, 0 means sharp spline, 1 means smooth. Works with negative values </td></tr>
+    <tr><td class="paramname">ZRotationDeg</td><td>Angle in degrees. Rotation around Z axis for cool effects </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ac0b770dbc1fedb9b4f216fa7e616c0d5" name="ac0b770dbc1fedb9b4f216fa7e616c0d5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac0b770dbc1fedb9b4f216fa7e616c0d5">&#9670;&#160;</a></span>VectorFrom2Points()</h2>
 
@@ -426,7 +548,7 @@ In C++ override <b>OnMeshPlace_Implementation</b>, it is BlueprintNativeEvent</d
       </table>
 </div><div class="memdoc">
 
-<p>Get normalized vector between 2 points A and B on spline. </p>
+<p>Get normalized vector between 2 points, points are clamped to spline length. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">distanceA</td><td>distance along spline for point A </td></tr>

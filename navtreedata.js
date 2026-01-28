@@ -25,14 +25,16 @@
 var NAVTREE =
 [
   [ "Yasiu Spline Meshed", "index.html", [
-    [ "About Math Library", "md_Documentation_2About.html", [
+    [ "About SplineMeshed Library", "md_Documentation_2About.html", [
       [ "Overview", "md_Documentation_2About.html#autotoc_md1", null ],
       [ "Features", "md_Documentation_2About.html#autotoc_md3", null ],
       [ "SplineMeshed Component features", "md_Documentation_2About.html#autotoc_md5", null ],
       [ "SplineMeshed Actor features", "md_Documentation_2About.html#autotoc_md6", null ],
       [ "Documentation", "md_Documentation_2About.html#autotoc_md8", [
         [ "Installation", "md_Documentation_2About.html#autotoc_md9", null ],
-        [ "Usage", "md_Documentation_2About.html#autotoc_md10", null ]
+        [ "Usage", "md_Documentation_2About.html#autotoc_md10", [
+          [ "Links", "md_Documentation_2About.html#autotoc_md11", null ]
+        ] ]
       ] ]
     ] ],
     [ "Quick Start", "mainpage.html", "mainpage" ],
@@ -50,6 +52,7 @@ var NAVTREE =
       [ "File List", "files.html", "files_dup" ],
       [ "File Members", "globals.html", [
         [ "All", "globals.html", null ],
+        [ "Functions", "globals_func.html", null ],
         [ "Enumerations", "globals_enum.html", null ]
       ] ]
     ] ]

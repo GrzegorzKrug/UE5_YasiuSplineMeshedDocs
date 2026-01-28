@@ -1,10 +1,11 @@
 var hierarchy =
 [
     [ "AActor", null, [
-      [ "ASplineMeshed", "classASplineMeshed.html", null ],
-      [ "ASplineMeshed_AbstractExtension", "classASplineMeshed__AbstractExtension.html", [
-        [ "ASplineMeshed_ExtensionHelix", "classASplineMeshed__ExtensionHelix.html", null ],
-        [ "ASplineMeshed_ExtensionSinus", "classASplineMeshed__ExtensionSinus.html", null ]
+      [ "ASplineMeshed", "classASplineMeshed.html", [
+        [ "ASplineMeshed_AbstractExtension", "classASplineMeshed__AbstractExtension.html", [
+          [ "ASplineMeshed_ExtensionHelix", "classASplineMeshed__ExtensionHelix.html", null ],
+          [ "ASplineMeshed_ExtensionSinus", "classASplineMeshed__ExtensionSinus.html", null ]
+        ] ]
       ] ]
     ] ],
     [ "FSplineDebugParams", "structFSplineDebugParams.html", null ],
@@ -19,9 +20,12 @@ var hierarchy =
     [ "FSplineSinusParams", "structFSplineSinusParams.html", null ],
     [ "FSplineSmoothParams", "structFSplineSmoothParams.html", null ],
     [ "FVectorRange", "structFVectorRange.html", null ],
+    [ "UObject", null, [
+      [ "USpline_RNG", "classUSpline__RNG.html", null ]
+    ] ],
     [ "USplineComponent", null, [
       [ "USplineMeshedComponent", "classUSplineMeshedComponent.html", [
-        [ "USplineMeshedComponent_ExtensionBridge", "classUSplineMeshedComponent__ExtensionBridge.html", [
+        [ "USplineMeshedComponent_Extension", "classUSplineMeshedComponent__Extension.html", [
           [ "USplineMeshedComponent_ExtendedToHelix", "classUSplineMeshedComponent__ExtendedToHelix.html", null ],
           [ "USplineMeshedComponent_ExtendedToSinus", "classUSplineMeshedComponent__ExtendedToSinus.html", null ]
         ] ]

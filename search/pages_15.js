@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['with_20component_0',['Use pre-created actor with component',['../baseuse.html#autotoc_md24',1,'']]]
+  ['your_20actor_20in_20bp_0',['Add component to your actor in BP',['../baseuse.html#autotoc_md23',1,'']]]
 ];

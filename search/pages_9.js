@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['hierarchy_0',['Classes hierarchy',['../baseuse.html#autotoc_md28',1,'']]]
+  ['guide_0',['Installation guide',['../install.html',1,'mainpage']]]
 ];

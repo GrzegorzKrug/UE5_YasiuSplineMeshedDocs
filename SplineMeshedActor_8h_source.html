@@ -96,134 +96,100 @@ $(function(){initNavTree('SplineMeshedActor_8h_source.html','',''); });
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * Copyright (c) 2026 Grzegorz Krug.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> * All Rights Reserved.</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;CoreMinimal.h&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="SplineMeshedComponent_8h.html">SplineMeshedComponent.h</a>&quot;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;SplineMeshedActor.generated.h&quot;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;CoreMinimal.h&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="SplineMeshedComponent_8h.html">SplineMeshedComponent.h</a>&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;SplineMeshedActor.generated.h&quot;</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>UCLASS(Blueprintable, BlueprintType)</div>
-<div class="foldopen" id="foldopen00019" data-start="{" data-end="};">
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="classASplineMeshed.html">   19</a></span>class YASIUSPLINEMESHED_API ASplineMeshed : public AActor {</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    GENERATED_BODY()</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    ASplineMeshed();</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>UCLASS(Blueprintable, BlueprintType)</div>
+<div class="foldopen" id="foldopen00021" data-start="{" data-end="};">
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="classASplineMeshed.html">   21</a></span>class YASIUSPLINEMESHED_API ASplineMeshed : public AActor {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    GENERATED_BODY()</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    UPROPERTY(BlueprintReadWrite, VisibleInstanceOnly, Category=<span class="stringliteral">&quot;SplineMeshed&quot;</span>)</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="classASplineMeshed.html#a8bd8b77d15f861fcc342d7d4d8beb35d">   27</a></span>    TObjectPtr&lt;<a class="code hl_class" href="classUSplineMeshedComponent.html">USplineMeshedComponent</a>&gt; <a class="code hl_variable" href="classASplineMeshed.html#a8bd8b77d15f861fcc342d7d4d8beb35d">SplineMeshedComponent</a>;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    UPROPERTY(BlueprintReadWrite, EditAnywhere, Category=<span class="stringliteral">&quot;SplineMeshed&quot;</span>)</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classASplineMeshed.html#a19cc54e20b22f595eaee5a60ae80b8a3">   31</a></span>    TSoftObjectPtr&lt;UStaticMesh&gt; <a class="code hl_variable" href="classASplineMeshed.html#a19cc54e20b22f595eaee5a60ae80b8a3">Mesh</a>;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    UPROPERTY(BlueprintReadWrite, EditAnywhere, Category=<span class="stringliteral">&quot;SplineMeshed&quot;</span>)</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="classASplineMeshed.html#a53d0170100f79cd8c09292316ada2d42">   35</a></span>    <a class="code hl_struct" href="structFSplineMeshedSpawnParams.html">FSplineMeshedSpawnParams</a> <a class="code hl_variable" href="classASplineMeshed.html#a53d0170100f79cd8c09292316ada2d42">SpawnParameters</a>;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    UPROPERTY(BlueprintReadWrite, EditAnywhere, Category=<span class="stringliteral">&quot;SplineMeshed&quot;</span>)</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="classASplineMeshed.html#a26edbb89e09e0d9bd9cd36365f351f46">   39</a></span>    TArray&lt;TObjectPtr&lt;UMaterialInstance&gt;&gt; <a class="code hl_variable" href="classASplineMeshed.html#a26edbb89e09e0d9bd9cd36365f351f46">Materials</a>{};</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="classASplineMeshed.html#a2b07e77da74d6d3c4ded16718cacdc86">   42</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classASplineMeshed.html#a2b07e77da74d6d3c4ded16718cacdc86">OnConstruction</a>( <span class="keyword">const</span> FTransform&amp; Transform ) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#if WITH_EDITOR</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> PostEditMove( <span class="keywordtype">bool</span> bFinished ) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> PostEditChangeProperty( <span class="keyword">struct</span> FPropertyChangedEvent&amp; PropertyChangedEvent ) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    UFUNCTION(BlueprintCallable, CallInEditor, Category=<span class="stringliteral">&quot;SplineMeshed&quot;</span>)</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="classASplineMeshed.html#a2857db442ec614bb375bee5281a2e29e">   52</a></span>    void <a class="code hl_function" href="classASplineMeshed.html#a2857db442ec614bb375bee5281a2e29e">OverlapActorAlongSpline</a>();</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    UPROPERTY(BlueprintReadWrite, EditAnywhere, Category=<span class="stringliteral">&quot;SplineMeshed&quot;</span>)</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <a class="code hl_struct" href="structFSplineDetectionTestParams.html">FSplineDetectionTestParams</a> CollisionParams{};</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordtype">bool</span> wasUpdated = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="comment">// virtual void OnChan</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>};</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    ASplineMeshed();</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    UPROPERTY(BlueprintReadWrite, VisibleInstanceOnly, Category=<span class="stringliteral">&quot;YasiuSpline&quot;</span>)</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classASplineMeshed.html#a8bd8b77d15f861fcc342d7d4d8beb35d">   29</a></span>    TObjectPtr&lt;<a class="code hl_class" href="classUSplineMeshedComponent.html">USplineMeshedComponent</a>&gt; <a class="code hl_variable" href="classASplineMeshed.html#a8bd8b77d15f861fcc342d7d4d8beb35d">SplineMeshedComponent</a>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    UPROPERTY(BlueprintReadWrite, EditAnywhere, Category=<span class="stringliteral">&quot;YasiuSpline&quot;</span>)</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classASplineMeshed.html#a19cc54e20b22f595eaee5a60ae80b8a3">   33</a></span>    TSoftObjectPtr&lt;UStaticMesh&gt; <a class="code hl_variable" href="classASplineMeshed.html#a19cc54e20b22f595eaee5a60ae80b8a3">Mesh</a>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    UPROPERTY(BlueprintReadWrite, EditAnywhere, Category=<span class="stringliteral">&quot;YasiuSpline&quot;</span>)</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classASplineMeshed.html#ab69207a689304ff152544f6f0dbdfa2a">   37</a></span>    <a class="code hl_struct" href="structFSplineMeshedSpawnParams.html">FSplineMeshedSpawnParams</a> <a class="code hl_variable" href="classASplineMeshed.html#ab69207a689304ff152544f6f0dbdfa2a">SpawnParams</a>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    UPROPERTY(BlueprintReadWrite, EditAnywhere, Category=<span class="stringliteral">&quot;YasiuSpline&quot;</span>)</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classASplineMeshed.html#a26edbb89e09e0d9bd9cd36365f351f46">   41</a></span>    TArray&lt;TObjectPtr&lt;UMaterialInstance&gt;&gt; <a class="code hl_variable" href="classASplineMeshed.html#a26edbb89e09e0d9bd9cd36365f351f46">Materials</a>{};</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classASplineMeshed.html#a2b07e77da74d6d3c4ded16718cacdc86">   44</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classASplineMeshed.html#a2b07e77da74d6d3c4ded16718cacdc86">OnConstruction</a>( <span class="keyword">const</span> FTransform&amp; Transform ) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#if WITH_EDITOR</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> PostEditMove( <span class="keywordtype">bool</span> bFinished ) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> PostEditChangeProperty( <span class="keyword">struct</span> FPropertyChangedEvent&amp; PropertyChangedEvent ) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    UFUNCTION(BlueprintCallable, Category=<span class="stringliteral">&quot;YasiuSpline&quot;</span>)</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classASplineMeshed.html#a2857db442ec614bb375bee5281a2e29e">   54</a></span>    void <a class="code hl_function" href="classASplineMeshed.html#a2857db442ec614bb375bee5281a2e29e">OverlapActorAlongSpline</a>();</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    UFUNCTION(BlueprintCallable, Category=<span class="stringliteral">&quot;YasiuSpline&quot;</span>)</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordtype">void</span> CopyFromOtherSpline();</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    UPROPERTY(BlueprintReadWrite, EditAnywhere)</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    TSoftObjectPtr&lt;ASplineMeshed&gt; OtherSplineActor;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    UPROPERTY(BlueprintReadWrite, EditAnywhere, Category=<span class="stringliteral">&quot;YasiuSpline&quot;</span>)</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <a class="code hl_struct" href="structFSplineDetectionTestParams.html">FSplineDetectionTestParams</a> CollisionTestParams{};</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordtype">bool</span> wasUpdated = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>};</div>
 </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>UCLASS(Blueprintable, BlueprintType, Abstract)</div>
-<div class="foldopen" id="foldopen00067" data-start="{" data-end="};">
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="classASplineMeshed__AbstractExtension.html">   67</a></span>class YASIUSPLINEMESHED_API <a class="code hl_class" href="classASplineMeshed__AbstractExtension.html">ASplineMeshed_AbstractExtension</a> : public AActor {</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    GENERATED_BODY()</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="comment">// ASplineMeshed_ExtensionSinus();</span></div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    UPROPERTY(BlueprintReadWrite, EditDefaultsOnly)</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="classASplineMeshed__AbstractExtension.html#a39c4880808b8093d3fe12ba42bc69252">   75</a></span>    TObjectPtr&lt;<a class="code hl_class" href="classUSplineMeshedComponent__ExtensionBridge.html">USplineMeshedComponent_ExtensionBridge</a>&gt; <a class="code hl_variable" href="classASplineMeshed__AbstractExtension.html#a39c4880808b8093d3fe12ba42bc69252">SplineMeshedComponent</a>;</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span></div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    UPROPERTY(BlueprintReadWrite, EditAnywhere, Category=<span class="stringliteral">&quot;SplineMeshed&quot;</span>)</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="classASplineMeshed__AbstractExtension.html#af68a5bf64f555e8c8e73ae69139d09ca">   79</a></span>    TSoftObjectPtr&lt;UStaticMesh&gt; <a class="code hl_variable" href="classASplineMeshed__AbstractExtension.html#af68a5bf64f555e8c8e73ae69139d09ca">Mesh</a>;</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span></div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    UPROPERTY(BlueprintReadWrite, EditAnywhere, Category=<span class="stringliteral">&quot;SplineMeshed&quot;</span>)</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="classASplineMeshed__AbstractExtension.html#a0b204e8a155d8d40952c8d999663bd10">   83</a></span>    <a class="code hl_struct" href="structFSplineMeshedSpawnParams.html">FSplineMeshedSpawnParams</a> <a class="code hl_variable" href="classASplineMeshed__AbstractExtension.html#a0b204e8a155d8d40952c8d999663bd10">SplineParameters</a>{};</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span></div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    UPROPERTY(BlueprintReadWrite, EditAnywhere, Category=<span class="stringliteral">&quot;SplineMeshed&quot;</span>)</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="classASplineMeshed__AbstractExtension.html#aedbaea92a33f0c5bc334220ea598da15">   87</a></span>    TArray&lt;TObjectPtr&lt;UMaterialInstance&gt;&gt; <a class="code hl_variable" href="classASplineMeshed__AbstractExtension.html#aedbaea92a33f0c5bc334220ea598da15">Materials</a>;</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span></div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    UPROPERTY(BlueprintReadWrite, EditAnywhere, Category=<span class="stringliteral">&quot;SplineMeshed&quot;</span>)</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="classASplineMeshed__AbstractExtension.html#a5bb138552a38556941ca95e849376412">   91</a></span>    <a class="code hl_struct" href="structFSplineMeshed__ExtendedParams.html">FSplineMeshed_ExtendedParams</a> <a class="code hl_variable" href="classASplineMeshed__AbstractExtension.html#a5bb138552a38556941ca95e849376412">ExtendedActorParams</a>;</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span></div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="classASplineMeshed__AbstractExtension.html#affa48fc59a0bc98c380a32bf82af4e6f">   94</a></span>    virtual <span class="keywordtype">void</span> <a class="code hl_function" href="classASplineMeshed__AbstractExtension.html#affa48fc59a0bc98c380a32bf82af4e6f">OnConstruction</a>( const FTransform&amp; Transform ) override;</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="preprocessor">#if WITH_EDITOR</span></div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> PostEditMove( <span class="keywordtype">bool</span> bFinished ) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> PostEditChangeProperty( <span class="keyword">struct</span> FPropertyChangedEvent&amp; PropertyChangedEvent ) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span></div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    UFUNCTION(BlueprintCallable, CallInEditor, Category=<span class="stringliteral">&quot;SplineMeshed&quot;</span>)</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="classASplineMeshed__AbstractExtension.html#ab5abe91194bf55234cdac9222e4ecd1b">  104</a></span>    void <a class="code hl_function" href="classASplineMeshed__AbstractExtension.html#ab5abe91194bf55234cdac9222e4ecd1b">OverlapActorAlongSpline</a>();</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    UPROPERTY(BlueprintReadWrite, EditAnywhere, Category=<span class="stringliteral">&quot;SplineMeshed&quot;</span>)</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <a class="code hl_struct" href="structFSplineDetectionTestParams.html">FSplineDetectionTestParams</a> CollisionParams{};</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="keywordtype">bool</span> wasUpdated = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>};</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>UCLASS(Blueprintable, BlueprintType, Abstract)</div>
+<div class="foldopen" id="foldopen00074" data-start="{" data-end="};">
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="classASplineMeshed__AbstractExtension.html">   74</a></span>class YASIUSPLINEMESHED_API ASplineMeshed_AbstractExtension : public ASplineMeshed {</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    GENERATED_BODY()</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    ASplineMeshed_AbstractExtension() {};</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>};</div>
 </div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span></div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>UCLASS(Blueprintable, BlueprintType)</div>
-<div class="foldopen" id="foldopen00118" data-start="{" data-end="};">
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="classASplineMeshed__ExtensionSinus.html">  118</a></span>class YASIUSPLINEMESHED_API ASplineMeshed_ExtensionSinus : public <a class="code hl_class" href="classASplineMeshed__AbstractExtension.html">ASplineMeshed_AbstractExtension</a> {</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    GENERATED_BODY()</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    ASplineMeshed_ExtensionSinus();</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>};</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>UCLASS(Blueprintable, BlueprintType)</div>
+<div class="foldopen" id="foldopen00088" data-start="{" data-end="};">
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="classASplineMeshed__ExtensionSinus.html">   88</a></span>class YASIUSPLINEMESHED_API ASplineMeshed_ExtensionSinus : public ASplineMeshed_AbstractExtension {</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    GENERATED_BODY()</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    ASplineMeshed_ExtensionSinus();</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>};</div>
 </div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span></div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>UCLASS(Blueprintable, BlueprintType)</div>
-<div class="foldopen" id="foldopen00130" data-start="{" data-end="};">
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="classASplineMeshed__ExtensionHelix.html">  130</a></span>class YASIUSPLINEMESHED_API ASplineMeshed_ExtensionHelix : public <a class="code hl_class" href="classASplineMeshed__AbstractExtension.html">ASplineMeshed_AbstractExtension</a> {</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    GENERATED_BODY()</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    ASplineMeshed_ExtensionHelix();</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>};</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>UCLASS(Blueprintable, BlueprintType)</div>
+<div class="foldopen" id="foldopen00100" data-start="{" data-end="};">
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="classASplineMeshed__ExtensionHelix.html">  100</a></span>class YASIUSPLINEMESHED_API ASplineMeshed_ExtensionHelix : public ASplineMeshed_AbstractExtension {</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    GENERATED_BODY()</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    ASplineMeshed_ExtensionHelix();</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>};</div>
 </div>
 <div class="ttc" id="aSplineMeshedComponent_8h_html"><div class="ttname"><a href="SplineMeshedComponent_8h.html">SplineMeshedComponent.h</a></div></div>
-<div class="ttc" id="aclassASplineMeshed__AbstractExtension_html"><div class="ttname"><a href="classASplineMeshed__AbstractExtension.html">ASplineMeshed_AbstractExtension</a></div><div class="ttdoc">Base actor class with attached component, uses extended component USplineMeshed_ExtenstionSinus.</div><div class="ttdef"><b>Definition</b> SplineMeshedActor.h:67</div></div>
-<div class="ttc" id="aclassASplineMeshed__AbstractExtension_html_a0b204e8a155d8d40952c8d999663bd10"><div class="ttname"><a href="classASplineMeshed__AbstractExtension.html#a0b204e8a155d8d40952c8d999663bd10">ASplineMeshed_AbstractExtension::SplineParameters</a></div><div class="ttdeci">FSplineMeshedSpawnParams SplineParameters</div><div class="ttdoc">Common parameters used for spawning.</div><div class="ttdef"><b>Definition</b> SplineMeshedActor.h:83</div></div>
-<div class="ttc" id="aclassASplineMeshed__AbstractExtension_html_a39c4880808b8093d3fe12ba42bc69252"><div class="ttname"><a href="classASplineMeshed__AbstractExtension.html#a39c4880808b8093d3fe12ba42bc69252">ASplineMeshed_AbstractExtension::SplineMeshedComponent</a></div><div class="ttdeci">TObjectPtr&lt; USplineMeshedComponent_ExtensionBridge &gt; SplineMeshedComponent</div><div class="ttdoc">Attached child class of USplineMeshedComponent.</div><div class="ttdef"><b>Definition</b> SplineMeshedActor.h:75</div></div>
-<div class="ttc" id="aclassASplineMeshed__AbstractExtension_html_a5bb138552a38556941ca95e849376412"><div class="ttname"><a href="classASplineMeshed__AbstractExtension.html#a5bb138552a38556941ca95e849376412">ASplineMeshed_AbstractExtension::ExtendedActorParams</a></div><div class="ttdeci">FSplineMeshed_ExtendedParams ExtendedActorParams</div><div class="ttdoc">Params used for spline extension.</div><div class="ttdef"><b>Definition</b> SplineMeshedActor.h:91</div></div>
-<div class="ttc" id="aclassASplineMeshed__AbstractExtension_html_ab5abe91194bf55234cdac9222e4ecd1b"><div class="ttname"><a href="classASplineMeshed__AbstractExtension.html#ab5abe91194bf55234cdac9222e4ecd1b">ASplineMeshed_AbstractExtension::OverlapActorAlongSpline</a></div><div class="ttdeci">void OverlapActorAlongSpline()</div><div class="ttdoc">Check if any object is overlapping spline location.</div></div>
-<div class="ttc" id="aclassASplineMeshed__AbstractExtension_html_aedbaea92a33f0c5bc334220ea598da15"><div class="ttname"><a href="classASplineMeshed__AbstractExtension.html#aedbaea92a33f0c5bc334220ea598da15">ASplineMeshed_AbstractExtension::Materials</a></div><div class="ttdeci">TArray&lt; TObjectPtr&lt; UMaterialInstance &gt; &gt; Materials</div><div class="ttdoc">Materials list used to apply on meshes to corresponding index.</div><div class="ttdef"><b>Definition</b> SplineMeshedActor.h:87</div></div>
-<div class="ttc" id="aclassASplineMeshed__AbstractExtension_html_af68a5bf64f555e8c8e73ae69139d09ca"><div class="ttname"><a href="classASplineMeshed__AbstractExtension.html#af68a5bf64f555e8c8e73ae69139d09ca">ASplineMeshed_AbstractExtension::Mesh</a></div><div class="ttdeci">TSoftObjectPtr&lt; UStaticMesh &gt; Mesh</div><div class="ttdoc">Desired mesh used to spawn along spline.</div><div class="ttdef"><b>Definition</b> SplineMeshedActor.h:79</div></div>
-<div class="ttc" id="aclassASplineMeshed__AbstractExtension_html_affa48fc59a0bc98c380a32bf82af4e6f"><div class="ttname"><a href="classASplineMeshed__AbstractExtension.html#affa48fc59a0bc98c380a32bf82af4e6f">ASplineMeshed_AbstractExtension::OnConstruction</a></div><div class="ttdeci">virtual void OnConstruction(const FTransform &amp;Transform) override</div><div class="ttdoc">Function that spawns meshes after any change or spawn.</div></div>
-<div class="ttc" id="aclassASplineMeshed_html_a19cc54e20b22f595eaee5a60ae80b8a3"><div class="ttname"><a href="classASplineMeshed.html#a19cc54e20b22f595eaee5a60ae80b8a3">ASplineMeshed::Mesh</a></div><div class="ttdeci">TSoftObjectPtr&lt; UStaticMesh &gt; Mesh</div><div class="ttdoc">Mesh used to spawn along spline.</div><div class="ttdef"><b>Definition</b> SplineMeshedActor.h:31</div></div>
-<div class="ttc" id="aclassASplineMeshed_html_a26edbb89e09e0d9bd9cd36365f351f46"><div class="ttname"><a href="classASplineMeshed.html#a26edbb89e09e0d9bd9cd36365f351f46">ASplineMeshed::Materials</a></div><div class="ttdeci">TArray&lt; TObjectPtr&lt; UMaterialInstance &gt; &gt; Materials</div><div class="ttdoc">Materials list used to apply on meshes to corresponding index.</div><div class="ttdef"><b>Definition</b> SplineMeshedActor.h:39</div></div>
+<div class="ttc" id="aclassASplineMeshed_html_a19cc54e20b22f595eaee5a60ae80b8a3"><div class="ttname"><a href="classASplineMeshed.html#a19cc54e20b22f595eaee5a60ae80b8a3">ASplineMeshed::Mesh</a></div><div class="ttdeci">TSoftObjectPtr&lt; UStaticMesh &gt; Mesh</div><div class="ttdoc">Mesh used to spawn along spline.</div><div class="ttdef"><b>Definition</b> SplineMeshedActor.h:33</div></div>
+<div class="ttc" id="aclassASplineMeshed_html_a26edbb89e09e0d9bd9cd36365f351f46"><div class="ttname"><a href="classASplineMeshed.html#a26edbb89e09e0d9bd9cd36365f351f46">ASplineMeshed::Materials</a></div><div class="ttdeci">TArray&lt; TObjectPtr&lt; UMaterialInstance &gt; &gt; Materials</div><div class="ttdoc">Materials list used to apply on meshes to corresponding index.</div><div class="ttdef"><b>Definition</b> SplineMeshedActor.h:41</div></div>
 <div class="ttc" id="aclassASplineMeshed_html_a2857db442ec614bb375bee5281a2e29e"><div class="ttname"><a href="classASplineMeshed.html#a2857db442ec614bb375bee5281a2e29e">ASplineMeshed::OverlapActorAlongSpline</a></div><div class="ttdeci">void OverlapActorAlongSpline()</div><div class="ttdoc">Check if any object is overlapping spline location.</div></div>
 <div class="ttc" id="aclassASplineMeshed_html_a2b07e77da74d6d3c4ded16718cacdc86"><div class="ttname"><a href="classASplineMeshed.html#a2b07e77da74d6d3c4ded16718cacdc86">ASplineMeshed::OnConstruction</a></div><div class="ttdeci">virtual void OnConstruction(const FTransform &amp;Transform) override</div><div class="ttdoc">Function that spawns meshes after any change or spawn.</div></div>
-<div class="ttc" id="aclassASplineMeshed_html_a53d0170100f79cd8c09292316ada2d42"><div class="ttname"><a href="classASplineMeshed.html#a53d0170100f79cd8c09292316ada2d42">ASplineMeshed::SpawnParameters</a></div><div class="ttdeci">FSplineMeshedSpawnParams SpawnParameters</div><div class="ttdoc">Parameters used for mesh spawning.</div><div class="ttdef"><b>Definition</b> SplineMeshedActor.h:35</div></div>
-<div class="ttc" id="aclassASplineMeshed_html_a8bd8b77d15f861fcc342d7d4d8beb35d"><div class="ttname"><a href="classASplineMeshed.html#a8bd8b77d15f861fcc342d7d4d8beb35d">ASplineMeshed::SplineMeshedComponent</a></div><div class="ttdeci">TObjectPtr&lt; USplineMeshedComponent &gt; SplineMeshedComponent</div><div class="ttdoc">Spline meshed component.</div><div class="ttdef"><b>Definition</b> SplineMeshedActor.h:27</div></div>
-<div class="ttc" id="aclassUSplineMeshedComponent__ExtensionBridge_html"><div class="ttname"><a href="classUSplineMeshedComponent__ExtensionBridge.html">USplineMeshedComponent_ExtensionBridge</a></div><div class="ttdoc">Abstract class that uses bridge pattern.</div><div class="ttdef"><b>Definition</b> SplineMeshedComponent.h:865</div></div>
-<div class="ttc" id="aclassUSplineMeshedComponent_html"><div class="ttname"><a href="classUSplineMeshedComponent.html">USplineMeshedComponent</a></div><div class="ttdoc">Core component that handles meshes spawning along spline.</div><div class="ttdef"><b>Definition</b> SplineMeshedComponent.h:503</div></div>
+<div class="ttc" id="aclassASplineMeshed_html_a8bd8b77d15f861fcc342d7d4d8beb35d"><div class="ttname"><a href="classASplineMeshed.html#a8bd8b77d15f861fcc342d7d4d8beb35d">ASplineMeshed::SplineMeshedComponent</a></div><div class="ttdeci">TObjectPtr&lt; USplineMeshedComponent &gt; SplineMeshedComponent</div><div class="ttdoc">Spline meshed component.</div><div class="ttdef"><b>Definition</b> SplineMeshedActor.h:29</div></div>
+<div class="ttc" id="aclassASplineMeshed_html_ab69207a689304ff152544f6f0dbdfa2a"><div class="ttname"><a href="classASplineMeshed.html#ab69207a689304ff152544f6f0dbdfa2a">ASplineMeshed::SpawnParams</a></div><div class="ttdeci">FSplineMeshedSpawnParams SpawnParams</div><div class="ttdoc">Parameters used for mesh spawning.</div><div class="ttdef"><b>Definition</b> SplineMeshedActor.h:37</div></div>
+<div class="ttc" id="aclassUSplineMeshedComponent_html"><div class="ttname"><a href="classUSplineMeshedComponent.html">USplineMeshedComponent</a></div><div class="ttdoc">Core component that handles meshes spawning along spline.</div><div class="ttdef"><b>Definition</b> SplineMeshedComponent.h:515</div></div>
 <div class="ttc" id="astructFSplineDetectionTestParams_html"><div class="ttname"><a href="structFSplineDetectionTestParams.html">FSplineDetectionTestParams</a></div><div class="ttdoc">Params used for collision check along spline.</div><div class="ttdef"><b>Definition</b> SplineMeshedComponent.h:372</div></div>
 <div class="ttc" id="astructFSplineMeshedSpawnParams_html"><div class="ttname"><a href="structFSplineMeshedSpawnParams.html">FSplineMeshedSpawnParams</a></div><div class="ttdoc">Parameters used to customize mesh spawn along spline.</div><div class="ttdef"><b>Definition</b> SplineMeshedComponent.h:229</div></div>
-<div class="ttc" id="astructFSplineMeshed__ExtendedParams_html"><div class="ttname"><a href="structFSplineMeshed__ExtendedParams.html">FSplineMeshed_ExtendedParams</a></div><div class="ttdoc">Params used in subclasses USplineMeshedComponent_ExtensionBridge.</div><div class="ttdef"><b>Definition</b> SplineMeshedComponent.h:831</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

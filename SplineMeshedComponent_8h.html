@@ -135,9 +135,9 @@ Classes</h2></td></tr>
 <tr class="memitem:USplineMeshedComponent" id="r_USplineMeshedComponent"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="classUSplineMeshedComponent.html">USplineMeshedComponent</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Core component that handles meshes spawning along spline.  <a href="classUSplineMeshedComponent.html#details">More...</a><br /></td></tr>
 <tr class="memitem:FSplineMeshed_5FExtendedParams" id="r_FSplineMeshed_5FExtendedParams"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structFSplineMeshed__ExtendedParams.html">FSplineMeshed_ExtendedParams</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Params used in subclasses <a class="el" href="classUSplineMeshedComponent__ExtensionBridge.html" title="USplineMeshedComponent_ExtensionBridge">USplineMeshedComponent_ExtensionBridge</a>.  <a href="structFSplineMeshed__ExtendedParams.html#details">More...</a><br /></td></tr>
-<tr class="memitem:USplineMeshedComponent_5FExtensionBridge" id="r_USplineMeshedComponent_5FExtensionBridge"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="classUSplineMeshedComponent__ExtensionBridge.html">USplineMeshedComponent_ExtensionBridge</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract class that uses bridge pattern.  <a href="classUSplineMeshedComponent__ExtensionBridge.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Params used in subclasses USplineMeshedComponent_ExtensionBridge.  <a href="structFSplineMeshed__ExtendedParams.html#details">More...</a><br /></td></tr>
+<tr class="memitem:USplineMeshedComponent_5FExtension" id="r_USplineMeshedComponent_5FExtension"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="classUSplineMeshedComponent__Extension.html">USplineMeshedComponent_Extension</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract class that uses bridge pattern.  <a href="classUSplineMeshedComponent__Extension.html#details">More...</a><br /></td></tr>
 <tr class="memitem:USplineMeshedComponent_5FExtendedToSinus" id="r_USplineMeshedComponent_5FExtendedToSinus"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="classUSplineMeshedComponent__ExtendedToSinus.html">USplineMeshedComponent_ExtendedToSinus</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modified <a class="el" href="classUSplineMeshedComponent.html" title="USplineMeshedComponent">USplineMeshedComponent</a> that spawns meshes in zigzag/sinus pattern.  <a href="classUSplineMeshedComponent__ExtendedToSinus.html#details">More...</a><br /></td></tr>
 <tr class="memitem:USplineMeshedComponent_5FExtendedToHelix" id="r_USplineMeshedComponent_5FExtendedToHelix"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="classUSplineMeshedComponent__ExtendedToHelix.html">USplineMeshedComponent_ExtendedToHelix</a></td></tr>
@@ -158,6 +158,7 @@ Enumerations</h2></td></tr>
 <tr class="memitem:ae53e183930e650f062a4b1227d8da655" id="r_ae53e183930e650f062a4b1227d8da655"><td class="memItemLeft">enum class &#160;</td><td class="memItemRight"><a class="el" href="#ae53e183930e650f062a4b1227d8da655">ESplineMeshedSpawnMode</a> : uint8 { <a class="el" href="#ae53e183930e650f062a4b1227d8da655a296c6c67305acf3622ff14fe390fe3a1">FullSizeOnly</a>
 , <a class="el" href="#ae53e183930e650f062a4b1227d8da655a2b5d34458ec23ea904d8f2632d220675">StretchOnlyLast</a>
 , <a class="el" href="#ae53e183930e650f062a4b1227d8da655a9acef336480c41367ee5b4ce2c4df0c2">MinimalStretchOnAll</a>
+, <a class="el" href="#ae53e183930e650f062a4b1227d8da655a4709407690faa5e1d54c5afb175f19d0">ItemPerSegment</a>
  }</td></tr>
 <tr class="memdesc:ae53e183930e650f062a4b1227d8da655"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method that decides how many meshes spawn.  <a href="#ae53e183930e650f062a4b1227d8da655">More...</a><br /></td></tr>
 </table>
@@ -189,6 +190,8 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="ae53e183930e650f062a4b1227d8da655a2b5d34458ec23ea904d8f2632d220675" name="ae53e183930e650f062a4b1227d8da655a2b5d34458ec23ea904d8f2632d220675"></a>StretchOnlyLast&#160;</td><td class="fielddoc"><p>Last mesh will stretch to fit to end. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ae53e183930e650f062a4b1227d8da655a9acef336480c41367ee5b4ce2c4df0c2" name="ae53e183930e650f062a4b1227d8da655a9acef336480c41367ee5b4ce2c4df0c2"></a>MinimalStretchOnAll&#160;</td><td class="fielddoc"><p>Fit segments from start to end. Applies minimal and equal stretch to all segments. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae53e183930e650f062a4b1227d8da655a4709407690faa5e1d54c5afb175f19d0" name="ae53e183930e650f062a4b1227d8da655a4709407690faa5e1d54c5afb175f19d0"></a>ItemPerSegment&#160;</td><td class="fielddoc"><p>Places mesh object to fill single segment from point to point. </p>
 </td></tr>
 </table>
 

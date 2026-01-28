@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['vectorfrom2points_0',['VectorFrom2Points',['../classUSplineMeshedComponent.html#ac0b770dbc1fedb9b4f216fa7e616c0d5',1,'USplineMeshedComponent']]]
+  ['placemeshesonspline_0',['PlaceMeshesOnSpline',['../classUSplineMeshedComponent.html#a6c92fe0c698e10c7a930b38e761ea327',1,'USplineMeshedComponent']]]
 ];

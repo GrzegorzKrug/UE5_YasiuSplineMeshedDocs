@@ -1,7 +1,7 @@
 var annotated_dup =
 [
     [ "ASplineMeshed", "classASplineMeshed.html", "classASplineMeshed" ],
-    [ "ASplineMeshed_AbstractExtension", "classASplineMeshed__AbstractExtension.html", "classASplineMeshed__AbstractExtension" ],
+    [ "ASplineMeshed_AbstractExtension", "classASplineMeshed__AbstractExtension.html", null ],
     [ "ASplineMeshed_ExtensionHelix", "classASplineMeshed__ExtensionHelix.html", null ],
     [ "ASplineMeshed_ExtensionSinus", "classASplineMeshed__ExtensionSinus.html", null ],
     [ "FSplineDebugParams", "structFSplineDebugParams.html", "structFSplineDebugParams" ],
@@ -16,8 +16,9 @@ var annotated_dup =
     [ "FSplineSinusParams", "structFSplineSinusParams.html", "structFSplineSinusParams" ],
     [ "FSplineSmoothParams", "structFSplineSmoothParams.html", "structFSplineSmoothParams" ],
     [ "FVectorRange", "structFVectorRange.html", "structFVectorRange" ],
+    [ "USpline_RNG", "classUSpline__RNG.html", "classUSpline__RNG" ],
     [ "USplineMeshedComponent", "classUSplineMeshedComponent.html", "classUSplineMeshedComponent" ],
     [ "USplineMeshedComponent_ExtendedToHelix", "classUSplineMeshedComponent__ExtendedToHelix.html", null ],
     [ "USplineMeshedComponent_ExtendedToSinus", "classUSplineMeshedComponent__ExtendedToSinus.html", null ],
-    [ "USplineMeshedComponent_ExtensionBridge", "classUSplineMeshedComponent__ExtensionBridge.html", "classUSplineMeshedComponent__ExtensionBridge" ]
+    [ "USplineMeshedComponent_Extension", "classUSplineMeshedComponent__Extension.html", "classUSplineMeshedComponent__Extension" ]
 ];

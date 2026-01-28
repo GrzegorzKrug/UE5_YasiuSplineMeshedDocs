@@ -116,27 +116,35 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a3a6a8646c09d16ad8e4272e166e187f2" id="r_a3a6a8646c09d16ad8e4272e166e187f2"><td class="memItemLeft"><a id="a3a6a8646c09d16ad8e4272e166e187f2" name="a3a6a8646c09d16ad8e4272e166e187f2"></a>
 TSoftObjectPtr&lt; UStaticMesh &gt;&#160;</td><td class="memItemRight"><b>TestMesh</b> {}</td></tr>
 <tr class="memdesc:a3a6a8646c09d16ad8e4272e166e187f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mesh used for collision test. <br /></td></tr>
+<tr class="memitem:ab84505ea1e776b15d17d75252bf7347e" id="r_ab84505ea1e776b15d17d75252bf7347e"><td class="memItemLeft">FTransform&#160;</td><td class="memItemRight"><a class="el" href="#ab84505ea1e776b15d17d75252bf7347e">MeshTransform</a> {}</td></tr>
+<tr class="memdesc:ab84505ea1e776b15d17d75252bf7347e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Relative transform for collision check.  <br /></td></tr>
+<tr class="memitem:a3fa8d7490b3f5e45d9e048e335ab6579" id="r_a3fa8d7490b3f5e45d9e048e335ab6579"><td class="memItemLeft"><a id="a3fa8d7490b3f5e45d9e048e335ab6579" name="a3fa8d7490b3f5e45d9e048e335ab6579"></a>
+TArray&lt; TEnumAsByte&lt; ECollisionChannel &gt; &gt;&#160;</td><td class="memItemRight"><b>ObjectTypes</b> {ECollisionChannel::ECC_WorldStatic}</td></tr>
+<tr class="memdesc:a3fa8d7490b3f5e45d9e048e335ab6579"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of collision channels for testing in DetectObjectsAlongSpline. <br /></td></tr>
 <tr class="memitem:afaf19d0046790f77dab5becb00f68ed9" id="r_afaf19d0046790f77dab5becb00f68ed9"><td class="memItemLeft"><a id="afaf19d0046790f77dab5becb00f68ed9" name="afaf19d0046790f77dab5becb00f68ed9"></a>
 float&#160;</td><td class="memItemRight"><b>StepDistance</b> = 50</td></tr>
 <tr class="memdesc:afaf19d0046790f77dab5becb00f68ed9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Distance between collision checks (mesh size is ignored). <br /></td></tr>
-<tr class="memitem:ab84505ea1e776b15d17d75252bf7347e" id="r_ab84505ea1e776b15d17d75252bf7347e"><td class="memItemLeft">FTransform&#160;</td><td class="memItemRight"><a class="el" href="#ab84505ea1e776b15d17d75252bf7347e">MeshTransform</a> {}</td></tr>
-<tr class="memdesc:ab84505ea1e776b15d17d75252bf7347e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Relative transform for collision check.  <br /></td></tr>
+<tr class="memitem:a12f76661faec5302980b3a0de9d8910a" id="r_a12f76661faec5302980b3a0de9d8910a"><td class="memItemLeft"><a id="a12f76661faec5302980b3a0de9d8910a" name="a12f76661faec5302980b3a0de9d8910a"></a>
+<a class="el" href="SplineMeshedComponent_8h.html#a9135761ea76014f745be989347f84098">ESplineRotateMode</a>&#160;</td><td class="memItemRight"><b>RotationMethod</b> {}</td></tr>
+<tr class="memdesc:a12f76661faec5302980b3a0de9d8910a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotation method related to mesh spawn. <br /></td></tr>
 <tr class="memitem:a0339d5d405025b425072707cfef68ccd" id="r_a0339d5d405025b425072707cfef68ccd"><td class="memItemLeft"><a id="a0339d5d405025b425072707cfef68ccd" name="a0339d5d405025b425072707cfef68ccd"></a>
 bool&#160;</td><td class="memItemRight"><b>CenterMesh</b> {false}</td></tr>
 <tr class="memdesc:a0339d5d405025b425072707cfef68ccd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Should mesh be centered or use origin offset. <br /></td></tr>
 <tr class="memitem:a10206d9fd5bc07087f9793e541835a03" id="r_a10206d9fd5bc07087f9793e541835a03"><td class="memItemLeft"><a id="a10206d9fd5bc07087f9793e541835a03" name="a10206d9fd5bc07087f9793e541835a03"></a>
 bool&#160;</td><td class="memItemRight"><b>SelfIgnore</b> {true}</td></tr>
 <tr class="memdesc:a10206d9fd5bc07087f9793e541835a03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Should collision test ignore self components. <br /></td></tr>
-<tr class="memitem:a3fa8d7490b3f5e45d9e048e335ab6579" id="r_a3fa8d7490b3f5e45d9e048e335ab6579"><td class="memItemLeft"><a id="a3fa8d7490b3f5e45d9e048e335ab6579" name="a3fa8d7490b3f5e45d9e048e335ab6579"></a>
-TArray&lt; TEnumAsByte&lt; ECollisionChannel &gt; &gt;&#160;</td><td class="memItemRight"><b>ObjectTypes</b> {ECollisionChannel::ECC_WorldStatic}</td></tr>
-<tr class="memdesc:a3fa8d7490b3f5e45d9e048e335ab6579"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of collision channels for testing in DetectObjectsAlongSpline. <br /></td></tr>
+<tr class="memitem:acdc68e3df7fbd371c4330dc09ee0c5bf" id="r_acdc68e3df7fbd371c4330dc09ee0c5bf"><td class="memItemLeft"><a id="acdc68e3df7fbd371c4330dc09ee0c5bf" name="acdc68e3df7fbd371c4330dc09ee0c5bf"></a>
+FVector&#160;</td><td class="memItemRight"><b>UpVector</b> {0, 0, 1}</td></tr>
+<tr class="memdesc:acdc68e3df7fbd371c4330dc09ee0c5bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Up vector related to <span class="tt">Constant</span> rotation mode In RotationMethod. <br /></td></tr>
 <tr class="memitem:a21f7ee8d05284e6a5b75f2e1884850ef" id="r_a21f7ee8d05284e6a5b75f2e1884850ef"><td class="memItemLeft"><a id="a21f7ee8d05284e6a5b75f2e1884850ef" name="a21f7ee8d05284e6a5b75f2e1884850ef"></a>
 bool&#160;</td><td class="memItemRight"><b>StopAtFirstCollision</b> = true</td></tr>
 <tr class="memdesc:a21f7ee8d05284e6a5b75f2e1884850ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop iterating at first valid collision. <br /></td></tr>
 <tr class="memitem:aabc368b541ca2d87ca80d298fb7ad1b4" id="r_aabc368b541ca2d87ca80d298fb7ad1b4"><td class="memItemLeft"><a id="aabc368b541ca2d87ca80d298fb7ad1b4" name="aabc368b541ca2d87ca80d298fb7ad1b4"></a>
 bool&#160;</td><td class="memItemRight"><b>UseSphere</b> = false</td></tr>
 <tr class="memdesc:aabc368b541ca2d87ca80d298fb7ad1b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use sphere instead of bounding box. <br /></td></tr>
-<tr class="memitem:aa5fe9ec577122ebfb16eba8d494191ea" id="r_aa5fe9ec577122ebfb16eba8d494191ea"><td class="memItemLeft">FVector&#160;</td><td class="memItemRight"><a class="el" href="#aa5fe9ec577122ebfb16eba8d494191ea">ShapeSize</a> {1, 1, 1}</td></tr>
+<tr class="memitem:aa5fe9ec577122ebfb16eba8d494191ea" id="r_aa5fe9ec577122ebfb16eba8d494191ea"><td class="memItemLeft"><a id="aa5fe9ec577122ebfb16eba8d494191ea" name="aa5fe9ec577122ebfb16eba8d494191ea"></a>
+FVector&#160;</td><td class="memItemRight"><b>ShapeSize</b> {1, 1, 1}</td></tr>
+<tr class="memdesc:aa5fe9ec577122ebfb16eba8d494191ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run time variable evaluated and passed to detection function Box Shape size, For Sphere X is size. (Extent or Radius). <br /></td></tr>
 <tr class="memitem:a597d0a03f5041c7cc8b2fe2015f7800e" id="r_a597d0a03f5041c7cc8b2fe2015f7800e"><td class="memItemLeft"><a id="a597d0a03f5041c7cc8b2fe2015f7800e" name="a597d0a03f5041c7cc8b2fe2015f7800e"></a>
 bool&#160;</td><td class="memItemRight"><b>FirstOverlapWithingSplineLimits</b> = true</td></tr>
 <tr class="memdesc:a597d0a03f5041c7cc8b2fe2015f7800e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compensates boundary dimension to not extend beyond spline point, otherwise half of mesh will extend. <br /></td></tr>
@@ -161,6 +169,9 @@ bool&#160;</td><td class="memItemRight"><b>SkipNarrowPhase</b> {false}</td></tr>
 <tr class="memitem:a4b7967b3bc6e7df28a6a39a783d0f746" id="r_a4b7967b3bc6e7df28a6a39a783d0f746"><td class="memItemLeft"><a id="a4b7967b3bc6e7df28a6a39a783d0f746" name="a4b7967b3bc6e7df28a6a39a783d0f746"></a>
 <a class="el" href="structFSplineDebugParams.html">FSplineDebugParams</a>&#160;</td><td class="memItemRight"><b>DebugParams</b> {}</td></tr>
 <tr class="memdesc:a4b7967b3bc6e7df28a6a39a783d0f746"><td class="mdescLeft">&#160;</td><td class="mdescRight">Debug parms used to show overlap boxes. <br /></td></tr>
+<tr class="memitem:aea7eac78e3c1ed53dd52fdb115940b5b" id="r_aea7eac78e3c1ed53dd52fdb115940b5b"><td class="memItemLeft"><a id="aea7eac78e3c1ed53dd52fdb115940b5b" name="aea7eac78e3c1ed53dd52fdb115940b5b"></a>
+FVector&#160;</td><td class="memItemRight"><b>locationOffset</b> {}</td></tr>
+<tr class="memdesc:aea7eac78e3c1ed53dd52fdb115940b5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Temporary offset used for computing location on spline. <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Params used for collision check along spline. </p>
@@ -180,21 +191,6 @@ bool&#160;</td><td class="memItemRight"><b>SkipNarrowPhase</b> {false}</td></tr>
 
 <p>Relative transform for collision check. </p>
 <p>Sphere is scaled by X only. Translation is not affected by scale. Translation is relative to spline direction. </p>
-
-</div>
-</div>
-<a id="aa5fe9ec577122ebfb16eba8d494191ea" name="aa5fe9ec577122ebfb16eba8d494191ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa5fe9ec577122ebfb16eba8d494191ea">&#9670;&#160;</a></span>ShapeSize</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">FVector FSplineDetectionTestParams::ShapeSize {1, 1, 1}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Size evaluated at run for given mesh For Sphere use X </p>
 
 </div>
 </div>
