@@ -31,7 +31,7 @@ TObjectPtr<USplineMeshedComponent> SplineMeshCmp;
 ## Classes hierarchy 
 Core component:
 - \ref USplineMeshedComponent : core component
-- \ref USplineMeshedComponent_ExtensionBridge : modified component
+- \ref USplineMeshedComponent_Extension : modified component
 
 Classes:
 - \ref ASplineMeshed : Actor with core component
@@ -42,6 +42,6 @@ Classes:
 # Extending functionality
 Class has exposed function to use and override modification of every mesh for custom desire.
 - Create child class of any component:
-  - Override function [OnMeshPlace](@ref USplineMeshedComponent::OnMeshPlace) (for spawn customization)
-  - Override function [Detection](@ref USplineMeshedComponent::DetectObjectsAlongSpline) (for collision detection)
+  - Override function [OnMeshSpawn](@ref USplineMeshedComponent::OnMeshSpawn) (for spawn customization)
+  - Override function [Detection](@ref USplineMeshedComponent::DetectionFunction) (for collision detection)
 
