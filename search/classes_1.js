@@ -11,5 +11,6 @@ var searchData=
   ['fsplinerandomness_8',['FSplineRandomness',['../structFSplineRandomness.html',1,'']]],
   ['fsplinesinusparams_9',['FSplineSinusParams',['../structFSplineSinusParams.html',1,'']]],
   ['fsplinesmoothparams_10',['FSplineSmoothParams',['../structFSplineSmoothParams.html',1,'']]],
-  ['fvectorrange_11',['FVectorRange',['../structFVectorRange.html',1,'']]]
+  ['fvectorrange_11',['FVectorRange',['../structFVectorRange.html',1,'']]],
+  ['fyasiusplinemeshparams_12',['FYasiuSplineMeshParams',['../structFYasiuSplineMeshParams.html',1,'']]]
 ];

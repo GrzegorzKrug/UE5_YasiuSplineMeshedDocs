@@ -132,6 +132,8 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Params used for collision check along spline.  <a href="structFSplineDetectionTestParams.html#details">More...</a><br /></td></tr>
 <tr class="memitem:FSplineMeshedOverlapResult" id="r_FSplineMeshedOverlapResult"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structFSplineMeshedOverlapResult.html">FSplineMeshedOverlapResult</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collision results returned for use in BP.  <a href="structFSplineMeshedOverlapResult.html#details">More...</a><br /></td></tr>
+<tr class="memitem:FYasiuSplineMeshParams" id="r_FYasiuSplineMeshParams"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structFYasiuSplineMeshParams.html">FYasiuSplineMeshParams</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">SplineMesh parameters passed between functions.  <a href="structFYasiuSplineMeshParams.html#details">More...</a><br /></td></tr>
 <tr class="memitem:USplineMeshedComponent" id="r_USplineMeshedComponent"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="classUSplineMeshedComponent.html">USplineMeshedComponent</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Core component that handles meshes spawning along spline.  <a href="classUSplineMeshedComponent.html#details">More...</a><br /></td></tr>
 <tr class="memitem:FSplineMeshed_5FExtendedParams" id="r_FSplineMeshed_5FExtendedParams"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structFSplineMeshed__ExtendedParams.html">FSplineMeshed_ExtendedParams</a></td></tr>
@@ -155,16 +157,20 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="memdesc:a9135761ea76014f745be989347f84098"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method that solved mesh rotation along spline.  <a href="#a9135761ea76014f745be989347f84098">More...</a><br /></td></tr>
-<tr class="memitem:ae53e183930e650f062a4b1227d8da655" id="r_ae53e183930e650f062a4b1227d8da655"><td class="memItemLeft">enum class &#160;</td><td class="memItemRight"><a class="el" href="#ae53e183930e650f062a4b1227d8da655">ESplineMeshedSpawnMode</a> : uint8 { <a class="el" href="#ae53e183930e650f062a4b1227d8da655a296c6c67305acf3622ff14fe390fe3a1">FullSizeOnly</a>
-, <a class="el" href="#ae53e183930e650f062a4b1227d8da655a2b5d34458ec23ea904d8f2632d220675">StretchOnlyLast</a>
-, <a class="el" href="#ae53e183930e650f062a4b1227d8da655a9acef336480c41367ee5b4ce2c4df0c2">MinimalStretchOnAll</a>
-, <a class="el" href="#ae53e183930e650f062a4b1227d8da655a4709407690faa5e1d54c5afb175f19d0">ItemPerSegment</a>
+<tr class="memitem:a7ce2ebb92b14932a913299550e72b6ff" id="r_a7ce2ebb92b14932a913299550e72b6ff"><td class="memItemLeft">enum class &#160;</td><td class="memItemRight"><a class="el" href="#a7ce2ebb92b14932a913299550e72b6ff">ESplineMeshStretching</a> : uint8 { <br />
+&#160;&#160;<a class="el" href="#a7ce2ebb92b14932a913299550e72b6ffaa7c7ddc54be89a32393483203578bf48">NoStretching</a>
+, <a class="el" href="#a7ce2ebb92b14932a913299550e72b6ffa23c232e3f262042c9a8353bab29c9fd4">PipeStretching</a>
+, <a class="el" href="#a7ce2ebb92b14932a913299550e72b6ffa2b5d34458ec23ea904d8f2632d220675">StretchOnlyLast</a>
+, <a class="el" href="#a7ce2ebb92b14932a913299550e72b6ffa9acef336480c41367ee5b4ce2c4df0c2">MinimalStretchOnAll</a>
+, <br />
+&#160;&#160;<a class="el" href="#a7ce2ebb92b14932a913299550e72b6ffa4709407690faa5e1d54c5afb175f19d0">ItemPerSegment</a>
+<br />
  }</td></tr>
-<tr class="memdesc:ae53e183930e650f062a4b1227d8da655"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method that decides how many meshes spawn.  <a href="#ae53e183930e650f062a4b1227d8da655">More...</a><br /></td></tr>
+<tr class="memdesc:a7ce2ebb92b14932a913299550e72b6ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method that decides how to place meshes.  <a href="#a7ce2ebb92b14932a913299550e72b6ff">More...</a><br /></td></tr>
 </table>
 <a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">Enumeration Type Documentation</h2>
-<a id="ae53e183930e650f062a4b1227d8da655" name="ae53e183930e650f062a4b1227d8da655"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae53e183930e650f062a4b1227d8da655">&#9670;&#160;</a></span>ESplineMeshedSpawnMode</h2>
+<a id="a7ce2ebb92b14932a913299550e72b6ff" name="a7ce2ebb92b14932a913299550e72b6ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ce2ebb92b14932a913299550e72b6ff">&#9670;&#160;</a></span>ESplineMeshStretching</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -173,7 +179,7 @@ Enumerations</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enum class <a class="el" href="#ae53e183930e650f062a4b1227d8da655">ESplineMeshedSpawnMode</a> : uint8</td>
+          <td class="memname">enum class <a class="el" href="#a7ce2ebb92b14932a913299550e72b6ff">ESplineMeshStretching</a> : uint8</td>
         </tr>
       </table>
   </td>
@@ -183,15 +189,17 @@ Enumerations</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Method that decides how many meshes spawn. </p>
+<p>Method that decides how to place meshes. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae53e183930e650f062a4b1227d8da655a296c6c67305acf3622ff14fe390fe3a1" name="ae53e183930e650f062a4b1227d8da655a296c6c67305acf3622ff14fe390fe3a1"></a>FullSizeOnly&#160;</td><td class="fielddoc"><p>Only meshes that fit with full size will spawn. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a7ce2ebb92b14932a913299550e72b6ffaa7c7ddc54be89a32393483203578bf48" name="a7ce2ebb92b14932a913299550e72b6ffaa7c7ddc54be89a32393483203578bf48"></a>NoStretching&#160;</td><td class="fielddoc"><p>Only full meshes will be spawned. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ae53e183930e650f062a4b1227d8da655a2b5d34458ec23ea904d8f2632d220675" name="ae53e183930e650f062a4b1227d8da655a2b5d34458ec23ea904d8f2632d220675"></a>StretchOnlyLast&#160;</td><td class="fielddoc"><p>Last mesh will stretch to fit to end. </p>
+<tr><td class="fieldname"><a id="a7ce2ebb92b14932a913299550e72b6ffa23c232e3f262042c9a8353bab29c9fd4" name="a7ce2ebb92b14932a913299550e72b6ffa23c232e3f262042c9a8353bab29c9fd4"></a>PipeStretching&#160;</td><td class="fielddoc"><p>Stretch meshes to make seamless connection at offset. (Can not use randomness). </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ae53e183930e650f062a4b1227d8da655a9acef336480c41367ee5b4ce2c4df0c2" name="ae53e183930e650f062a4b1227d8da655a9acef336480c41367ee5b4ce2c4df0c2"></a>MinimalStretchOnAll&#160;</td><td class="fielddoc"><p>Fit segments from start to end. Applies minimal and equal stretch to all segments. </p>
+<tr><td class="fieldname"><a id="a7ce2ebb92b14932a913299550e72b6ffa2b5d34458ec23ea904d8f2632d220675" name="a7ce2ebb92b14932a913299550e72b6ffa2b5d34458ec23ea904d8f2632d220675"></a>StretchOnlyLast&#160;</td><td class="fielddoc"><p>Last mesh will stretch to fit to end. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ae53e183930e650f062a4b1227d8da655a4709407690faa5e1d54c5afb175f19d0" name="ae53e183930e650f062a4b1227d8da655a4709407690faa5e1d54c5afb175f19d0"></a>ItemPerSegment&#160;</td><td class="fielddoc"><p>Places mesh object to fill single segment from point to point. </p>
+<tr><td class="fieldname"><a id="a7ce2ebb92b14932a913299550e72b6ffa9acef336480c41367ee5b4ce2c4df0c2" name="a7ce2ebb92b14932a913299550e72b6ffa9acef336480c41367ee5b4ce2c4df0c2"></a>MinimalStretchOnAll&#160;</td><td class="fielddoc"><p>Fit segments from start to end. Applies minimal and equal stretch to all segments. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ce2ebb92b14932a913299550e72b6ffa4709407690faa5e1d54c5afb175f19d0" name="a7ce2ebb92b14932a913299550e72b6ffa4709407690faa5e1d54c5afb175f19d0"></a>ItemPerSegment&#160;</td><td class="fielddoc"><p>Places mesh object to fill single segment from point to point. </p>
 </td></tr>
 </table>
 

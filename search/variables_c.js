@@ -9,10 +9,16 @@ var searchData=
   ['sinustoolparams_6',['SinusToolParams',['../classUSplineMeshedComponent.html#ad9480c67e3226d4631a30b74f2926f38',1,'USplineMeshedComponent']]],
   ['skipnarrowphase_7',['SkipNarrowPhase',['../structFSplineDetectionTestParams.html#a9847b9775c5a6bc2d374b16cac569c82',1,'FSplineDetectionTestParams']]],
   ['smoothness_8',['smoothness',['../structFSplineSmoothParams.html#aa5c30ca7db6e2e2349fe02d714395b54',1,'FSplineSmoothParams']]],
-  ['spacingbygap_9',['SpacingByGap',['../structFSplineMeshedSpawnParams.html#a002fb3d9b3c2754ff49ae8ab80fdd4b7',1,'FSplineMeshedSpawnParams']]],
-  ['spawnmethod_10',['SpawnMethod',['../structFSplineMeshedSpawnParams.html#a3251af4f49ce7b1592466572394797da',1,'FSplineMeshedSpawnParams']]],
-  ['spawnparams_11',['SpawnParams',['../classASplineMeshed.html#ab69207a689304ff152544f6f0dbdfa2a',1,'ASplineMeshed']]],
+  ['spawnparams_9',['SpawnParams',['../classASplineMeshed.html#ab69207a689304ff152544f6f0dbdfa2a',1,'ASplineMeshed']]],
+  ['splinedistanceend_10',['SplineDistanceEnd',['../structFYasiuSplineMeshParams.html#a65d4b24252eed34caf8c58bc2b3b5935',1,'FYasiuSplineMeshParams']]],
+  ['splinedistancestart_11',['SplineDistanceStart',['../structFYasiuSplineMeshParams.html#a6090dc424870d956dc76a3861c7dc1ba',1,'FYasiuSplineMeshParams']]],
   ['splinemeshedcomponent_12',['SplineMeshedComponent',['../classASplineMeshed.html#a8bd8b77d15f861fcc342d7d4d8beb35d',1,'ASplineMeshed']]],
-  ['stepdistance_13',['StepDistance',['../structFSplineDetectionTestParams.html#afaf19d0046790f77dab5becb00f68ed9',1,'FSplineDetectionTestParams']]],
-  ['stopatfirstcollision_14',['StopAtFirstCollision',['../structFSplineDetectionTestParams.html#a21f7ee8d05284e6a5b75f2e1884850ef',1,'FSplineDetectionTestParams']]]
+  ['startoffset_13',['StartOffset',['../structFYasiuSplineMeshParams.html#ab0ef1a0d04768b6e3c1ca4644126e49a',1,'FYasiuSplineMeshParams']]],
+  ['startpos_14',['StartPos',['../structFYasiuSplineMeshParams.html#a9ab42c2ec7060bc24d56d2909be89ac9',1,'FYasiuSplineMeshParams']]],
+  ['startroll_15',['StartRoll',['../structFYasiuSplineMeshParams.html#a4d338d724d9e1eacf318b366931fd84e',1,'FYasiuSplineMeshParams']]],
+  ['startscale_16',['StartScale',['../structFYasiuSplineMeshParams.html#af2ea2a16161233585c68416f7ebc8d4d',1,'FYasiuSplineMeshParams']]],
+  ['starttangent_17',['StartTangent',['../structFYasiuSplineMeshParams.html#a8dd8c8b5a89e791efa5ba396aca82f18',1,'FYasiuSplineMeshParams']]],
+  ['stepdistance_18',['StepDistance',['../structFSplineDetectionTestParams.html#afaf19d0046790f77dab5becb00f68ed9',1,'FSplineDetectionTestParams']]],
+  ['stopatfirstcollision_19',['StopAtFirstCollision',['../structFSplineDetectionTestParams.html#a21f7ee8d05284e6a5b75f2e1884850ef',1,'FSplineDetectionTestParams']]],
+  ['stretchmethod_20',['StretchMethod',['../structFSplineMeshedSpawnParams.html#a3570d889c4018205e8b5b4d82e5faf3d',1,'FSplineMeshedSpawnParams']]]
 ];

@@ -16,6 +16,7 @@ var annotated_dup =
     [ "FSplineSinusParams", "structFSplineSinusParams.html", "structFSplineSinusParams" ],
     [ "FSplineSmoothParams", "structFSplineSmoothParams.html", "structFSplineSmoothParams" ],
     [ "FVectorRange", "structFVectorRange.html", "structFVectorRange" ],
+    [ "FYasiuSplineMeshParams", "structFYasiuSplineMeshParams.html", "structFYasiuSplineMeshParams" ],
     [ "USpline_RNG", "classUSpline__RNG.html", "classUSpline__RNG" ],
     [ "USplineMeshedComponent", "classUSplineMeshedComponent.html", "classUSplineMeshedComponent" ],
     [ "USplineMeshedComponent_ExtendedToHelix", "classUSplineMeshedComponent__ExtendedToHelix.html", null ],

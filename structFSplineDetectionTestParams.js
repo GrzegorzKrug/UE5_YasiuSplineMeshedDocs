@@ -8,7 +8,7 @@ var structFSplineDetectionTestParams =
     [ "IgnoreBlocks", "structFSplineDetectionTestParams.html#a06d78a4a70573d67f32e8ef7049eca8f", null ],
     [ "IgnoreTouches", "structFSplineDetectionTestParams.html#a7ee387b7ad38f3a5cbbef72e83728a3c", null ],
     [ "LastOverlapWithingSplineLimits", "structFSplineDetectionTestParams.html#a5864f964bc44349a5d63cb0b423dbe26", null ],
-    [ "locationOffset", "structFSplineDetectionTestParams.html#aea7eac78e3c1ed53dd52fdb115940b5b", null ],
+    [ "LocationOffset", "structFSplineDetectionTestParams.html#a3ef95df466d09f398ad9cc664106dc6d", null ],
     [ "MeshTransform", "structFSplineDetectionTestParams.html#ab84505ea1e776b15d17d75252bf7347e", null ],
     [ "ObjectTypes", "structFSplineDetectionTestParams.html#a3fa8d7490b3f5e45d9e048e335ab6579", null ],
     [ "RotationMethod", "structFSplineDetectionTestParams.html#a12f76661faec5302980b3a0de9d8910a", null ],

@@ -1,17 +1,5 @@
 var searchData=
 [
-  ['resetseedpos_0',['ResetSeedPos',['../classUSpline__RNG.html#a782fbe2f7c94907d1b347cb5d9ea9f86',1,'USpline_RNG']]],
-  ['resolution_1',['Resolution',['../structFSplineHelixParams.html#a3e530e8dbc491c80f9115f8800ece070',1,'FSplineHelixParams']]],
-  ['rng_5f0_2',['RNG_0',['../classUSpline__RNG.html#aeb7c36d139b9a28e6a7e7d5320fafdef',1,'USpline_RNG']]],
-  ['rng_5f1_3',['RNG_1',['../classUSpline__RNG.html#ab80a2a2440228e142c8d04c44bf12ba3',1,'USpline_RNG']]],
-  ['rng_5f2_4',['RNG_2',['../classUSpline__RNG.html#a3b752ea7bb628f36769ec8214346b719',1,'USpline_RNG']]],
-  ['rng_5f3_5',['RNG_3',['../classUSpline__RNG.html#a7acf6c861903ca5a5c4a7ba787f31580',1,'USpline_RNG']]],
-  ['rng_5f4_6',['RNG_4',['../classUSpline__RNG.html#a65d1505d8b143ea3e6a730176b165924',1,'USpline_RNG']]],
-  ['rng_5f5_7',['RNG_5',['../classUSpline__RNG.html#a34154bede4525cc257456eb5f69f2067',1,'USpline_RNG']]],
-  ['rotateboundingbox_8',['RotateBoundingBox',['../YasiuMiniMath_8h.html#ac9138642654ec88a95603690cf73f17c',1,'YasiuMiniMath.h']]],
-  ['rotatetoshape_9',['RotateToShape',['../structFSplineMeshed__ExtendedParams.html#a26c55a04d70be97984598e60d1e50c17',1,'FSplineMeshed_ExtendedParams']]],
-  ['rotation_10',['Rotation',['../structFSplineRandomness.html#adcf10da4ecb2a9c1f5e647eca0a6395d',1,'FSplineRandomness']]],
-  ['rotation_11',['rotation',['../structFSplineMeshed__PointTangent.html#a454e71f60bd6525a936cfec42da31f6a',1,'FSplineMeshed_PointTangent']]],
-  ['rotationmethod_12',['RotationMethod',['../structFSplineMeshedSpawnParams.html#af13eb122ac50043ad95b69a40796d97c',1,'FSplineMeshedSpawnParams::RotationMethod'],['../structFSplineDetectionTestParams.html#a12f76661faec5302980b3a0de9d8910a',1,'FSplineDetectionTestParams::RotationMethod']]],
-  ['rotationz_13',['rotationZ',['../structFSplineSmoothParams.html#ad10f0238b8265e53b432ddfac6f3d7f4',1,'FSplineSmoothParams']]]
+  ['quick_20start_0',['Quick Start',['../mainpage.html',1,'']]],
+  ['quick_20use_1',['Quick Use',['../baseuse.html',1,'mainpage']]]
 ];

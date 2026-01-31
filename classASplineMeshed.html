@@ -100,7 +100,7 @@ $(function(){initNavTree('classASplineMeshed.html','','classASplineMeshed-member
 </div><!--header-->
 <div class="contents">
 
-<p>Base actor class with attached component for quick and drag, customizable.  
+<p>Base actor class with attached component for quick and drag, customizable Actor updates spline and meshes on each change. Ready to use.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="SplineMeshedActor_8h_source.html">SplineMeshedActor.h</a>&gt;</code></p>
@@ -121,15 +121,24 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2b07e77da74d6d3c4ded16718cacdc86" id="r_a2b07e77da74d6d3c4ded16718cacdc86"><td class="memItemLeft"><a id="a2b07e77da74d6d3c4ded16718cacdc86" name="a2b07e77da74d6d3c4ded16718cacdc86"></a>
 virtual void&#160;</td><td class="memItemRight"><b>OnConstruction</b> (const FTransform &amp;Transform) override</td></tr>
 <tr class="memdesc:a2b07e77da74d6d3c4ded16718cacdc86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that spawns meshes after any change or spawn. <br /></td></tr>
+<tr class="memitem:a84b42f0cbdf5e0c8b8d303f4867285f7" id="r_a84b42f0cbdf5e0c8b8d303f4867285f7"><td class="memItemLeft"><a id="a84b42f0cbdf5e0c8b8d303f4867285f7" name="a84b42f0cbdf5e0c8b8d303f4867285f7"></a>
+bool&#160;</td><td class="memItemRight"><b>SpawnMeshes</b> ()</td></tr>
+<tr class="memdesc:a84b42f0cbdf5e0c8b8d303f4867285f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base Function to pass all params <a class="el" href="#a8bd8b77d15f861fcc342d7d4d8beb35d" title="SplineMeshedComponent">SplineMeshedComponent</a> and Place meshes. <br /></td></tr>
 <tr class="memitem:a2857db442ec614bb375bee5281a2e29e" id="r_a2857db442ec614bb375bee5281a2e29e"><td class="memItemLeft"><a id="a2857db442ec614bb375bee5281a2e29e" name="a2857db442ec614bb375bee5281a2e29e"></a>
 void&#160;</td><td class="memItemRight"><b>OverlapActorAlongSpline</b> ()</td></tr>
 <tr class="memdesc:a2857db442ec614bb375bee5281a2e29e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if any object is overlapping spline location. <br /></td></tr>
+<tr class="memitem:ae3c9afa4b891d19f341b45063375b9cb" id="r_ae3c9afa4b891d19f341b45063375b9cb"><td class="memItemLeft"><a id="ae3c9afa4b891d19f341b45063375b9cb" name="ae3c9afa4b891d19f341b45063375b9cb"></a>
+void&#160;</td><td class="memItemRight"><b>NoNeedToRerunConstruction</b> ()</td></tr>
+<tr class="memdesc:ae3c9afa4b891d19f341b45063375b9cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tell constructor there are no changes. <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a8bd8b77d15f861fcc342d7d4d8beb35d" id="r_a8bd8b77d15f861fcc342d7d4d8beb35d"><td class="memItemLeft"><a id="a8bd8b77d15f861fcc342d7d4d8beb35d" name="a8bd8b77d15f861fcc342d7d4d8beb35d"></a>
 TObjectPtr&lt; <a class="el" href="classUSplineMeshedComponent.html">USplineMeshedComponent</a> &gt;&#160;</td><td class="memItemRight"><b>SplineMeshedComponent</b></td></tr>
 <tr class="memdesc:a8bd8b77d15f861fcc342d7d4d8beb35d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spline meshed component. <br /></td></tr>
+<tr class="memitem:ae3eb830f6573c5eca7aa6678c900cc41" id="r_ae3eb830f6573c5eca7aa6678c900cc41"><td class="memItemLeft"><a id="ae3eb830f6573c5eca7aa6678c900cc41" name="ae3eb830f6573c5eca7aa6678c900cc41"></a>
+bool&#160;</td><td class="memItemRight"><b>AutoUpdate</b> = true</td></tr>
+<tr class="memdesc:ae3eb830f6573c5eca7aa6678c900cc41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Auto update meshes to spline. <br /></td></tr>
 <tr class="memitem:a19cc54e20b22f595eaee5a60ae80b8a3" id="r_a19cc54e20b22f595eaee5a60ae80b8a3"><td class="memItemLeft"><a id="a19cc54e20b22f595eaee5a60ae80b8a3" name="a19cc54e20b22f595eaee5a60ae80b8a3"></a>
 TSoftObjectPtr&lt; UStaticMesh &gt;&#160;</td><td class="memItemRight"><b>Mesh</b></td></tr>
 <tr class="memdesc:a19cc54e20b22f595eaee5a60ae80b8a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mesh used to spawn along spline. <br /></td></tr>
@@ -141,7 +150,7 @@ TArray&lt; TObjectPtr&lt; UMaterialInstance &gt; &gt;&#160;</td><td class="memIt
 <tr class="memdesc:a26edbb89e09e0d9bd9cd36365f351f46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Materials list used to apply on meshes to corresponding index. <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Base actor class with attached component for quick and drag, customizable. </p>
+<div class="textblock"><p>Base actor class with attached component for quick and drag, customizable Actor updates spline and meshes on each change. Ready to use. </p>
 <p>Parameters stored in variable for quick edit in level </p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>Source/SplineMeshed/Public/<a class="el" href="SplineMeshedActor_8h_source.html">SplineMeshedActor.h</a></li>

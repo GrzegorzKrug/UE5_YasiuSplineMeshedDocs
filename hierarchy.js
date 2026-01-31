@@ -20,6 +20,7 @@ var hierarchy =
     [ "FSplineSinusParams", "structFSplineSinusParams.html", null ],
     [ "FSplineSmoothParams", "structFSplineSmoothParams.html", null ],
     [ "FVectorRange", "structFVectorRange.html", null ],
+    [ "FYasiuSplineMeshParams", "structFYasiuSplineMeshParams.html", null ],
     [ "UObject", null, [
       [ "USpline_RNG", "classUSpline__RNG.html", null ]
     ] ],

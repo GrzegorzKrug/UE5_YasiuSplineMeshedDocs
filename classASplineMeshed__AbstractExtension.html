@@ -110,7 +110,7 @@ Inheritance diagram for ASplineMeshed_AbstractExtension:</div>
  <div class="center">
   <img src="classASplineMeshed__AbstractExtension.png" usemap="#ASplineMeshed_5FAbstractExtension_map" alt=""/>
   <map id="ASplineMeshed_5FAbstractExtension_map" name="ASplineMeshed_5FAbstractExtension_map">
-<area href="classASplineMeshed.html" title="Base actor class with attached component for quick and drag, customizable." alt="ASplineMeshed" shape="rect" coords="109,56,318,80"/>
+<area href="classASplineMeshed.html" title="Base actor class with attached component for quick and drag, customizable Actor updates spline and me..." alt="ASplineMeshed" shape="rect" coords="109,56,318,80"/>
 <area href="classASplineMeshed__ExtensionHelix.html" title="Base actor class with attached component, uses extended component USplineMeshedComponent_ExtendedToHe..." alt="ASplineMeshed_ExtensionHelix" shape="rect" coords="0,168,209,192"/>
 <area href="classASplineMeshed__ExtensionSinus.html" title="Base actor class with attached component, uses extended component USplineMeshedComponent_ExtendedToSi..." alt="ASplineMeshed_ExtensionSinus" shape="rect" coords="219,168,428,192"/>
   </map>
@@ -122,13 +122,22 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2b07e77da74d6d3c4ded16718cacdc86 inherit pub_methods_classASplineMeshed" id="r_a2b07e77da74d6d3c4ded16718cacdc86"><td class="memItemLeft">
 virtual void&#160;</td><td class="memItemRight"><b>OnConstruction</b> (const FTransform &amp;Transform) override</td></tr>
 <tr class="memdesc:a2b07e77da74d6d3c4ded16718cacdc86 inherit pub_methods_classASplineMeshed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that spawns meshes after any change or spawn. <br /></td></tr>
+<tr class="memitem:a84b42f0cbdf5e0c8b8d303f4867285f7 inherit pub_methods_classASplineMeshed" id="r_a84b42f0cbdf5e0c8b8d303f4867285f7"><td class="memItemLeft">
+bool&#160;</td><td class="memItemRight"><b>SpawnMeshes</b> ()</td></tr>
+<tr class="memdesc:a84b42f0cbdf5e0c8b8d303f4867285f7 inherit pub_methods_classASplineMeshed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base Function to pass all params <a class="el" href="classASplineMeshed.html#a8bd8b77d15f861fcc342d7d4d8beb35d" title="SplineMeshedComponent">SplineMeshedComponent</a> and Place meshes. <br /></td></tr>
 <tr class="memitem:a2857db442ec614bb375bee5281a2e29e inherit pub_methods_classASplineMeshed" id="r_a2857db442ec614bb375bee5281a2e29e"><td class="memItemLeft">
 void&#160;</td><td class="memItemRight"><b>OverlapActorAlongSpline</b> ()</td></tr>
 <tr class="memdesc:a2857db442ec614bb375bee5281a2e29e inherit pub_methods_classASplineMeshed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if any object is overlapping spline location. <br /></td></tr>
+<tr class="memitem:ae3c9afa4b891d19f341b45063375b9cb inherit pub_methods_classASplineMeshed" id="r_ae3c9afa4b891d19f341b45063375b9cb"><td class="memItemLeft">
+void&#160;</td><td class="memItemRight"><b>NoNeedToRerunConstruction</b> ()</td></tr>
+<tr class="memdesc:ae3c9afa4b891d19f341b45063375b9cb inherit pub_methods_classASplineMeshed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tell constructor there are no changes. <br /></td></tr>
 <tr class="inherit_header pub_attribs_classASplineMeshed"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_classASplineMeshed')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Attributes inherited from <a class="el" href="classASplineMeshed.html">ASplineMeshed</a></td></tr>
 <tr class="memitem:a8bd8b77d15f861fcc342d7d4d8beb35d inherit pub_attribs_classASplineMeshed" id="r_a8bd8b77d15f861fcc342d7d4d8beb35d"><td class="memItemLeft">
 TObjectPtr&lt; <a class="el" href="classUSplineMeshedComponent.html">USplineMeshedComponent</a> &gt;&#160;</td><td class="memItemRight"><b>SplineMeshedComponent</b></td></tr>
 <tr class="memdesc:a8bd8b77d15f861fcc342d7d4d8beb35d inherit pub_attribs_classASplineMeshed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spline meshed component. <br /></td></tr>
+<tr class="memitem:ae3eb830f6573c5eca7aa6678c900cc41 inherit pub_attribs_classASplineMeshed" id="r_ae3eb830f6573c5eca7aa6678c900cc41"><td class="memItemLeft">
+bool&#160;</td><td class="memItemRight"><b>AutoUpdate</b> = true</td></tr>
+<tr class="memdesc:ae3eb830f6573c5eca7aa6678c900cc41 inherit pub_attribs_classASplineMeshed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Auto update meshes to spline. <br /></td></tr>
 <tr class="memitem:a19cc54e20b22f595eaee5a60ae80b8a3 inherit pub_attribs_classASplineMeshed" id="r_a19cc54e20b22f595eaee5a60ae80b8a3"><td class="memItemLeft">
 TSoftObjectPtr&lt; UStaticMesh &gt;&#160;</td><td class="memItemRight"><b>Mesh</b></td></tr>
 <tr class="memdesc:a19cc54e20b22f595eaee5a60ae80b8a3 inherit pub_attribs_classASplineMeshed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mesh used to spawn along spline. <br /></td></tr>

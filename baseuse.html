@@ -102,8 +102,8 @@ $(function(){initNavTree('baseuse.html','',''); });
 <div class="textblock"><h1 class="doxsection"><a class="anchor" id="autotoc_md22"></a>
 Use pre-created actor with component</h1>
 <ul>
-<li>Spawn actor class in level: <b><a class="el" href="classASplineMeshed.html" title="Base actor class with attached component for quick and drag, customizable.">ASplineMeshed</a></b> class</li>
-<li>Create child actor class from: <b><a class="el" href="classASplineMeshed.html" title="Base actor class with attached component for quick and drag, customizable.">ASplineMeshed</a></b> class</li>
+<li>Spawn actor class in level: <b><a class="el" href="classASplineMeshed.html" title="Base actor class with attached component for quick and drag, customizable Actor updates spline and me...">ASplineMeshed</a></b> class</li>
+<li>Create child actor class from: <b><a class="el" href="classASplineMeshed.html" title="Base actor class with attached component for quick and drag, customizable Actor updates spline and me...">ASplineMeshed</a></b> class</li>
 </ul>
 <h1 class="doxsection"><a class="anchor" id="autotoc_md23"></a>
 Add component to your actor in BP</h1>
@@ -125,12 +125,12 @@ Use in C++</h1>
 </div><!-- fragment --><p>It is <b>UObject</b>, so it must comply with unreal engine rules for objects lifecycle. Store ref value as any UObject if you want it to persist in game for longer. </p><div class="fragment"><div class="line"><span class="comment">/* Declaration in class, write initialization in CDO */</span></div>
 <div class="line">UPROPERTY()</div>
 <div class="line">TObjectPtr&lt;<a class="code hl_class" href="classUSplineMeshedComponent.html">USplineMeshedComponent</a>&gt; SplineMeshCmp;</div>
-<div class="ttc" id="aclassUSplineMeshedComponent_html"><div class="ttname"><a href="classUSplineMeshedComponent.html">USplineMeshedComponent</a></div><div class="ttdoc">Core component that handles meshes spawning along spline.</div><div class="ttdef"><b>Definition</b> SplineMeshedComponent.h:515</div></div>
+<div class="ttc" id="aclassUSplineMeshedComponent_html"><div class="ttname"><a href="classUSplineMeshedComponent.html">USplineMeshedComponent</a></div><div class="ttdoc">Core component that handles meshes spawning along spline.</div><div class="ttdef"><b>Definition</b> SplineMeshedComponent.h:592</div></div>
 </div><!-- fragment --> <h2 class="doxsection"><a class="anchor" id="autotoc_md26"></a>
 Classes hierarchy</h2>
 <p>Core component:</p><ul>
 <li><a class="el" href="classUSplineMeshedComponent.html" title="USplineMeshedComponent">USplineMeshedComponent</a> : core component</li>
-<li>USplineMeshedComponent_ExtensionBridge : modified component</li>
+<li><a class="el" href="classUSplineMeshedComponent__Extension.html" title="USplineMeshedComponent_Extension">USplineMeshedComponent_Extension</a> : modified component</li>
 </ul>
 <p>Classes:</p><ul>
 <li><a class="el" href="classASplineMeshed.html" title="ASplineMeshed">ASplineMeshed</a> : Actor with core component</li>
@@ -141,8 +141,8 @@ Classes hierarchy</h2>
 Extending functionality</h1>
 <p>Class has exposed function to use and override modification of every mesh for custom desire.</p><ul>
 <li>Create child class of any component:<ul>
-<li>Override function <a class="el" href="classUSplineMeshedComponent.html#ab8718e38d16fcf40a12f0088e735c45c" title="USplineMeshedComponent::OnMeshPlace">OnMeshPlace</a> (for spawn customization)</li>
-<li>Override function <a class="el" href="classUSplineMeshedComponent.html#a1a8091e532457e23af39ee0462dc5161" title="USplineMeshedComponent::DetectObjectsAlongSpline">Detection</a> (for collision detection) </li>
+<li>Override function <a class="el" href="classUSplineMeshedComponent.html#a44ecb043daf44f981266df347b928ece" title="USplineMeshedComponent::OnMeshSpawn">OnMeshSpawn</a> (for spawn customization)</li>
+<li>Override function <a class="el" href="classUSplineMeshedComponent.html#aa284793dce8db65919165feac0ac1752" title="USplineMeshedComponent::DetectionFunction">Detection</a> (for collision detection) </li>
 </ul>
 </li>
 </ul>

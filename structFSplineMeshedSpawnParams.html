@@ -113,23 +113,29 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a3251af4f49ce7b1592466572394797da" id="r_a3251af4f49ce7b1592466572394797da"><td class="memItemLeft"><a id="a3251af4f49ce7b1592466572394797da" name="a3251af4f49ce7b1592466572394797da"></a>
-<a class="el" href="SplineMeshedComponent_8h.html#ae53e183930e650f062a4b1227d8da655">ESplineMeshedSpawnMode</a>&#160;</td><td class="memItemRight"><b>SpawnMethod</b> = <a class="el" href="SplineMeshedComponent_8h.html#ae53e183930e650f062a4b1227d8da655a296c6c67305acf3622ff14fe390fe3a1">ESplineMeshedSpawnMode::FullSizeOnly</a></td></tr>
-<tr class="memdesc:a3251af4f49ce7b1592466572394797da"><td class="mdescLeft">&#160;</td><td class="mdescRight">How many meshes should be spawned along spline. <br /></td></tr>
+<tr class="memitem:a3570d889c4018205e8b5b4d82e5faf3d" id="r_a3570d889c4018205e8b5b4d82e5faf3d"><td class="memItemLeft"><a id="a3570d889c4018205e8b5b4d82e5faf3d" name="a3570d889c4018205e8b5b4d82e5faf3d"></a>
+<a class="el" href="SplineMeshedComponent_8h.html#a7ce2ebb92b14932a913299550e72b6ff">ESplineMeshStretching</a>&#160;</td><td class="memItemRight"><b>StretchMethod</b> = <a class="el" href="SplineMeshedComponent_8h.html#a7ce2ebb92b14932a913299550e72b6ffaa7c7ddc54be89a32393483203578bf48">ESplineMeshStretching::NoStretching</a></td></tr>
+<tr class="memdesc:a3570d889c4018205e8b5b4d82e5faf3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">How many meshes should be spawned along spline. <br /></td></tr>
 <tr class="memitem:af13eb122ac50043ad95b69a40796d97c" id="r_af13eb122ac50043ad95b69a40796d97c"><td class="memItemLeft"><a id="af13eb122ac50043ad95b69a40796d97c" name="af13eb122ac50043ad95b69a40796d97c"></a>
 <a class="el" href="SplineMeshedComponent_8h.html#a9135761ea76014f745be989347f84098">ESplineRotateMode</a>&#160;</td><td class="memItemRight"><b>RotationMethod</b> = <a class="el" href="SplineMeshedComponent_8h.html#a9135761ea76014f745be989347f84098af9bfcd21a32539b98a03390875851a99">ESplineRotateMode::TwistFix</a></td></tr>
 <tr class="memdesc:af13eb122ac50043ad95b69a40796d97c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method used for solving up vector. <br /></td></tr>
 <tr class="memitem:a88da45bffd27e0376eb0a8f515b5ffcc" id="r_a88da45bffd27e0376eb0a8f515b5ffcc"><td class="memItemLeft"><a id="a88da45bffd27e0376eb0a8f515b5ffcc" name="a88da45bffd27e0376eb0a8f515b5ffcc"></a>
 TEnumAsByte&lt; ESplineMeshAxis::Type &gt;&#160;</td><td class="memItemRight"><b>ForwardAxis</b> = ESplineMeshAxis::X</td></tr>
 <tr class="memdesc:a88da45bffd27e0376eb0a8f515b5ffcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Axis of mesh to be aligned along spline. <br /></td></tr>
+<tr class="memitem:aac99e811d8671cdc8c37f18e40f44488" id="r_aac99e811d8671cdc8c37f18e40f44488"><td class="memItemLeft"><a id="aac99e811d8671cdc8c37f18e40f44488" name="aac99e811d8671cdc8c37f18e40f44488"></a>
+float&#160;</td><td class="memItemRight"><b>MeshSpacing</b> = 50</td></tr>
+<tr class="memdesc:aac99e811d8671cdc8c37f18e40f44488"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spacing between meshes, Scaled with MeshTransform for easier use. see also <a class="el" href="#a414a5d14a4fe889aa84ec693f057b8e8" title="AddMeshSizeToSpacing">AddMeshSizeToSpacing</a>. <br /></td></tr>
+<tr class="memitem:a414a5d14a4fe889aa84ec693f057b8e8" id="r_a414a5d14a4fe889aa84ec693f057b8e8"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a414a5d14a4fe889aa84ec693f057b8e8">AddMeshSizeToSpacing</a> = true</td></tr>
+<tr class="memdesc:a414a5d14a4fe889aa84ec693f057b8e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of mesh in spine direction will be added to spacing step.  <br /></td></tr>
 <tr class="memitem:a2db90b7e238a38541d7c56903f132768" id="r_a2db90b7e238a38541d7c56903f132768"><td class="memItemLeft"><a id="a2db90b7e238a38541d7c56903f132768" name="a2db90b7e238a38541d7c56903f132768"></a>
 bool&#160;</td><td class="memItemRight"><b>DeformMesh</b> = true</td></tr>
 <tr class="memdesc:a2db90b7e238a38541d7c56903f132768"><td class="mdescLeft">&#160;</td><td class="mdescRight">Can meshes be deformed with tangents. <br /></td></tr>
-<tr class="memitem:aac99e811d8671cdc8c37f18e40f44488" id="r_aac99e811d8671cdc8c37f18e40f44488"><td class="memItemLeft"><a id="aac99e811d8671cdc8c37f18e40f44488" name="aac99e811d8671cdc8c37f18e40f44488"></a>
-float&#160;</td><td class="memItemRight"><b>MeshSpacing</b> = 50</td></tr>
-<tr class="memdesc:aac99e811d8671cdc8c37f18e40f44488"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spacing between meshes, see also <a class="el" href="#a002fb3d9b3c2754ff49ae8ab80fdd4b7" title="SpacingByGap">SpacingByGap</a>. <br /></td></tr>
-<tr class="memitem:a002fb3d9b3c2754ff49ae8ab80fdd4b7" id="r_a002fb3d9b3c2754ff49ae8ab80fdd4b7"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a002fb3d9b3c2754ff49ae8ab80fdd4b7">SpacingByGap</a> = true</td></tr>
-<tr class="memdesc:a002fb3d9b3c2754ff49ae8ab80fdd4b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">SpacingByGap will create gap of given size between them.  <br /></td></tr>
+<tr class="memitem:af0a7acab67a5043a92c4567d386c7581" id="r_af0a7acab67a5043a92c4567d386c7581"><td class="memItemLeft"><a id="af0a7acab67a5043a92c4567d386c7581" name="af0a7acab67a5043a92c4567d386c7581"></a>
+bool&#160;</td><td class="memItemRight"><b>FixInvalidTangents</b> = true</td></tr>
+<tr class="memdesc:af0a7acab67a5043a92c4567d386c7581"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fix tangents that are perpendicular (prevents most deforms that show mesh inside). <br /></td></tr>
+<tr class="memitem:a2161495eeeeef4027128cd622d085fe2" id="r_a2161495eeeeef4027128cd622d085fe2"><td class="memItemLeft"><a id="a2161495eeeeef4027128cd622d085fe2" name="a2161495eeeeef4027128cd622d085fe2"></a>
+bool&#160;</td><td class="memItemRight"><b>FixSharpDeformations</b> = false</td></tr>
+<tr class="memdesc:a2161495eeeeef4027128cd622d085fe2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to fix (tangents) of meshes that are spawned on very tight curves. (FixTangents must be enabled). <br /></td></tr>
 <tr class="memitem:aa67816c1f9d0395c1298c4d1f964a48f" id="r_aa67816c1f9d0395c1298c4d1f964a48f"><td class="memItemLeft"><a id="aa67816c1f9d0395c1298c4d1f964a48f" name="aa67816c1f9d0395c1298c4d1f964a48f"></a>
 FVector&#160;</td><td class="memItemRight"><b>UpVector</b> {0, 0, 1}</td></tr>
 <tr class="memdesc:aa67816c1f9d0395c1298c4d1f964a48f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector for use with "Constant" rotation mode, <a class="el" href="SplineMeshedComponent_8h.html#a9135761ea76014f745be989347f84098" title="ESplineRotateMode">ESplineRotateMode</a>. <br /></td></tr>
@@ -137,14 +143,31 @@ FVector&#160;</td><td class="memItemRight"><b>UpVector</b> {0, 0, 1}</td></tr>
 <tr class="memdesc:ae2290a1e747af5826a260922b9d2b04a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Relative transform change.  <br /></td></tr>
 <tr class="memitem:ab74c99fa03379597f3e62f14be6e0808" id="r_ab74c99fa03379597f3e62f14be6e0808"><td class="memItemLeft"><a id="ab74c99fa03379597f3e62f14be6e0808" name="ab74c99fa03379597f3e62f14be6e0808"></a>
 <a class="el" href="structFSplineRandomness.html">FSplineRandomness</a>&#160;</td><td class="memItemRight"><b>MeshRandomness</b> {}</td></tr>
-<tr class="memdesc:ab74c99fa03379597f3e62f14be6e0808"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values used for randomizing rotation and translation. <br /></td></tr>
-<tr class="memitem:a18f9317de5d29d5d3c82873ae6459d2f" id="r_a18f9317de5d29d5d3c82873ae6459d2f"><td class="memItemLeft"><a id="a18f9317de5d29d5d3c82873ae6459d2f" name="a18f9317de5d29d5d3c82873ae6459d2f"></a>
-<a class="el" href="structFSplineMeshedCollision.html">FSplineMeshedCollision</a>&#160;</td><td class="memItemRight"><b>CollisionParameters</b> {}</td></tr>
-<tr class="memdesc:a18f9317de5d29d5d3c82873ae6459d2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collision parameters that are applied to each mesh. <br /></td></tr>
+<tr class="memdesc:ab74c99fa03379597f3e62f14be6e0808"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values used for randomizing rotation and translation. Not used with Stretching=Pipes. <br /></td></tr>
+<tr class="memitem:ae849dd18baf12389c2ff8d96522dad86" id="r_ae849dd18baf12389c2ff8d96522dad86"><td class="memItemLeft"><a id="ae849dd18baf12389c2ff8d96522dad86" name="ae849dd18baf12389c2ff8d96522dad86"></a>
+<a class="el" href="structFSplineMeshedCollision.html">FSplineMeshedCollision</a>&#160;</td><td class="memItemRight"><b>CollisionPreset</b> {}</td></tr>
+<tr class="memdesc:ae849dd18baf12389c2ff8d96522dad86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collision parameters that are applied to each mesh. <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Parameters used to customize mesh spawn along spline. </p>
 </div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
+<a id="a414a5d14a4fe889aa84ec693f057b8e8" name="a414a5d14a4fe889aa84ec693f057b8e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a414a5d14a4fe889aa84ec693f057b8e8">&#9670;&#160;</a></span>AddMeshSizeToSpacing</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FSplineMeshedSpawnParams::AddMeshSizeToSpacing = true</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Size of mesh in spine direction will be added to spacing step. </p>
+<p>True: will calculate mesh size and add gap value to find next position False: will place each mesh after given distance When false, spawn method fill be ignored (except single per segment) </p>
+
+</div>
+</div>
 <a id="ae2290a1e747af5826a260922b9d2b04a" name="ae2290a1e747af5826a260922b9d2b04a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae2290a1e747af5826a260922b9d2b04a">&#9670;&#160;</a></span>MeshTransform</h2>
 
@@ -166,23 +189,6 @@ FVector&#160;</td><td class="memItemRight"><b>UpVector</b> {0, 0, 1}</td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a002fb3d9b3c2754ff49ae8ab80fdd4b7" name="a002fb3d9b3c2754ff49ae8ab80fdd4b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a002fb3d9b3c2754ff49ae8ab80fdd4b7">&#9670;&#160;</a></span>SpacingByGap</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool FSplineMeshedSpawnParams::SpacingByGap = true</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>SpacingByGap will create gap of given size between them. </p>
-<p>True: will calculate mesh size and add gap value to find next position False: will place each mesh after given distance When false, spawn method fill be ignored (except single per segment) </p>
 
 </div>
 </div>
