@@ -140,10 +140,24 @@ virtual void&#160;</td><td class="memItemRight"><b>CopySplinePoints</b> (const <
 <tr class="memitem:a84a58aa95e43f613a03313728bfe853d" id="r_a84a58aa95e43f613a03313728bfe853d"><td class="memItemLeft"><a id="a84a58aa95e43f613a03313728bfe853d" name="a84a58aa95e43f613a03313728bfe853d"></a>
 virtual void&#160;</td><td class="memItemRight"><b>CopySplineAndMeshes</b> (const <a class="el" href="classUSplineMeshedComponent.html">USplineMeshedComponent</a> *copyFrom)</td></tr>
 <tr class="memdesc:a84a58aa95e43f613a03313728bfe853d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy spline points, curve and mesh properties. <br /></td></tr>
+<tr class="memitem:a9ce88010114eb7643cf415d5fc15e16d" id="r_a9ce88010114eb7643cf415d5fc15e16d"><td class="memItemLeft"><a id="a9ce88010114eb7643cf415d5fc15e16d" name="a9ce88010114eb7643cf415d5fc15e16d"></a>
+void&#160;</td><td class="memItemRight"><b>MakeHelix</b> (const <a class="el" href="structFSplineHelixParams.html">FSplineHelixParams</a> &amp;HelixParams)</td></tr>
+<tr class="memdesc:a9ce88010114eb7643cf415d5fc15e16d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that changes points to helix. <br /></td></tr>
+<tr class="memitem:a0eb365a9e12c02cc373fb9da734e30e2" id="r_a0eb365a9e12c02cc373fb9da734e30e2"><td class="memItemLeft"><a id="a0eb365a9e12c02cc373fb9da734e30e2" name="a0eb365a9e12c02cc373fb9da734e30e2"></a>
+void&#160;</td><td class="memItemRight"><b>MakeSinus</b> (const <a class="el" href="structFSplineSinusParams.html">FSplineSinusParams</a> &amp;SinusParams)</td></tr>
+<tr class="memdesc:a0eb365a9e12c02cc373fb9da734e30e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that changes points to sinus. <br /></td></tr>
+<tr class="memitem:aa4e3e3aff2fe0081ffdbb115a63e35fc" id="r_aa4e3e3aff2fe0081ffdbb115a63e35fc"><td class="memItemLeft"><a id="aa4e3e3aff2fe0081ffdbb115a63e35fc" name="aa4e3e3aff2fe0081ffdbb115a63e35fc"></a>
+ASplineMeshActor *&#160;</td><td class="memItemRight"><b>SpawnMeshStaticClone</b> (const USplineMeshComponent *Mesh)</td></tr>
+<tr class="memdesc:aa4e3e3aff2fe0081ffdbb115a63e35fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spawns static actor in world and copies spline mesh properties. <br /></td></tr>
+<tr class="memitem:ac32b009d59a667dc343ef378f5bb2436" id="r_ac32b009d59a667dc343ef378f5bb2436"><td class="memItemLeft"><a id="ac32b009d59a667dc343ef378f5bb2436" name="ac32b009d59a667dc343ef378f5bb2436"></a>
+void&#160;</td><td class="memItemRight"><b>CloneSplineToStaticObjects</b> ()</td></tr>
+<tr class="memdesc:ac32b009d59a667dc343ef378f5bb2436"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates clone of all meshes in spline and make them static object. <br /></td></tr>
 <tr class="memitem:a945bf84c3f5af905b0f6b535266e8da3" id="r_a945bf84c3f5af905b0f6b535266e8da3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a945bf84c3f5af905b0f6b535266e8da3">SetSmoothnessAtPoint</a> (int keyIndex, float smoothness=1.f, float ZRotationDeg=0.f)</td></tr>
 <tr class="memdesc:a945bf84c3f5af905b0f6b535266e8da3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change single point to have given smoothness and rotation.  <br /></td></tr>
 <tr class="memitem:aec99d8fbe687365a3e052f88c8ac2990" id="r_aec99d8fbe687365a3e052f88c8ac2990"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aec99d8fbe687365a3e052f88c8ac2990">SetSmoothnessAtAllPoints</a> (float smoothness=1.f, float ZRotationDeg=0.f)</td></tr>
 <tr class="memdesc:aec99d8fbe687365a3e052f88c8ac2990"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change spline all points to have desired params.  <br /></td></tr>
+<tr class="memitem:aa36e74622f4106433511fbc9f47f3847" id="r_aa36e74622f4106433511fbc9f47f3847"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aa36e74622f4106433511fbc9f47f3847">OffsetAllPoints</a> (const FVector &amp;RelativeOffset)</td></tr>
+<tr class="memdesc:aa36e74622f4106433511fbc9f47f3847"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function used to move all spline points with given relative offset.  <br /></td></tr>
 <tr class="memitem:aeb3746f79c9bd818188638ee41e103db" id="r_aeb3746f79c9bd818188638ee41e103db"><td class="memItemLeft"><a id="aeb3746f79c9bd818188638ee41e103db" name="aeb3746f79c9bd818188638ee41e103db"></a>
 void&#160;</td><td class="memItemRight"><b>Sharp</b> ()</td></tr>
 <tr class="memdesc:aeb3746f79c9bd818188638ee41e103db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function will adjust tangents of all points to make it sharp. <br /></td></tr>
@@ -164,25 +178,31 @@ void&#160;</td><td class="memItemRight"><b>CustomTangentsAllPoints</b> ()</td></
 <tr class="memdesc:a653b9ac49e0a82091f61a1e1533d02ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function will adjust tangents of all spline points using <a class="el" href="#a163a6373860c8fe000bd1b3bfdd65648" title="TangentToolParams">TangentToolParams</a> variable. <br /></td></tr>
 <tr class="memitem:a1a8091e532457e23af39ee0462dc5161" id="r_a1a8091e532457e23af39ee0462dc5161"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a1a8091e532457e23af39ee0462dc5161">DetectObjectsAlongSpline</a> (TArray&lt; <a class="el" href="structFSplineMeshedOverlapResult.html">FSplineMeshedOverlapResult</a> &gt; &amp;DetectResults, <a class="el" href="structFSplineDetectionTestParams.html">FSplineDetectionTestParams</a> DetectionParams) const</td></tr>
 <tr class="memdesc:a1a8091e532457e23af39ee0462dc5161"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detection function that iterates along spline and does multiple checks.  <br /></td></tr>
-<tr class="memitem:aa284793dce8db65919165feac0ac1752" id="r_aa284793dce8db65919165feac0ac1752"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aa284793dce8db65919165feac0ac1752">DetectionFunction</a> (TArray&lt; <a class="el" href="structFSplineMeshedOverlapResult.html">FSplineMeshedOverlapResult</a> &gt; &amp;LocalOverlaps, UWorld *World, const FVector &amp;LocationIn, const FQuat &amp;RotationIn, const <a class="el" href="structFSplineDetectionTestParams.html">FSplineDetectionTestParams</a> &amp;ParamsIn) const</td></tr>
-<tr class="memdesc:aa284793dce8db65919165feac0ac1752"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detection function's body, (can be customized), used by <a class="el" href="#a1a8091e532457e23af39ee0462dc5161" title="DetectObjectsAlongSpline">DetectObjectsAlongSpline</a>. By default, it detects overlaps by object type.  <br /></td></tr>
+<tr class="memitem:a145ccab048cf8817048b66a063b4bee9" id="r_a145ccab048cf8817048b66a063b4bee9"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a145ccab048cf8817048b66a063b4bee9">DetectionFunction</a> (TArray&lt; <a class="el" href="structFSplineMeshedOverlapResult.html">FSplineMeshedOverlapResult</a> &gt; &amp;DetectedObjects, UWorld *World, const FVector &amp;LocationIn, const FQuat &amp;RotationIn, const <a class="el" href="structFSplineDetectionTestParams.html">FSplineDetectionTestParams</a> &amp;ParamsIn) const</td></tr>
+<tr class="memdesc:a145ccab048cf8817048b66a063b4bee9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detection function's body, (can be customized), used by <a class="el" href="#a1a8091e532457e23af39ee0462dc5161" title="DetectObjectsAlongSpline">DetectObjectsAlongSpline</a>. By default, it detects overlaps by object type.  <br /></td></tr>
 <tr class="memitem:ac0b770dbc1fedb9b4f216fa7e616c0d5" id="r_ac0b770dbc1fedb9b4f216fa7e616c0d5"><td class="memItemLeft">FVector&#160;</td><td class="memItemRight"><a class="el" href="#ac0b770dbc1fedb9b4f216fa7e616c0d5">VectorFrom2Points</a> (float distanceA, float distanceB, const TEnumAsByte&lt; ESplineCoordinateSpace::Type &gt; &amp;CoordSpace=ESplineCoordinateSpace::World) const</td></tr>
 <tr class="memdesc:ac0b770dbc1fedb9b4f216fa7e616c0d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get normalized vector between 2 points, points are clamped to spline length.  <br /></td></tr>
+<tr class="memitem:af9992beacbc970889197859efdce5d0e" id="r_af9992beacbc970889197859efdce5d0e"><td class="memItemLeft"><a id="af9992beacbc970889197859efdce5d0e" name="af9992beacbc970889197859efdce5d0e"></a>
+FVector&#160;</td><td class="memItemRight"><b>CalculateSplineUpVector</b> (<a class="el" href="SplineMeshedComponent_8h.html#a9135761ea76014f745be989347f84098">ESplineRotateMode</a> Mode, const FVector &amp;CurrentUp, const FVector &amp;CurrentForward, const FVector &amp;PrevUp, const FVector &amp;UpParameter) const</td></tr>
+<tr class="memdesc:af9992beacbc970889197859efdce5d0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function used to calculate UpVector from given vectors. <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a226ecd0737db9e8aed1bba70a41f121b" id="r_a226ecd0737db9e8aed1bba70a41f121b"><td class="memItemLeft"><a id="a226ecd0737db9e8aed1bba70a41f121b" name="a226ecd0737db9e8aed1bba70a41f121b"></a>
 static void&#160;</td><td class="memItemRight"><b>ApplyParamsToMesh</b> (const <a class="el" href="structFYasiuSplineMeshParams.html">FYasiuSplineMeshParams</a> &amp;params, USplineMeshComponent *Mesh)</td></tr>
-<tr class="memdesc:a226ecd0737db9e8aed1bba70a41f121b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies all parameters from struct to Mesh Object. <br /></td></tr>
+<tr class="memdesc:a226ecd0737db9e8aed1bba70a41f121b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies all parameters from struct to SplineMesh Object. Except ForwardDir and StaticMesh. <br /></td></tr>
+<tr class="memitem:a305d39e029226b7695cbc4d5a4e0f7cd" id="r_a305d39e029226b7695cbc4d5a4e0f7cd"><td class="memItemLeft"><a id="a305d39e029226b7695cbc4d5a4e0f7cd" name="a305d39e029226b7695cbc4d5a4e0f7cd"></a>
+static void&#160;</td><td class="memItemRight"><b>CopyMeshMaterials</b> (const UMeshComponent *copyFrom, UMeshComponent *copyTo)</td></tr>
+<tr class="memdesc:a305d39e029226b7695cbc4d5a4e0f7cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy materials between meshes. <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:ad9480c67e3226d4631a30b74f2926f38" id="r_ad9480c67e3226d4631a30b74f2926f38"><td class="memItemLeft"><a id="ad9480c67e3226d4631a30b74f2926f38" name="ad9480c67e3226d4631a30b74f2926f38"></a>
 <a class="el" href="structFSplineSinusParams.html">FSplineSinusParams</a>&#160;</td><td class="memItemRight"><b>SinusToolParams</b> {}</td></tr>
-<tr class="memdesc:ad9480c67e3226d4631a30b74f2926f38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameters to create sinus spline. <br /></td></tr>
+<tr class="memdesc:ad9480c67e3226d4631a30b74f2926f38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameters to create sinus spline in editor. <br /></td></tr>
 <tr class="memitem:a96dd1aa9636520965c96b1100e917403" id="r_a96dd1aa9636520965c96b1100e917403"><td class="memItemLeft"><a id="a96dd1aa9636520965c96b1100e917403" name="a96dd1aa9636520965c96b1100e917403"></a>
 <a class="el" href="structFSplineHelixParams.html">FSplineHelixParams</a>&#160;</td><td class="memItemRight"><b>HelixToolParams</b> {}</td></tr>
-<tr class="memdesc:a96dd1aa9636520965c96b1100e917403"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameters to create helix spline. <br /></td></tr>
+<tr class="memdesc:a96dd1aa9636520965c96b1100e917403"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameters to create helix spline in editor. <br /></td></tr>
 <tr class="memitem:a163a6373860c8fe000bd1b3bfdd65648" id="r_a163a6373860c8fe000bd1b3bfdd65648"><td class="memItemLeft"><a id="a163a6373860c8fe000bd1b3bfdd65648" name="a163a6373860c8fe000bd1b3bfdd65648"></a>
 <a class="el" href="structFSplineSmoothParams.html">FSplineSmoothParams</a>&#160;</td><td class="memItemRight"><b>TangentToolParams</b> {}</td></tr>
 <tr class="memdesc:a163a6373860c8fe000bd1b3bfdd65648"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameter used by editor commands. <br /></td></tr>
@@ -222,8 +242,8 @@ TArray&lt; TObjectPtr&lt; USplineMeshComponent &gt; &gt;&#160;</td><td class="me
 
 </div>
 </div>
-<a id="aa284793dce8db65919165feac0ac1752" name="aa284793dce8db65919165feac0ac1752"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa284793dce8db65919165feac0ac1752">&#9670;&#160;</a></span>DetectionFunction()</h2>
+<a id="a145ccab048cf8817048b66a063b4bee9" name="a145ccab048cf8817048b66a063b4bee9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a145ccab048cf8817048b66a063b4bee9">&#9670;&#160;</a></span>DetectionFunction()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -231,7 +251,7 @@ TArray&lt; TObjectPtr&lt; USplineMeshComponent &gt; &gt;&#160;</td><td class="me
         <tr>
           <td class="memname">void USplineMeshedComponent::DetectionFunction </td>
           <td>(</td>
-          <td class="paramtype">TArray&lt; <a class="el" href="structFSplineMeshedOverlapResult.html">FSplineMeshedOverlapResult</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>LocalOverlaps</em></span>, </td>
+          <td class="paramtype">TArray&lt; <a class="el" href="structFSplineMeshedOverlapResult.html">FSplineMeshedOverlapResult</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>DetectedObjects</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -258,10 +278,10 @@ TArray&lt; TObjectPtr&lt; USplineMeshComponent &gt; &gt;&#160;</td><td class="me
 
 <p>Detection function's body, (can be customized), used by <a class="el" href="#a1a8091e532457e23af39ee0462dc5161" title="DetectObjectsAlongSpline">DetectObjectsAlongSpline</a>. By default, it detects overlaps by object type. </p>
 <p>Other objects must have Collision "Query" enabled and math collision channel in <b>paramsIn</b></p>
-<dl class="section note"><dt>Note</dt><dd>Please aggregate detected actors into localOverlaps if you want proper results from <a class="el" href="#a1a8091e532457e23af39ee0462dc5161" title="DetectObjectsAlongSpline">DetectObjectsAlongSpline</a></dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Please aggregate detected object into DetectedObjects if you want proper results from <a class="el" href="#a1a8091e532457e23af39ee0462dc5161" title="DetectObjectsAlongSpline">DetectObjectsAlongSpline</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">LocalOverlaps</td><td>Output array, passed to top function. </td></tr>
+    <tr><td class="paramname">DetectedObjects</td><td>Output array, passed to top function. </td></tr>
     <tr><td class="paramname">World</td><td>World reference used to run detection </td></tr>
     <tr><td class="paramname">LocationIn</td><td>Location of detection </td></tr>
     <tr><td class="paramname">RotationIn</td><td>Rotation of detection </td></tr>
@@ -269,7 +289,6 @@ TArray&lt; TObjectPtr&lt; USplineMeshComponent &gt; &gt;&#160;</td><td class="me
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns <b>True</b> if found at least 1 object </dd></dl>
 
 </div>
 </div>
@@ -297,9 +316,9 @@ TArray&lt; TObjectPtr&lt; USplineMeshComponent &gt; &gt;&#160;</td><td class="me
 <p>Returns all objects of given type, ignoring their <b>ChannelType responses</b>.</p>
 <dl class="section note"><dt>Note</dt><dd>Detection can be modified (by Injection) </dd>
 <dd>
-In BP please override CustomDetectionFunction </dd>
+In BP please override <a class="el" href="#a145ccab048cf8817048b66a063b4bee9" title="DetectionFunction">DetectionFunction</a> </dd>
 <dd>
-In C++ override <b>CustomDetectionFunction_Implementation</b>, it is BlueprintNativeEvent</dd></dl>
+In C++ override <b>DetectionFunction_Implementation</b>, it is BlueprintNativeEvent</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">DetectResults</td><td>Output array of detected actors </td></tr>
@@ -330,6 +349,31 @@ In C++ override <b>CustomDetectionFunction_Implementation</b>, it is BlueprintNa
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">OutArray</td><td>Array with pointers to all valid objects. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa36e74622f4106433511fbc9f47f3847" name="aa36e74622f4106433511fbc9f47f3847"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa36e74622f4106433511fbc9f47f3847">&#9670;&#160;</a></span>OffsetAllPoints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void USplineMeshedComponent::OffsetAllPoints </td>
+          <td>(</td>
+          <td class="paramtype">const FVector &amp;</td>          <td class="paramname"><span class="paramname"><em>RelativeOffset</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function used to move all spline points with given relative offset. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">RelativeOffset</td><td>Relative offset to apply </td></tr>
   </table>
   </dd>
 </dl>

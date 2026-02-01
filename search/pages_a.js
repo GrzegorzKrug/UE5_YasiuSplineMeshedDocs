@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['hierarchy_0',['Classes hierarchy',['../baseuse.html#autotoc_md26',1,'']]]
+  ['hierarchy_0',['Classes hierarchy',['../baseuse.html#autotoc_md28',1,'']]]
 ];

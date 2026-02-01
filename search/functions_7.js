@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['noneedtorerunconstruction_0',['NoNeedToRerunConstruction',['../classASplineMeshed.html#ae3c9afa4b891d19f341b45063375b9cb',1,'ASplineMeshed']]],
-  ['num_1',['Num',['../classUSplineMeshedComponent.html#a64eda4c580472ebeeb173c572700d909',1,'USplineMeshedComponent']]]
+  ['makehelix_0',['MakeHelix',['../classUSplineMeshedComponent.html#a9ce88010114eb7643cf415d5fc15e16d',1,'USplineMeshedComponent']]],
+  ['makesinus_1',['MakeSinus',['../classUSplineMeshedComponent.html#a0eb365a9e12c02cc373fb9da734e30e2',1,'USplineMeshedComponent']]]
 ];

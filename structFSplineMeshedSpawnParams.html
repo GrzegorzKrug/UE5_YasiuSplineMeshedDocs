@@ -130,12 +130,11 @@ float&#160;</td><td class="memItemRight"><b>MeshSpacing</b> = 50</td></tr>
 <tr class="memitem:a2db90b7e238a38541d7c56903f132768" id="r_a2db90b7e238a38541d7c56903f132768"><td class="memItemLeft"><a id="a2db90b7e238a38541d7c56903f132768" name="a2db90b7e238a38541d7c56903f132768"></a>
 bool&#160;</td><td class="memItemRight"><b>DeformMesh</b> = true</td></tr>
 <tr class="memdesc:a2db90b7e238a38541d7c56903f132768"><td class="mdescLeft">&#160;</td><td class="mdescRight">Can meshes be deformed with tangents. <br /></td></tr>
-<tr class="memitem:af0a7acab67a5043a92c4567d386c7581" id="r_af0a7acab67a5043a92c4567d386c7581"><td class="memItemLeft"><a id="af0a7acab67a5043a92c4567d386c7581" name="af0a7acab67a5043a92c4567d386c7581"></a>
-bool&#160;</td><td class="memItemRight"><b>FixInvalidTangents</b> = true</td></tr>
-<tr class="memdesc:af0a7acab67a5043a92c4567d386c7581"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fix tangents that are perpendicular (prevents most deforms that show mesh inside). <br /></td></tr>
+<tr class="memitem:af0a7acab67a5043a92c4567d386c7581" id="r_af0a7acab67a5043a92c4567d386c7581"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#af0a7acab67a5043a92c4567d386c7581">FixInvalidTangents</a> = true</td></tr>
+<tr class="memdesc:af0a7acab67a5043a92c4567d386c7581"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fix tangents that are perpendicular (prevents most deforms that show mesh inside).  <br /></td></tr>
 <tr class="memitem:a2161495eeeeef4027128cd622d085fe2" id="r_a2161495eeeeef4027128cd622d085fe2"><td class="memItemLeft"><a id="a2161495eeeeef4027128cd622d085fe2" name="a2161495eeeeef4027128cd622d085fe2"></a>
 bool&#160;</td><td class="memItemRight"><b>FixSharpDeformations</b> = false</td></tr>
-<tr class="memdesc:a2161495eeeeef4027128cd622d085fe2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to fix (tangents) of meshes that are spawned on very tight curves. (FixTangents must be enabled). <br /></td></tr>
+<tr class="memdesc:a2161495eeeeef4027128cd622d085fe2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes (tangents) of meshes that are spawned on very tight curves. (FixInvalidTangents must be enabled). <br /></td></tr>
 <tr class="memitem:aa67816c1f9d0395c1298c4d1f964a48f" id="r_aa67816c1f9d0395c1298c4d1f964a48f"><td class="memItemLeft"><a id="aa67816c1f9d0395c1298c4d1f964a48f" name="aa67816c1f9d0395c1298c4d1f964a48f"></a>
 FVector&#160;</td><td class="memItemRight"><b>UpVector</b> {0, 0, 1}</td></tr>
 <tr class="memdesc:aa67816c1f9d0395c1298c4d1f964a48f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector for use with "Constant" rotation mode, <a class="el" href="SplineMeshedComponent_8h.html#a9135761ea76014f745be989347f84098" title="ESplineRotateMode">ESplineRotateMode</a>. <br /></td></tr>
@@ -164,7 +163,24 @@ FVector&#160;</td><td class="memItemRight"><b>UpVector</b> {0, 0, 1}</td></tr>
 </div><div class="memdoc">
 
 <p>Size of mesh in spine direction will be added to spacing step. </p>
-<p>True: will calculate mesh size and add gap value to find next position False: will place each mesh after given distance When false, spawn method fill be ignored (except single per segment) </p>
+<p>True: will calculate mesh size and add gap value to find next position False: will place each mesh after given distance Does not make any effect when StretchMode==SinglePerSegment </p>
+
+</div>
+</div>
+<a id="af0a7acab67a5043a92c4567d386c7581" name="af0a7acab67a5043a92c4567d386c7581"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0a7acab67a5043a92c4567d386c7581">&#9670;&#160;</a></span>FixInvalidTangents</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FSplineMeshedSpawnParams::FixInvalidTangents = true</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fix tangents that are perpendicular (prevents most deforms that show mesh inside). </p>
+<p>Threshold is 20% or normalized CrossProduct </p>
 
 </div>
 </div>
@@ -184,8 +200,8 @@ FVector&#160;</td><td class="memItemRight"><b>UpVector</b> {0, 0, 1}</td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">Location</td><td>Offset is relative to spline (not relative to rotation change) </td></tr>
-    <tr><td class="paramname">Rotation</td><td>Rotation change relative to spline </td></tr>
-    <tr><td class="paramname">Scale</td><td>Scale change of mesh </td></tr>
+    <tr><td class="paramname">Rotation</td><td>change relative to spline </td></tr>
+    <tr><td class="paramname">Scale</td><td>change of mesh </td></tr>
   </table>
   </dd>
 </dl>
