@@ -4,6 +4,6 @@
 
 \subpage baseuse
 
-[//]: # (\subpage examples)
+\subpage example
 
 \subpage issues

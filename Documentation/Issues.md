@@ -6,4 +6,9 @@
 - It can cause temporary object hanging as part of actor/component.
 - Meshes will not be saved and will disappear after restart (or level change).
 
+### Buttons
+@note Some buttons should not be visible in editor.
+- Functions are disabled to not cause crash, but buttons may still be visible.
+
+
 ---

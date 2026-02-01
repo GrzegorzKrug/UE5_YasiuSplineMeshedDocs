@@ -6,7 +6,7 @@
 
 1. Download the ZIP file containing the plugin.
 
-- From FAB [Marketplace]() todo link
+- [MarketPlace (Fab)](https://www.fab.com/listings/a273ca9f-3e51-4837-94dc-c8c0a2638995)
 
 2. Locate your Unreal Engine project folder on your computer.
 3. Inside your project folder, create a new folder named **Plugins** if it doesn’t already exist.
@@ -25,7 +25,7 @@ YourProject
 
 ---
 
-## 2A. C++ Dependency
+## 2. C++ Dependency
 
 Add dependency to your project in build file: **ProjectName.Build.cs**
 
@@ -33,9 +33,7 @@ Add dependency to your project in build file: **ProjectName.Build.cs**
    PrivateDependencyModuleNames.AddRange(new string[] { "YasiuSplineMeshed" });
 ```
 
----
-
-## 2B. Enable the Plugin in Unreal Engine
+### (Probably optional) Enable the Plugin in Unreal Engine
 
 1. Open your Unreal Engine project.
 2. In the top menu, select **Edit → Plugins**.
