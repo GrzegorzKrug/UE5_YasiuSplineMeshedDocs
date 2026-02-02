@@ -14,12 +14,11 @@ var searchData=
   ['component_11',['Use pre-created actor with component',['../baseuse.html#autotoc_md24',1,'']]],
   ['component_20features_12',['SplineMeshed Component features',['../md_Documentation_2About.html#autotoc_md5',1,'']]],
   ['component_20to_20your_20actor_20in_20bp_13',['Add component to your actor in BP',['../baseuse.html#autotoc_md25',1,'']]],
-  ['constantabsolute_14',['ConstantAbsolute',['../SplineMeshedComponent_8h.html#a9135761ea76014f745be989347f84098a6fbf16c129ce9a4415643c5ced587a67',1,'SplineMeshedComponent.h']]],
-  ['constantrelative_15',['ConstantRelative',['../SplineMeshedComponent_8h.html#a9135761ea76014f745be989347f84098a635f29ead0a8d03cf8d3e69299d62ac9',1,'SplineMeshedComponent.h']]],
-  ['copymeshmaterials_16',['CopyMeshMaterials',['../classUSplineMeshedComponent.html#a305d39e029226b7695cbc4d5a4e0f7cd',1,'USplineMeshedComponent']]],
-  ['copysplineandmeshes_17',['CopySplineAndMeshes',['../classUSplineMeshedComponent.html#a84a58aa95e43f613a03313728bfe853d',1,'USplineMeshedComponent']]],
-  ['copysplinepoints_18',['CopySplinePoints',['../classUSplineMeshedComponent.html#afb54158f09a1e1dc5cb04d10211eb1ea',1,'USplineMeshedComponent']]],
-  ['created_20actor_20with_20component_19',['Use pre-created actor with component',['../baseuse.html#autotoc_md24',1,'']]],
-  ['customtangents_20',['CustomTangents',['../classUSplineMeshedComponent.html#a4390ce371e26ca9ebf81573b779deddc',1,'USplineMeshedComponent']]],
-  ['customtangentsallpoints_21',['CustomTangentsAllPoints',['../classUSplineMeshedComponent.html#a653b9ac49e0a82091f61a1e1533d02ae',1,'USplineMeshedComponent']]]
+  ['constructionfinished_14',['ConstructionFinished',['../classASplineMeshed.html#a6a28573a0bd9c59a0a01795a7e08cd39',1,'ASplineMeshed']]],
+  ['copymeshmaterials_15',['CopyMeshMaterials',['../classUSplineMeshedComponent.html#a305d39e029226b7695cbc4d5a4e0f7cd',1,'USplineMeshedComponent']]],
+  ['copysplineandmeshes_16',['CopySplineAndMeshes',['../classUSplineMeshedComponent.html#a84a58aa95e43f613a03313728bfe853d',1,'USplineMeshedComponent']]],
+  ['copysplinepoints_17',['CopySplinePoints',['../classUSplineMeshedComponent.html#afb54158f09a1e1dc5cb04d10211eb1ea',1,'USplineMeshedComponent']]],
+  ['created_20actor_20with_20component_18',['Use pre-created actor with component',['../baseuse.html#autotoc_md24',1,'']]],
+  ['customtangents_19',['CustomTangents',['../classUSplineMeshedComponent.html#a4390ce371e26ca9ebf81573b779deddc',1,'USplineMeshedComponent']]],
+  ['customtangentsallpoints_20',['CustomTangentsAllPoints',['../classUSplineMeshedComponent.html#a653b9ac49e0a82091f61a1e1533d02ae',1,'USplineMeshedComponent']]]
 ];

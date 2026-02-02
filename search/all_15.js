@@ -8,6 +8,5 @@ var searchData=
   ['the_20plugin_20in_20unreal_20engine_5',['(Probably optional) Enable the Plugin in Unreal Engine',['../install.html#autotoc_md18',1,'']]],
   ['to_20your_20actor_20in_20bp_6',['Add component to your actor in BP',['../baseuse.html#autotoc_md25',1,'']]],
   ['tracecomplex_7',['TraceComplex',['../structFSplineDetectionTestParams.html#ad62314de7cd09624a78e297eeece202d',1,'FSplineDetectionTestParams']]],
-  ['translation_8',['Translation',['../structFSplineRandomness.html#a4571b50905bf2a3bd6bd1d134b62a7df',1,'FSplineRandomness']]],
-  ['twistfix_9',['TwistFix',['../SplineMeshedComponent_8h.html#a9135761ea76014f745be989347f84098af9bfcd21a32539b98a03390875851a99',1,'SplineMeshedComponent.h']]]
+  ['translation_8',['Translation',['../structFSplineRandomness.html#a4571b50905bf2a3bd6bd1d134b62a7df',1,'FSplineRandomness']]]
 ];

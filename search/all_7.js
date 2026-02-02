@@ -7,12 +7,10 @@ var searchData=
   ['endscale_4',['EndScale',['../structFYasiuSplineMeshParams.html#a3519f494efeb1a0208e916902cb5ac0e',1,'FYasiuSplineMeshParams']]],
   ['endtangent_5',['EndTangent',['../structFYasiuSplineMeshParams.html#ab1545d15d9950d6804effbf0e5f562d9',1,'FYasiuSplineMeshParams']]],
   ['engine_6',['(Probably optional) Enable the Plugin in Unreal Engine',['../install.html#autotoc_md18',1,'']]],
-  ['esplinemeshstretching_7',['ESplineMeshStretching',['../SplineMeshedComponent_8h.html#a7ce2ebb92b14932a913299550e72b6ff',1,'SplineMeshedComponent.h']]],
-  ['esplinerotatemode_8',['ESplineRotateMode',['../SplineMeshedComponent_8h.html#a9135761ea76014f745be989347f84098',1,'SplineMeshedComponent.h']]],
-  ['examples_9',['Examples',['../example.html',1,'mainpage']]],
-  ['examples_20are_20demonstrated_20in_20demo_20level_10',['Examples are demonstrated in demo level',['../example.html#autotoc_md12',1,'']]],
-  ['extendedspline_11',['ExtendedSpline',['../classUSplineMeshedComponent__Extension.html#a33791bc8745fa744c5af21b5a13b5b0e',1,'USplineMeshedComponent_Extension']]],
-  ['extending_20functionality_12',['Extending functionality',['../baseuse.html#autotoc_md30',1,'']]],
-  ['extract_20the_20plugin_13',['1. Download and Extract the Plugin',['../install.html#autotoc_md15',1,'']]],
-  ['extracurvy_14',['ExtraCurvy',['../classUSplineMeshedComponent.html#a7297dab4bceab781599f93aef38d628e',1,'USplineMeshedComponent']]]
+  ['examples_7',['Examples',['../example.html',1,'mainpage']]],
+  ['examples_20are_20demonstrated_20in_20demo_20level_8',['Examples are demonstrated in demo level',['../example.html#autotoc_md12',1,'']]],
+  ['extendedspline_9',['ExtendedSpline',['../classUSplineMeshedComponent__Extension.html#a33791bc8745fa744c5af21b5a13b5b0e',1,'USplineMeshedComponent_Extension']]],
+  ['extending_20functionality_10',['Extending functionality',['../baseuse.html#autotoc_md30',1,'']]],
+  ['extract_20the_20plugin_11',['1. Download and Extract the Plugin',['../install.html#autotoc_md15',1,'']]],
+  ['extracurvy_12',['ExtraCurvy',['../classUSplineMeshedComponent.html#a7297dab4bceab781599f93aef38d628e',1,'USplineMeshedComponent']]]
 ];
