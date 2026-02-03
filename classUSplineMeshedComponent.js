@@ -3,7 +3,7 @@ var classUSplineMeshedComponent =
     [ "ApplyParamsToMesh", "classUSplineMeshedComponent.html#a226ecd0737db9e8aed1bba70a41f121b", null ],
     [ "CalculateSplineUpVector", "classUSplineMeshedComponent.html#af9992beacbc970889197859efdce5d0e", null ],
     [ "ChangeMesh", "classUSplineMeshedComponent.html#abfe23e44c33dd90915cff2e717326c2a", null ],
-    [ "CloneSplineToStaticObjects", "classUSplineMeshedComponent.html#ac32b009d59a667dc343ef378f5bb2436", null ],
+    [ "CloneSplineToStaticActors", "classUSplineMeshedComponent.html#ac1e0f7905686cc632e055c0f5267352c", null ],
     [ "CopyMeshMaterials", "classUSplineMeshedComponent.html#a305d39e029226b7695cbc4d5a4e0f7cd", null ],
     [ "CopySplineAndMeshes", "classUSplineMeshedComponent.html#a84a58aa95e43f613a03313728bfe853d", null ],
     [ "CopySplinePoints", "classUSplineMeshedComponent.html#afb54158f09a1e1dc5cb04d10211eb1ea", null ],

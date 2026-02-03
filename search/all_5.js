@@ -6,7 +6,7 @@ var searchData=
   ['centermesh_3',['CenterMesh',['../structFSplineDetectionTestParams.html#a0339d5d405025b425072707cfef68ccd',1,'FSplineDetectionTestParams']]],
   ['changemesh_4',['ChangeMesh',['../classUSplineMeshedComponent.html#abfe23e44c33dd90915cff2e717326c2a',1,'USplineMeshedComponent']]],
   ['classes_20hierarchy_5',['Classes hierarchy',['../baseuse.html#autotoc_md28',1,'']]],
-  ['clonesplinetostaticobjects_6',['CloneSplineToStaticObjects',['../classUSplineMeshedComponent.html#ac32b009d59a667dc343ef378f5bb2436',1,'USplineMeshedComponent']]],
+  ['clonesplinetostaticactors_6',['CloneSplineToStaticActors',['../classUSplineMeshedComponent.html#ac1e0f7905686cc632e055c0f5267352c',1,'USplineMeshedComponent']]],
   ['collisionenabled_7',['CollisionEnabled',['../structFSplineMeshedCollision.html#af0285027b186a21eba29b4bebf8d75af',1,'FSplineMeshedCollision']]],
   ['collisionpreset_8',['CollisionPreset',['../structFSplineMeshedSpawnParams.html#ae849dd18baf12389c2ff8d96522dad86',1,'FSplineMeshedSpawnParams']]],
   ['collisiontype_9',['CollisionType',['../structFSplineMeshedCollision.html#aba11c4cf02559491f01cc2b4ae7f4fe1',1,'FSplineMeshedCollision']]],

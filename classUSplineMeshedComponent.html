@@ -149,11 +149,10 @@ void&#160;</td><td class="memItemRight"><b>MakeSinus</b> (const <a class="el" hr
 <tr class="memitem:aa4e3e3aff2fe0081ffdbb115a63e35fc" id="r_aa4e3e3aff2fe0081ffdbb115a63e35fc"><td class="memItemLeft"><a id="aa4e3e3aff2fe0081ffdbb115a63e35fc" name="aa4e3e3aff2fe0081ffdbb115a63e35fc"></a>
 ASplineMeshActor *&#160;</td><td class="memItemRight"><b>SpawnMeshStaticClone</b> (const USplineMeshComponent *Mesh)</td></tr>
 <tr class="memdesc:aa4e3e3aff2fe0081ffdbb115a63e35fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spawns static actor in world and copies spline mesh properties. <br /></td></tr>
-<tr class="memitem:ac32b009d59a667dc343ef378f5bb2436" id="r_ac32b009d59a667dc343ef378f5bb2436"><td class="memItemLeft"><a id="ac32b009d59a667dc343ef378f5bb2436" name="ac32b009d59a667dc343ef378f5bb2436"></a>
-void&#160;</td><td class="memItemRight"><b>CloneSplineToStaticObjects</b> ()</td></tr>
-<tr class="memdesc:ac32b009d59a667dc343ef378f5bb2436"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates clone of all meshes in spline and make them static object. <br /></td></tr>
+<tr class="memitem:ac1e0f7905686cc632e055c0f5267352c" id="r_ac1e0f7905686cc632e055c0f5267352c"><td class="memItemLeft">TArray&lt; ASplineMeshActor * &gt;&#160;</td><td class="memItemRight"><a class="el" href="#ac1e0f7905686cc632e055c0f5267352c">CloneSplineToStaticActors</a> ()</td></tr>
+<tr class="memdesc:ac1e0f7905686cc632e055c0f5267352c"><td class="mdescLeft">&#160;</td><td class="mdescRight">clone of all meshes in spline and make them static object  <br /></td></tr>
 <tr class="memitem:a945bf84c3f5af905b0f6b535266e8da3" id="r_a945bf84c3f5af905b0f6b535266e8da3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a945bf84c3f5af905b0f6b535266e8da3">SetSmoothnessAtPoint</a> (int keyIndex, float smoothness=1.f, float ZRotationDeg=0.f)</td></tr>
-<tr class="memdesc:a945bf84c3f5af905b0f6b535266e8da3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change single point to have given smoothness and rotation.  <br /></td></tr>
+<tr class="memdesc:a945bf84c3f5af905b0f6b535266e8da3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change single point to have given smoothness and rotation. Does not update actor!  <br /></td></tr>
 <tr class="memitem:aec99d8fbe687365a3e052f88c8ac2990" id="r_aec99d8fbe687365a3e052f88c8ac2990"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aec99d8fbe687365a3e052f88c8ac2990">SetSmoothnessAtAllPoints</a> (float smoothness=1.f, float ZRotationDeg=0.f)</td></tr>
 <tr class="memdesc:aec99d8fbe687365a3e052f88c8ac2990"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change spline all points to have desired params.  <br /></td></tr>
 <tr class="memitem:aa36e74622f4106433511fbc9f47f3847" id="r_aa36e74622f4106433511fbc9f47f3847"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aa36e74622f4106433511fbc9f47f3847">OffsetAllPoints</a> (const FVector &amp;RelativeOffset)</td></tr>
@@ -239,6 +238,26 @@ TArray&lt; TObjectPtr&lt; USplineMeshComponent &gt; &gt;&#160;</td><td class="me
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ac1e0f7905686cc632e055c0f5267352c" name="ac1e0f7905686cc632e055c0f5267352c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1e0f7905686cc632e055c0f5267352c">&#9670;&#160;</a></span>CloneSplineToStaticActors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TArray&lt; ASplineMeshActor * &gt; USplineMeshedComponent::CloneSplineToStaticActors </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>clone of all meshes in spline and make them static object </p>
+<dl class="section return"><dt>Returns</dt><dd>Array of actors spawned in world </dd></dl>
 
 </div>
 </div>
@@ -553,7 +572,7 @@ In C++ override <b>OnMeshSpawn_Implementation</b>, it is BlueprintNativeEvent</d
       </table>
 </div><div class="memdoc">
 
-<p>Change single point to have given smoothness and rotation. </p>
+<p>Change single point to have given smoothness and rotation. Does not update actor! </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">keyIndex</td><td>Spline point index </td></tr>
