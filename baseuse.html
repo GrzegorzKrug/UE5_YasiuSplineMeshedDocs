@@ -99,13 +99,13 @@ $(function(){initNavTree('baseuse.html','',''); });
   <div class="headertitle"><div class="title">Quick Use </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1 class="doxsection"><a class="anchor" id="autotoc_md24"></a>
+<div class="textblock"><h1 class="doxsection"><a class="anchor" id="autotoc_md25"></a>
 Use pre-created actor with component</h1>
 <ul>
 <li>Spawn actor class in level: <b><a class="el" href="classASplineMeshed.html" title="Base actor class with attached component for quick and drag, customizable Actor updates spline and me...">ASplineMeshed</a></b> class</li>
 <li>Create child actor class from: <b><a class="el" href="classASplineMeshed.html" title="Base actor class with attached component for quick and drag, customizable Actor updates spline and me...">ASplineMeshed</a></b> class</li>
 </ul>
-<h1 class="doxsection"><a class="anchor" id="autotoc_md25"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md26"></a>
 Add component to your actor in BP</h1>
 <p>Use one of this:</p><ul>
 <li>Attach component to actor in component tree</li>
@@ -116,7 +116,7 @@ Add component to your actor in BP</h1>
 </li>
 </ul>
 <hr  />
-<h1 class="doxsection"><a class="anchor" id="autotoc_md27"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md28"></a>
 Use in C++</h1>
 <p>To access Spline Meshed component or class: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="SplineMeshedComponent_8h.html">SplineMeshedComponent.h</a>&quot;</span> </div>
 <div class="line"><span class="preprocessor">#include &quot;<a class="code" href="SplineMeshedActor_8h.html">SplineMeshedActor.h</a>&quot;</span>  </div>
@@ -125,8 +125,8 @@ Use in C++</h1>
 </div><!-- fragment --><p>It is <b>UObject</b>, so it must comply with unreal engine rules for objects lifecycle. Store ref value as any UObject if you want it to persist in game for longer. </p><div class="fragment"><div class="line"><span class="comment">/* Declaration in class, write initialization in CDO */</span></div>
 <div class="line">UPROPERTY()</div>
 <div class="line">TObjectPtr&lt;<a class="code hl_class" href="classUSplineMeshedComponent.html">USplineMeshedComponent</a>&gt; SplineMeshCmp;</div>
-<div class="ttc" id="aclassUSplineMeshedComponent_html"><div class="ttname"><a href="classUSplineMeshedComponent.html">USplineMeshedComponent</a></div><div class="ttdoc">Core component that handles meshes spawning along spline.</div><div class="ttdef"><b>Definition</b> SplineMeshedComponent.h:624</div></div>
-</div><!-- fragment --> <h2 class="doxsection"><a class="anchor" id="autotoc_md28"></a>
+<div class="ttc" id="aclassUSplineMeshedComponent_html"><div class="ttname"><a href="classUSplineMeshedComponent.html">USplineMeshedComponent</a></div><div class="ttdoc">Core component that handles meshes spawning along spline.</div><div class="ttdef"><b>Definition</b> SplineMeshedComponent.h:636</div></div>
+</div><!-- fragment --> <h2 class="doxsection"><a class="anchor" id="autotoc_md29"></a>
 Classes hierarchy</h2>
 <p>Core component:</p><ul>
 <li><a class="el" href="classUSplineMeshedComponent.html" title="USplineMeshedComponent">USplineMeshedComponent</a> : core component</li>
@@ -137,15 +137,19 @@ Classes hierarchy</h2>
 <li><a class="el" href="classASplineMeshed__AbstractExtension.html" title="ASplineMeshed_AbstractExtension">ASplineMeshed_AbstractExtension</a> : Actor with modified component</li>
 </ul>
 <hr  />
-<h1 class="doxsection"><a class="anchor" id="autotoc_md30"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md31"></a>
 Extending functionality</h1>
 <p>Class has exposed function to use and override modification of every mesh for custom desire.</p><ul>
 <li>Create child class of any component:<ul>
 <li>Override function <a class="el" href="classUSplineMeshedComponent.html#a44ecb043daf44f981266df347b928ece" title="USplineMeshedComponent::OnMeshSpawn">OnMeshSpawn</a> (for spawn customization)</li>
-<li>Override function <a class="el" href="classUSplineMeshedComponent.html#a145ccab048cf8817048b66a063b4bee9" title="USplineMeshedComponent::DetectionFunction">Detection</a> (for collision detection) </li>
+<li>Override function <a class="el" href="classUSplineMeshedComponent.html#a145ccab048cf8817048b66a063b4bee9" title="USplineMeshedComponent::DetectionFunction">Detection</a> (for collision detection)</li>
 </ul>
 </li>
 </ul>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md32"></a>
+Customizing pipeline</h2>
+<p>All functions useful for creating custom pipeline are exposed for Blueprint.</p>
+<p>Spline function list: <a class="el" href="classUSplineMeshedComponent.html" title="USplineMeshedComponent">USplineMeshedComponent</a> </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

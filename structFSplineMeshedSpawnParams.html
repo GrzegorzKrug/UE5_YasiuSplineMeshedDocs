@@ -108,16 +108,16 @@ $(function(){initNavTree('structFSplineMeshedSpawnParams.html','','structFSpline
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a5e4e8db4da8829fd5de3e9bfd0d7a03e" id="r_a5e4e8db4da8829fd5de3e9bfd0d7a03e"><td class="memItemLeft"><a id="a5e4e8db4da8829fd5de3e9bfd0d7a03e" name="a5e4e8db4da8829fd5de3e9bfd0d7a03e"></a>
-&#160;</td><td class="memItemRight"><b>FSplineMeshedSpawnParams</b> (const float &amp;spacing, const bool &amp;deformMesh, const ESplineMeshAxis::Type &amp;forwardAxis, const ESplineRotateMode &amp;RotateMethod)</td></tr>
+&#160;</td><td class="memItemRight"><b>FSplineMeshedSpawnParams</b> (const float &amp;spacing, const bool &amp;deformMesh, const ESplineMeshAxis::Type &amp;forwardAxis, const <a class="el" href="SplineMeshedComponent_8h.html#a9135761ea76014f745be989347f84098">ESplineRotateMode</a> &amp;RotateMethod)</td></tr>
 <tr class="memdesc:a5e4e8db4da8829fd5de3e9bfd0d7a03e"><td class="mdescLeft">&#160;</td><td class="mdescRight">For Spaced non-deformed meshes. <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a3570d889c4018205e8b5b4d82e5faf3d" id="r_a3570d889c4018205e8b5b4d82e5faf3d"><td class="memItemLeft"><a id="a3570d889c4018205e8b5b4d82e5faf3d" name="a3570d889c4018205e8b5b4d82e5faf3d"></a>
-ESplineMeshStretching&#160;</td><td class="memItemRight"><b>StretchMethod</b> = ESplineMeshStretching::NoStretching</td></tr>
+<a class="el" href="SplineMeshedComponent_8h.html#a7ce2ebb92b14932a913299550e72b6ff">ESplineMeshStretching</a>&#160;</td><td class="memItemRight"><b>StretchMethod</b> = <a class="el" href="SplineMeshedComponent_8h.html#a7ce2ebb92b14932a913299550e72b6ffaa7c7ddc54be89a32393483203578bf48">ESplineMeshStretching::NoStretching</a></td></tr>
 <tr class="memdesc:a3570d889c4018205e8b5b4d82e5faf3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">How many meshes should be spawned along spline. <br /></td></tr>
 <tr class="memitem:af13eb122ac50043ad95b69a40796d97c" id="r_af13eb122ac50043ad95b69a40796d97c"><td class="memItemLeft"><a id="af13eb122ac50043ad95b69a40796d97c" name="af13eb122ac50043ad95b69a40796d97c"></a>
-ESplineRotateMode&#160;</td><td class="memItemRight"><b>RotationMethod</b> = ESplineRotateMode::TwistFix</td></tr>
+<a class="el" href="SplineMeshedComponent_8h.html#a9135761ea76014f745be989347f84098">ESplineRotateMode</a>&#160;</td><td class="memItemRight"><b>RotationMethod</b> = <a class="el" href="SplineMeshedComponent_8h.html#a9135761ea76014f745be989347f84098a06ab8e3bf209eebab733f863a0a1c4bf">ESplineRotateMode::DefaultFixed</a></td></tr>
 <tr class="memdesc:af13eb122ac50043ad95b69a40796d97c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method used for solving up vector. <br /></td></tr>
 <tr class="memitem:a88da45bffd27e0376eb0a8f515b5ffcc" id="r_a88da45bffd27e0376eb0a8f515b5ffcc"><td class="memItemLeft"><a id="a88da45bffd27e0376eb0a8f515b5ffcc" name="a88da45bffd27e0376eb0a8f515b5ffcc"></a>
 TEnumAsByte&lt; ESplineMeshAxis::Type &gt;&#160;</td><td class="memItemRight"><b>ForwardAxis</b> = ESplineMeshAxis::X</td></tr>
@@ -137,7 +137,7 @@ bool&#160;</td><td class="memItemRight"><b>FixSharpDeformations</b> = false</td>
 <tr class="memdesc:a2161495eeeeef4027128cd622d085fe2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes (tangents) of meshes that are spawned on very tight curves. (FixInvalidTangents must be enabled). <br /></td></tr>
 <tr class="memitem:aa67816c1f9d0395c1298c4d1f964a48f" id="r_aa67816c1f9d0395c1298c4d1f964a48f"><td class="memItemLeft"><a id="aa67816c1f9d0395c1298c4d1f964a48f" name="aa67816c1f9d0395c1298c4d1f964a48f"></a>
 FVector&#160;</td><td class="memItemRight"><b>UpVector</b> {0, 0, 1}</td></tr>
-<tr class="memdesc:aa67816c1f9d0395c1298c4d1f964a48f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector for use with "Constant" rotation mode, ESplineRotateMode. <br /></td></tr>
+<tr class="memdesc:aa67816c1f9d0395c1298c4d1f964a48f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector for use with "Constant" rotation mode, <a class="el" href="SplineMeshedComponent_8h.html#a9135761ea76014f745be989347f84098" title="ESplineRotateMode">ESplineRotateMode</a>. <br /></td></tr>
 <tr class="memitem:ae2290a1e747af5826a260922b9d2b04a" id="r_ae2290a1e747af5826a260922b9d2b04a"><td class="memItemLeft">FTransform&#160;</td><td class="memItemRight"><a class="el" href="#ae2290a1e747af5826a260922b9d2b04a">MeshTransform</a> {}</td></tr>
 <tr class="memdesc:ae2290a1e747af5826a260922b9d2b04a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Relative transform change.  <br /></td></tr>
 <tr class="memitem:ab74c99fa03379597f3e62f14be6e0808" id="r_ab74c99fa03379597f3e62f14be6e0808"><td class="memItemLeft"><a id="ab74c99fa03379597f3e62f14be6e0808" name="ab74c99fa03379597f3e62f14be6e0808"></a>
@@ -209,7 +209,7 @@ FVector&#160;</td><td class="memItemRight"><b>UpVector</b> {0, 0, 1}</td></tr>
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>Source/SplineMeshed/Public/<a class="el" href="SplineMeshedComponent_8h_source.html">SplineMeshedComponent.h</a></li>
+<li>Source/YasiuSplineMeshed/Public/<a class="el" href="SplineMeshedComponent_8h_source.html">SplineMeshedComponent.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

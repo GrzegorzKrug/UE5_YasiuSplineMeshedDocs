@@ -14,6 +14,7 @@ var classUSplineMeshedComponent =
     [ "ExtraCurvy", "classUSplineMeshedComponent.html#a7297dab4bceab781599f93aef38d628e", null ],
     [ "GetMeshes", "classUSplineMeshedComponent.html#a447e6334b01907ecd0d8ea4c397d9d22", null ],
     [ "GetMeshPositonsArray", "classUSplineMeshedComponent.html#aed18762e0050d61776f9a012b593d7ef", null ],
+    [ "GetSideOffset", "classUSplineMeshedComponent.html#aba79e36d166dde945bd1086352670461", null ],
     [ "MakeHelix", "classUSplineMeshedComponent.html#a9ce88010114eb7643cf415d5fc15e16d", null ],
     [ "MakeSinus", "classUSplineMeshedComponent.html#a0eb365a9e12c02cc373fb9da734e30e2", null ],
     [ "Num", "classUSplineMeshedComponent.html#a64eda4c580472ebeeb173c572700d909", null ],

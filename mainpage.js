@@ -10,12 +10,14 @@ var mainpage =
       ] ]
     ] ],
     [ "Quick Use", "baseuse.html", [
-      [ "Use pre-created actor with component", "baseuse.html#autotoc_md24", null ],
-      [ "Add component to your actor in BP", "baseuse.html#autotoc_md25", null ],
-      [ "Use in C++", "baseuse.html#autotoc_md27", [
-        [ "Classes hierarchy", "baseuse.html#autotoc_md28", null ]
+      [ "Use pre-created actor with component", "baseuse.html#autotoc_md25", null ],
+      [ "Add component to your actor in BP", "baseuse.html#autotoc_md26", null ],
+      [ "Use in C++", "baseuse.html#autotoc_md28", [
+        [ "Classes hierarchy", "baseuse.html#autotoc_md29", null ]
       ] ],
-      [ "Extending functionality", "baseuse.html#autotoc_md30", null ]
+      [ "Extending functionality", "baseuse.html#autotoc_md31", [
+        [ "Customizing pipeline", "baseuse.html#autotoc_md32", null ]
+      ] ]
     ] ],
     [ "Examples", "example.html", [
       [ "Examples are demonstrated in demo level", "example.html#autotoc_md12", [

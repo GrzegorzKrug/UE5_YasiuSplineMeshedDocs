@@ -6,5 +6,6 @@ var searchData=
   ['getmeshpositonsarray_3',['GetMeshPositonsArray',['../classUSplineMeshedComponent.html#aed18762e0050d61776f9a012b593d7ef',1,'USplineMeshedComponent']]],
   ['getnextdouble_4',['GetNextDouble',['../classUSpline__RNG.html#a71e74873d95f97778f38e5880efd0956',1,'USpline_RNG']]],
   ['getnextint_5',['GetNextInt',['../classUSpline__RNG.html#a143465bab887e1fc56a739b8fd307145',1,'USpline_RNG']]],
-  ['getqueryparams_6',['GetQueryParams',['../structFSplineDetectionTestParams.html#a27b96d7c554682e0b21f865db767255f',1,'FSplineDetectionTestParams']]]
+  ['getqueryparams_6',['GetQueryParams',['../structFSplineDetectionTestParams.html#a27b96d7c554682e0b21f865db767255f',1,'FSplineDetectionTestParams']]],
+  ['getsideoffset_7',['GetSideOffset',['../classUSplineMeshedComponent.html#aba79e36d166dde945bd1086352670461',1,'USplineMeshedComponent']]]
 ];

@@ -99,18 +99,19 @@ $(function(){initNavTree('issues.html','',''); });
   <div class="headertitle"><div class="title">Known Issues </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h3 class="doxsection"><a class="anchor" id="autotoc_md21"></a>
-Temporary objects</h3>
-<dl class="section warning"><dt>Warning</dt><dd>Using undo/redo can create visual artifacts of spawned mesh objects<ul>
-<li>Due to optimization meshes are not flagged for auto clean and are persistent.</li>
-<li>It can cause temporary object hanging as part of actor/component.</li>
-<li>Meshes will not be saved and will disappear after restart (or level change).</li>
+<div class="textblock"><h4 class="doxsection"><a class="anchor" id="autotoc_md21"></a>
+Buttons</h4>
+<dl class="section note"><dt>Note</dt><dd>Some buttons should not be visible in editor and caused crash.<ul>
+<li>Buttons are still visible in Blueprint editor window</li>
+<li>Functions are disabled and no message is displayed.</li>
 </ul>
 </dd></dl>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md22"></a>
-Buttons</h3>
-<dl class="section note"><dt>Note</dt><dd>Some buttons should not be visible in editor.<ul>
-<li>Functions are disabled to not cause crash, but buttons may still be visible.</li>
+<hr  />
+<h4 class="doxsection"><a class="anchor" id="autotoc_md23"></a>
+Undo (Ctrl+Z)</h4>
+<dl class="section note"><dt>Note</dt><dd>Using undo/redo was causing problem by not tracking meshes correctly.<ul>
+<li>It is safe to use</li>
+<li>On <span class="tt">Undo</span> Meshes will be destroyed and new will be created in new construction pass. (only internal meshes stored in component)</li>
 </ul>
 </dd></dl>
 <hr  />
