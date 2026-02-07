@@ -30,7 +30,7 @@ TObjectPtr<USplineMeshedComponent> SplineMeshCmp;
 ```
 ## Classes hierarchy 
 Core component:
-- \ref USplineMeshedComponent : core component
+- \ref  USplineMeshedComponent : core component
 - \ref USplineMeshedComponent_Extension : modified component
 
 Classes:
@@ -45,3 +45,8 @@ Class has exposed function to use and override modification of every mesh for cu
   - Override function [OnMeshSpawn](@ref USplineMeshedComponent::OnMeshSpawn) (for spawn customization)
   - Override function [Detection](@ref USplineMeshedComponent::DetectionFunction) (for collision detection)
 
+## Customizing pipeline
+
+All functions useful for creating custom pipeline are exposed for Blueprint.
+
+Spline function list: \ref USplineMeshedComponent

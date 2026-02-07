@@ -1,14 +1,16 @@
 \page issues Known Issues
 
-### Temporary objects
-@warning Using undo/redo can create visual artifacts of spawned mesh objects
-- Due to optimization meshes are not flagged for auto clean and are persistent.
-- It can cause temporary object hanging as part of actor/component.
-- Meshes will not be saved and will disappear after restart (or level change).
 
-### Buttons
-@note Some buttons should not be visible in editor.
-- Functions are disabled to not cause crash, but buttons may still be visible.
+#### Buttons
+@note Some buttons should not be visible in editor and caused crash.
+- Buttons are still visible in Blueprint editor window 
+- Functions are disabled and no message is displayed.
 
+---
+
+#### Undo (Ctrl+Z)
+@note Using undo/redo was causing problem by not tracking meshes correctly.
+- It is safe to use
+- On `Undo` Meshes will be destroyed and new will be created in new construction pass. (only internal meshes stored in component)
 
 ---
