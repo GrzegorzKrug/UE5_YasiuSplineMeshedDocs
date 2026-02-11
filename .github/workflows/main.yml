@@ -50,13 +50,13 @@ jobs:
         run: |
           # ls -a
           # pwd
-          #git checkout main  
+          # git checkout main  
 
           # Capture log message
           git log --oneline -n 3
           echo "Last git message:"
-          git log -1 --pretty=%B
-          git log -1 --pretty=%B plugin > /lastCommitTxt.txt          
+          git log -1 --pretty=%B plugin
+          LASTCOMMIT = git log -1 --pretty=%B plugin
           
           # Mv has issues with overwrite, rsync? 
           rm -r plugin/.git
@@ -82,7 +82,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes were made"
           else
-            git commit -m "AutoUpdate: $(cat /lastCommitTxt.txt)"
+            git commit -m "AutoUpdate: $LASTCOMMIT"
             git push origin main
           fi
           
