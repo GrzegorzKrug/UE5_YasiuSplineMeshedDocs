@@ -56,7 +56,7 @@ jobs:
           git log --oneline -n 3
           echo "Last git message:"
           echo git log -n 2 --oneline plugin
-          "MYLASTCM=$(git log -1 --pretty=%B plugin)"
+          set MYLASTCM "$(git log -1 --pretty=%B plugin)"
           
           # Mv has issues with overwrite, rsync? 
           rm -r plugin/.git
