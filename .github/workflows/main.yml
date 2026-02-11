@@ -55,7 +55,7 @@ jobs:
           # Capture log message
           git log --oneline -n 3
           echo "Last git message:"
-          git log -1 --pretty=%B plugin
+          git log -n 2 --oneline plugin
           git log -1 --pretty=%B plugin >> $MYVERY_LASTCOMMIT
           
           # Mv has issues with overwrite, rsync? 
@@ -82,7 +82,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes were made"
           else
-            git commit -m "AutoUpdate: $MYVERY_LASTCOMMIT"
+            git commit -m "AutoUpdate: ${{ env.MYLASTCOMMIT }}"
             git push origin main
           fi
           
