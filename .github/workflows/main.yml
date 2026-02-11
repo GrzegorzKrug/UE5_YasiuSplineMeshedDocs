@@ -80,7 +80,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes were made"
           else
-            git commit -m "AutoUpdate: "$(cat lastCommitTxt.txt)
+            git commit -m "AutoUpdate: $(cat lastCommitTxt.txt)"
             git push origin main
           fi
           
