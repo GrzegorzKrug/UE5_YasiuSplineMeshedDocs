@@ -50,13 +50,17 @@ jobs:
         run: |
           # ls -a
           # pwd
-          #git checkout main     
+          #git checkout main  
 
+          # Capture log message
+          git log -1 --pretty=%B plugin > lastCommitTxt.txt
+          
           # Mv has issues with overwrite, rsync? 
           rm -r plugin/.git
           cp -r plugin/* .
           rm plugin -r
-
+          
+          
           FILE_TYPES=(".md" ".txt" ".png" ".jpg" ".bmp")
           echo ${FILE_TYPES[@]}
           git status          
@@ -76,7 +80,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes were made"
           else
-            git commit -m "Automatic docs update"
+            git commit -m $(cat lastCommitTxt.txt)
             git push origin main
           fi
           
