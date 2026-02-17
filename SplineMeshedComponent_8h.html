@@ -159,11 +159,11 @@ Enumerations</h2></td></tr>
 <tr class="memdesc:a9135761ea76014f745be989347f84098"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method that solved mesh rotation along spline.  <a href="#a9135761ea76014f745be989347f84098">More...</a><br /></td></tr>
 <tr class="memitem:a7ce2ebb92b14932a913299550e72b6ff" id="r_a7ce2ebb92b14932a913299550e72b6ff"><td class="memItemLeft">enum class &#160;</td><td class="memItemRight"><a class="el" href="#a7ce2ebb92b14932a913299550e72b6ff">ESplineMeshStretching</a> : uint8 { <br />
 &#160;&#160;<a class="el" href="#a7ce2ebb92b14932a913299550e72b6ffaa7c7ddc54be89a32393483203578bf48">NoStretching</a>
-, <a class="el" href="#a7ce2ebb92b14932a913299550e72b6ffa23c232e3f262042c9a8353bab29c9fd4">PipeStretching</a>
 , <a class="el" href="#a7ce2ebb92b14932a913299550e72b6ffa2b5d34458ec23ea904d8f2632d220675">StretchOnlyLast</a>
 , <a class="el" href="#a7ce2ebb92b14932a913299550e72b6ffa9acef336480c41367ee5b4ce2c4df0c2">MinimalStretchOnAll</a>
+, <a class="el" href="#a7ce2ebb92b14932a913299550e72b6ffa4709407690faa5e1d54c5afb175f19d0">ItemPerSegment</a>
 , <br />
-&#160;&#160;<a class="el" href="#a7ce2ebb92b14932a913299550e72b6ffa4709407690faa5e1d54c5afb175f19d0">ItemPerSegment</a>
+&#160;&#160;<a class="el" href="#a7ce2ebb92b14932a913299550e72b6ffa23c232e3f262042c9a8353bab29c9fd4">PipeStretching</a>
 <br />
  }</td></tr>
 <tr class="memdesc:a7ce2ebb92b14932a913299550e72b6ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method that decides how to place meshes.  <a href="#a7ce2ebb92b14932a913299550e72b6ff">More...</a><br /></td></tr>
@@ -193,13 +193,13 @@ Enumerations</h2></td></tr>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a7ce2ebb92b14932a913299550e72b6ffaa7c7ddc54be89a32393483203578bf48" name="a7ce2ebb92b14932a913299550e72b6ffaa7c7ddc54be89a32393483203578bf48"></a>NoStretching&#160;</td><td class="fielddoc"><p>Only full meshes will be spawned. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a7ce2ebb92b14932a913299550e72b6ffa23c232e3f262042c9a8353bab29c9fd4" name="a7ce2ebb92b14932a913299550e72b6ffa23c232e3f262042c9a8353bab29c9fd4"></a>PipeStretching&#160;</td><td class="fielddoc"><p>Stretch meshes to make seamless connection at offset. (Can not use randomness). </p>
-</td></tr>
 <tr><td class="fieldname"><a id="a7ce2ebb92b14932a913299550e72b6ffa2b5d34458ec23ea904d8f2632d220675" name="a7ce2ebb92b14932a913299550e72b6ffa2b5d34458ec23ea904d8f2632d220675"></a>StretchOnlyLast&#160;</td><td class="fielddoc"><p>Last mesh will stretch to fit to end. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a7ce2ebb92b14932a913299550e72b6ffa9acef336480c41367ee5b4ce2c4df0c2" name="a7ce2ebb92b14932a913299550e72b6ffa9acef336480c41367ee5b4ce2c4df0c2"></a>MinimalStretchOnAll&#160;</td><td class="fielddoc"><p>Fit segments from start to end. Applies minimal and equal stretch to all segments. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a7ce2ebb92b14932a913299550e72b6ffa4709407690faa5e1d54c5afb175f19d0" name="a7ce2ebb92b14932a913299550e72b6ffa4709407690faa5e1d54c5afb175f19d0"></a>ItemPerSegment&#160;</td><td class="fielddoc"><p>Places mesh object to fill single segment from point to point. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ce2ebb92b14932a913299550e72b6ffa23c232e3f262042c9a8353bab29c9fd4" name="a7ce2ebb92b14932a913299550e72b6ffa23c232e3f262042c9a8353bab29c9fd4"></a>PipeStretching&#160;</td><td class="fielddoc"><p>Stretch meshes to make seamless connection at offset. (Can not use randomness). </p>
 </td></tr>
 </table>
 

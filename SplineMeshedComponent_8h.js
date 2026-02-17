@@ -19,10 +19,10 @@ var SplineMeshedComponent_8h =
     [ "USplineMeshedComponent_ExtendedToHelix", "classUSplineMeshedComponent__ExtendedToHelix.html", null ],
     [ "ESplineMeshStretching", "SplineMeshedComponent_8h.html#a7ce2ebb92b14932a913299550e72b6ff", [
       [ "NoStretching", "SplineMeshedComponent_8h.html#a7ce2ebb92b14932a913299550e72b6ffaa7c7ddc54be89a32393483203578bf48", null ],
-      [ "PipeStretching", "SplineMeshedComponent_8h.html#a7ce2ebb92b14932a913299550e72b6ffa23c232e3f262042c9a8353bab29c9fd4", null ],
       [ "StretchOnlyLast", "SplineMeshedComponent_8h.html#a7ce2ebb92b14932a913299550e72b6ffa2b5d34458ec23ea904d8f2632d220675", null ],
       [ "MinimalStretchOnAll", "SplineMeshedComponent_8h.html#a7ce2ebb92b14932a913299550e72b6ffa9acef336480c41367ee5b4ce2c4df0c2", null ],
-      [ "ItemPerSegment", "SplineMeshedComponent_8h.html#a7ce2ebb92b14932a913299550e72b6ffa4709407690faa5e1d54c5afb175f19d0", null ]
+      [ "ItemPerSegment", "SplineMeshedComponent_8h.html#a7ce2ebb92b14932a913299550e72b6ffa4709407690faa5e1d54c5afb175f19d0", null ],
+      [ "PipeStretching", "SplineMeshedComponent_8h.html#a7ce2ebb92b14932a913299550e72b6ffa23c232e3f262042c9a8353bab29c9fd4", null ]
     ] ],
     [ "ESplineRotateMode", "SplineMeshedComponent_8h.html#a9135761ea76014f745be989347f84098", [
       [ "ConstantAbsolute", "SplineMeshedComponent_8h.html#a9135761ea76014f745be989347f84098a6fbf16c129ce9a4415643c5ced587a67", null ],

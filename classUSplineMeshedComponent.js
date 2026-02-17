@@ -21,7 +21,7 @@ var classUSplineMeshedComponent =
     [ "OffsetAllPoints", "classUSplineMeshedComponent.html#aa36e74622f4106433511fbc9f47f3847", null ],
     [ "OnMeshSpawn", "classUSplineMeshedComponent.html#a44ecb043daf44f981266df347b928ece", null ],
     [ "PlaceMeshesAlongSpline", "classUSplineMeshedComponent.html#a5004f83a419cd2fc5f6ab9028ddd8f13", null ],
-    [ "SetMaterialsByIndex", "classUSplineMeshedComponent.html#ab8389511a5c1c142f8b719eaef4c47d7", null ],
+    [ "SetMaterialsByIndex", "classUSplineMeshedComponent.html#a914bcf94f25982040caf7a1f6f489315", null ],
     [ "SetSmoothnessAtAllPoints", "classUSplineMeshedComponent.html#aec99d8fbe687365a3e052f88c8ac2990", null ],
     [ "SetSmoothnessAtPoint", "classUSplineMeshedComponent.html#a945bf84c3f5af905b0f6b535266e8da3", null ],
     [ "Sharp", "classUSplineMeshedComponent.html#aeb3746f79c9bd818188638ee41e103db", null ],

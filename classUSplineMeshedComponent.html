@@ -132,8 +132,8 @@ int&#160;</td><td class="memItemRight"><b>Num</b> () const</td></tr>
 <tr class="memdesc:abfe23e44c33dd90915cff2e717326c2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change static mesh in all Objects. (Updates only mesh's tangents).  <br /></td></tr>
 <tr class="memitem:a447e6334b01907ecd0d8ea4c397d9d22" id="r_a447e6334b01907ecd0d8ea4c397d9d22"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a447e6334b01907ecd0d8ea4c397d9d22">GetMeshes</a> (TArray&lt; class USplineMeshComponent * &gt; &amp;OutArray) const</td></tr>
 <tr class="memdesc:a447e6334b01907ecd0d8ea4c397d9d22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns Copy of array containing only valid SplineMesh objects.  <br /></td></tr>
-<tr class="memitem:ab8389511a5c1c142f8b719eaef4c47d7" id="r_ab8389511a5c1c142f8b719eaef4c47d7"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#ab8389511a5c1c142f8b719eaef4c47d7">SetMaterialsByIndex</a> (const TArray&lt; UMaterialInstance * &gt; &amp;materials)</td></tr>
-<tr class="memdesc:ab8389511a5c1c142f8b719eaef4c47d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies materials from array to all meshes.  <br /></td></tr>
+<tr class="memitem:a914bcf94f25982040caf7a1f6f489315" id="r_a914bcf94f25982040caf7a1f6f489315"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a914bcf94f25982040caf7a1f6f489315">SetMaterialsByIndex</a> (const TArray&lt; UMaterialInterface * &gt; &amp;materials)</td></tr>
+<tr class="memdesc:a914bcf94f25982040caf7a1f6f489315"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies materials from array to all meshes.  <br /></td></tr>
 <tr class="memitem:afb54158f09a1e1dc5cb04d10211eb1ea" id="r_afb54158f09a1e1dc5cb04d10211eb1ea"><td class="memItemLeft"><a id="afb54158f09a1e1dc5cb04d10211eb1ea" name="afb54158f09a1e1dc5cb04d10211eb1ea"></a>
 virtual void&#160;</td><td class="memItemRight"><b>CopySplinePoints</b> (const <a class="el" href="classUSplineMeshedComponent.html">USplineMeshedComponent</a> *copyFrom)</td></tr>
 <tr class="memdesc:afb54158f09a1e1dc5cb04d10211eb1ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy spline points and curve. <br /></td></tr>
@@ -492,8 +492,8 @@ In C++ override <b>OnMeshSpawn_Implementation</b>, it is BlueprintNativeEvent</d
 
 </div>
 </div>
-<a id="ab8389511a5c1c142f8b719eaef4c47d7" name="ab8389511a5c1c142f8b719eaef4c47d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab8389511a5c1c142f8b719eaef4c47d7">&#9670;&#160;</a></span>SetMaterialsByIndex()</h2>
+<a id="a914bcf94f25982040caf7a1f6f489315" name="a914bcf94f25982040caf7a1f6f489315"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a914bcf94f25982040caf7a1f6f489315">&#9670;&#160;</a></span>SetMaterialsByIndex()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -504,7 +504,7 @@ In C++ override <b>OnMeshSpawn_Implementation</b>, it is BlueprintNativeEvent</d
         <tr>
           <td class="memname">virtual void USplineMeshedComponent::SetMaterialsByIndex </td>
           <td>(</td>
-          <td class="paramtype">const TArray&lt; UMaterialInstance * &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>materials</em></span></td><td>)</td>
+          <td class="paramtype">const TArray&lt; UMaterialInterface * &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>materials</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
